@@ -1,0 +1,70 @@
+.header {
+	width: 100%;
+	background: url("../images/tan-wood.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.nav {
+	text-align: center;
+	width: 100%;
+}
+
+.logo--lg {
+	margin: auto;
+	display: none;
+	@media(min-width: 980px) {
+		display: inline;
+		margin: 1.75em 0;
+	}
+}
+
+.logo--sm {
+	margin: auto;
+	display: block;
+	padding: 1.75em 0 1.25em;
+	@media(min-width: 980px) {
+		display: none;
+	}
+}
+
+.nav__list {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+.left {
+	@media(min-width: $bp-xsmall) {
+		display: inline;
+		//margin-left: 0;
+	}
+}
+
+.right {
+	@media(min-width: $bp-xsmall) {
+		display: inline;
+		//margin-left: 0;
+	}
+}
+
+.list__item {
+	list-style-type: none;
+	display: inline-block;
+	padding: 1.5em 0; //24px
+	
+	@media(min-width: $bp-xsmall) {
+		width: 20%;
+	}
+}
+
+.item__link {
+	text-decoration: none;
+	font-family: $font-avenir-reg;
+	font-weight: 400;
+	font-size: 1.25em; //20px
+	color: $color-brown;
+	
+	:hover {
+		
+	}
+}

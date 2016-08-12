@@ -1,0 +1,85 @@
+/**
+All Styles
+**/
+/* line 1, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_reset.scss */
+body {
+  margin: 0; }
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 200; }
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 400; }
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 700; }
+
+/* line 1, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+.header {
+  width: 100%;
+  background: url("../images/tan-wood.jpg") no-repeat center;
+  background-size: cover; }
+
+/* line 7, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+.nav {
+  text-align: center;
+  width: 100%; }
+
+/* line 12, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+.logo--lg {
+  margin: auto;
+  display: none; }
+  @media (min-width: 980px) {
+    /* line 12, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+    .logo--lg {
+      display: inline;
+      margin: 1.75em 0; } }
+
+/* line 21, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+.logo--sm {
+  margin: auto;
+  display: block;
+  padding: 1.75em 0 1.25em; }
+  @media (min-width: 980px) {
+    /* line 21, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+    .logo--sm {
+      display: none; } }
+
+/* line 30, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+.nav__list {
+  margin: 0;
+  padding: 0;
+  display: inline-block; }
+
+@media (min-width: 400px) {
+  /* line 36, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+  .left {
+    display: inline; } }
+
+@media (min-width: 400px) {
+  /* line 43, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+  .right {
+    display: inline; } }
+
+/* line 50, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+.list__item {
+  list-style-type: none;
+  display: inline-block;
+  padding: 1.5em 0; }
+  @media (min-width: 400px) {
+    /* line 50, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+    .list__item {
+      width: 20%; } }
+
+/* line 60, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+.item__link {
+  text-decoration: none;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.25em;
+  color: #4B3900; }
+
+/*# sourceMappingURL=styles.css.map */

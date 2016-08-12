@@ -1,0 +1,26 @@
+//---------------Fonts---------------//
+$font-egyptian: Egyptian, Georgia, "Times New Roman", serif;
+$font-avenir: Avenir, Helvetica, Arial, sans-serif;
+$font-avenir-roman: $font-avenir;
+$font-avenir-medium: $font-avenir;
+
+//---------------Colors---------------//
+//Base Colors
+$color-brown: #4B3900;
+$color-orange: #F26531;
+$color-blue: #08B7BD;
+$color-tan: #F0F1D9;
+
+//Grayscale Colors
+$color-light-gray: #E4E5E6;
+$color-dark-gray: #A1A1A1;
+
+//Black & White
+$color-black: #000;
+$color-white: #fff;
+
+//---------------Break Points---------------//
+$bp-xsmall: 400px; //25em
+$bp-small: 720px; //45em
+$bp-medium: 980px; //61.25em
+$bp-large: 1400px; //87.5em
