@@ -5,81 +5,252 @@ All Styles
 body {
   margin: 0; }
 
+/* line 5, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_reset.scss */
+h1, h2, h3, p {
+  margin: 0; }
+
 @font-face {
-  font-family: Avenir;
-  font-weight: 200; }
+  font-family: Egyptian;
+  src: url("/src/public/fonts/6e10a66d-dfda-4866-8ba4-be80c33f44d9.eot?#iefix");
+  src: url("/src/public/fonts/6e10a66d-dfda-4866-8ba4-be80c33f44d9.eot?#iefix") format("eot"), url("/src/public/fonts/220aeeef-b16f-4aa5-9cde-80a0c8898c31.woff2") format("woff2"), url("/src/public/fonts/9632f777-a0ee-40fc-ba6d-817484d1d572.woff") format("woff"), url("/src/public/fonts/0a5a4d63-7e73-45a2-b206-3c65108aab37.ttf") format("truetype"), url("/src/public/fonts/c039d37d-63b4-4b91-9acf-9296e42153df.svg#c039d37d-63b4-4b91-9acf-9296e42153df") format("svg"); }
 
 @font-face {
   font-family: Avenir;
-  font-weight: 400; }
+  font-weight: 400;
+  src: url("/src/public/fonts/57bf7902-79ee-4b31-a327-1bbf59a3d155.eot?#iefix");
+  src: url("/src/public/fonts/57bf7902-79ee-4b31-a327-1bbf59a3d155.eot?#iefix") format("eot"), url("/src/public/fonts/b290e775-e0f9-4980-914b-a4c32a5e3e36.woff2") format("woff2"), url("/src/public/fonts/4b978f72-bb48-46c3-909a-2a8cd2f8819c.woff") format("woff"), url("/src/public/fonts/9bdf0737-f98c-477a-9365-ffc41b9d1285.ttf") format("truetype"), url("/src/public/fonts/15281d0d-e3c2-46e1-94db-cb681e00bfaa.svg#15281d0d-e3c2-46e1-94db-cb681e00bfaa") format("svg"); }
 
 @font-face {
   font-family: Avenir;
-  font-weight: 700; }
+  font-weight: 700;
+  src: url("/src/public/fonts/e0542193-b2e6-4273-bc45-39d4dfd3c15b.eot?#iefix");
+  src: url("/src/public/fonts/e0542193-b2e6-4273-bc45-39d4dfd3c15b.eot?#iefix") format("eot"), url("/src/public/fonts/17b90ef5-b63f-457b-a981-503bb7afe3c0.woff2") format("woff2"), url("/src/public/fonts/c9aeeabd-dd65-491d-b4be-3e0db9ae47a0.woff") format("woff"), url("/src/public/fonts/25f994de-d13f-4a5d-a82b-bf925a1e054d.ttf") format("truetype"), url("/src/public/fonts/3604edbd-784e-4ca7-b978-18836469c62d.svg#3604edbd-784e-4ca7-b978-18836469c62d") format("svg"); }
 
 /* line 1, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
 .header {
   width: 100%;
   background: url("../images/tan-wood.jpg") no-repeat center;
   background-size: cover; }
+  @media (min-width: 980px) {
+    /* line 1, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+    .header {
+      padding-bottom: 1.75em; } }
 
-/* line 7, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+/* line 11, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
 .nav {
   text-align: center;
   width: 100%; }
 
-/* line 12, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
-.logo--lg {
-  margin: auto;
-  display: none; }
+/* line 16, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+.site-title {
+  padding-top: 1em;
+  margin: auto; }
   @media (min-width: 980px) {
-    /* line 12, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
-    .logo--lg {
-      display: inline;
-      margin: 1.75em 0; } }
+    /* line 16, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+    .site-title {
+      width: 40%;
+      position: absolute;
+      left: 30%; } }
 
-/* line 21, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
-.logo--sm {
-  margin: auto;
+/* line 27, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+.site-logo {
+  background-size: cover;
   display: block;
-  padding: 1.75em 0 1.25em; }
+  height: 2em;
+  width: 1.75em;
+  margin: 0 auto;
+  overflow: hidden;
+  text-indent: -9999em; }
   @media (min-width: 980px) {
-    /* line 21, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
-    .logo--sm {
-      display: none; } }
+    /* line 27, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+    .site-logo {
+      width: 10em;
+      background-size: contain; } }
 
-/* line 30, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+/* line 42, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
 .nav__list {
   margin: 0;
   padding: 0;
-  display: inline-block; }
+  display: inline; }
 
-@media (min-width: 400px) {
-  /* line 36, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
-  .left {
-    display: inline; } }
-
-@media (min-width: 400px) {
-  /* line 43, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
-  .right {
-    display: inline; } }
-
-/* line 50, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+/* line 48, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
 .list__item {
   list-style-type: none;
   display: inline-block;
-  padding: 1.5em 0; }
-  @media (min-width: 400px) {
-    /* line 50, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+  padding: 1.5em 0;
+  width: 24%; }
+  @media (min-width: 980px) {
+    /* line 48, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
     .list__item {
-      width: 20%; } }
+      width: 6%;
+      margin-top: 1.75em; } }
 
-/* line 60, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+@media (min-width: 980px) {
+  /* line 59, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+  .left1 {
+    margin: 0 5em 0 2em; } }
+
+@media (min-width: 980px) {
+  /* line 65, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+  .left2 {
+    margin-right: 15em; } }
+
+@media (min-width: 980px) {
+  /* line 71, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+  .right1 {
+    margin-left: 15em; } }
+
+@media (min-width: 980px) {
+  /* line 77, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
+  .right2 {
+    margin: 0 2em 0 5em; } }
+
+/* line 83, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_header.scss */
 .item__link {
   text-decoration: none;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 1.25em;
   color: #4B3900; }
+
+/* line 1, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_hero.scss */
+.hero {
+  background: url("../images/bedroom_with_products_bright.jpg") no-repeat 10% 50%;
+  background-size: cover; }
+
+/* line 6, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_hero.scss */
+.hero__overlay {
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  padding: 4em 0 18em; }
+
+/* line 12, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_hero.scss */
+.hero__heading {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 2.125em;
+  color: #4B3900;
+  margin-bottom: 0.5em; }
+  @media (min-width: 720px) {
+    /* line 12, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_hero.scss */
+    .hero__heading {
+      font-size: 2.5em; } }
+  @media (min-width: 980px) {
+    /* line 12, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_hero.scss */
+    .hero__heading {
+      font-weight: 700;
+      font-size: 3.5em;
+      margin-top: 1em; } }
+  @media (min-width: 1400px) {
+    /* line 12, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_hero.scss */
+    .hero__heading {
+      font-size: 5.5em;
+      margin-bottom: 0.25em; } }
+
+/* line 35, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_hero.scss */
+.hero__text {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: #4B3900;
+  width: 85%;
+  margin: auto; }
+  @media (min-width: 720px) {
+    /* line 35, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_hero.scss */
+    .hero__text {
+      font-size: 1.5em; } }
+  @media (min-width: 980px) {
+    /* line 35, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_hero.scss */
+    .hero__text {
+      width: 75%;
+      font-size: 2em; } }
+
+/* line 1, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_carousel.scss */
+.carousel {
+  box-sizing: border-box; }
+
+/* line 7, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_carousel.scss */
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+/* line 11, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_carousel.scss */
+.carousel__img {
+  background-image: url("http://placehold.it/200x150");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 150px;
+  margin: 0px 5px;
+  padding-top: 60px; }
+
+/* line 21, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_carousel.scss */
+.carousel__img:hover {
+  border: 3px solid black;
+  background: rgba(0, 0, 0, 0.5);
+  color: white; }
+
+/* line 27, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_carousel.scss */
+.carousel__img:hover .carousel__text {
+  display: block; }
+
+/* line 31, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_carousel.scss */
+.carousel__text {
+  display: none;
+  text-align: center;
+  padding-bottom: 1em; }
+
+/* line 37, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_carousel.scss */
+.slick-dots {
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 0; }
+  /* line 41, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_carousel.scss */
+  .slick-dots li {
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px; }
+    /* line 46, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_carousel.scss */
+    .slick-dots li.slick-active button {
+      background-color: black; }
+    /* line 50, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_carousel.scss */
+    .slick-dots li button {
+      font: 0/0 a;
+      text-shadow: none;
+      color: transparent;
+      background-color: #999;
+      border: none;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%; }
+    /* line 60, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_carousel.scss */
+    .slick-dots li :hover {
+      background-color: black; }
+
+/* Custom Arrow */
+/* line 69, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_carousel.scss */
+.prev {
+  color: #999;
+  position: absolute;
+  top: 38%;
+  left: -2em;
+  font-size: 1.5em; }
+  /* line 75, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_carousel.scss */
+  .prev :hover {
+    cursor: pointer;
+    color: black; }
+
+/* line 81, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_carousel.scss */
+.next {
+  color: #999;
+  position: absolute;
+  top: 38%;
+  right: -2em;
+  font-size: 1.5em; }
+  /* line 87, /Users/sparkuser/Documents/Project3-AModernEden/fed-final-project/src/scss/_carousel.scss */
+  .next :hover {
+    cursor: pointer;
+    color: black; }
 
 /*# sourceMappingURL=styles.css.map */
