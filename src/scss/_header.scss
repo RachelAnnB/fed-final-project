@@ -2,6 +2,10 @@
 	width: 100%;
 	background: url("../images/tan-wood.jpg") no-repeat center;
 	background-size: cover;
+
+	@media(min-width: $bp-medium) {
+		padding-bottom: 1.75em; //28px
+	}
 }
 
 .nav {
@@ -9,62 +13,81 @@
 	width: 100%;
 }
 
-.logo--lg {
+.site-title {
+	padding-top: 1em; //16px
 	margin: auto;
-	display: none;
-	@media(min-width: 980px) {
-		display: inline;
-		margin: 1.75em 0;
+
+	@media(min-width: $bp-medium) {
+		width: 40%;
+		position: absolute;
+		left: 30%;
 	}
 }
 
-.logo--sm {
-	margin: auto;
+.site-logo {
+	background-size: cover;
 	display: block;
-	padding: 1.75em 0 1.25em;
-	@media(min-width: 980px) {
-		display: none;
+	height: 2em; //32px
+	width: 1.75em; //28px
+	margin: 0 auto;
+	overflow: hidden;
+	text-indent: -9999em;
+
+	@media(min-width: $bp-medium) {
+		width: 10em; //160px
+		background-size: contain;
 	}
 }
 
 .nav__list {
 	margin: 0;
 	padding: 0;
-	display: inline-block;
-}
-
-.left {
-	@media(min-width: $bp-xsmall) {
-		display: inline;
-		//margin-left: 0;
-	}
-}
-
-.right {
-	@media(min-width: $bp-xsmall) {
-		display: inline;
-		//margin-left: 0;
-	}
+	display: inline;
 }
 
 .list__item {
 	list-style-type: none;
 	display: inline-block;
 	padding: 1.5em 0; //24px
-	
-	@media(min-width: $bp-xsmall) {
-		width: 20%;
+	width: 24%;
+	@media(min-width: $bp-medium) {
+		width: 6%;
+		margin-top: 1.75em; //28px
+	}
+}
+
+.left1 {
+	@media(min-width: $bp-medium) {
+		margin: 0 5em 0 2em; //0 80px 0 32px
+	}
+}
+
+.left2 {
+	@media(min-width: $bp-medium) {
+		margin-right: 15em; //240px
+	}
+}
+
+.right1 {
+	@media(min-width: $bp-medium) {
+		margin-left: 15em; //240px
+	}
+}
+
+.right2 {
+	@media(min-width: $bp-medium) {
+		margin: 0 2em 0 5em; //0 32px 0 80px
 	}
 }
 
 .item__link {
 	text-decoration: none;
-	font-family: $font-avenir-reg;
+	font-family: $font-avenir-roman;
 	font-weight: 400;
 	font-size: 1.25em; //20px
 	color: $color-brown;
-	
+
 	:hover {
-		
+
 	}
 }
