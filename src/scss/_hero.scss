@@ -1,3 +1,8 @@
+//---------------Break Points---------------//
+//45em (720px)
+//61.25em (980px)
+//87.5em (1400px)
+
 .hero {
 	background: url("../images/bedroom_with_products_bright.jpg") no-repeat 10% 50%;
 	background-size: cover;
@@ -16,17 +21,17 @@
 	color: $color-brown;
 	margin-bottom: 0.5em; //8px
 	
-	@media(min-width: $bp-small) {
+	@media(min-width: 45em) {
 		font-size: 2.5em; //40px
 	}
 	
-	@media(min-width: $bp-medium) {
+	@media(min-width: 61.25em) {
 		font-weight: 700;
 		font-size: 3.5em; //56px
 		margin-top: 1em; //16px
 	}
 	
-	@media(min-width: $bp-large) {
+	@media(min-width: 87.5em) {
 		font-size: 5.5em; //88px
 		margin-bottom: 0.25em; //4px
 	}
@@ -40,11 +45,11 @@
 	width: 85%;
 	margin: auto;
 	
-	@media(min-width: $bp-small) {
+	@media(min-width: 45em) {
 		font-size: 1.5em; //24px
 	}
 	
-	@media(min-width: $bp-medium) {
+	@media(min-width: 61.25em) {
 		width: 75%;
 		font-size: 2em; //32px
 	}
