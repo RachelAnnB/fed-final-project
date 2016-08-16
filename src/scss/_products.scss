@@ -1,0 +1,108 @@
+.products {
+	background: url("../images/white-wood.jpg") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+}
+
+.products__heading {
+	font-size: 1em; //16px
+}
+
+.products__box {
+	margin: auto;
+}
+
+.product-title__box {
+	width: 90%;
+	background-color: $color-blue;
+	padding: 1em; //16px
+	margin: 4em auto 3em; //64px 48px
+}
+
+.product-title {
+	font-family: $font-egyptian;
+	font-size: 1.5em; //24px
+	color: $color-white;
+	border: 2px solid $color-white;
+	padding: 1em; //16px
+}
+
+.products__group {
+	
+}
+
+.products__group__item {
+	
+}
+
+.product__img {
+	max-width: 18em; //
+	max-height: 18em; //
+	overflow: hidden;
+	border-radius: 25em; //
+}
+
+.item__heading {
+	width: 80%;
+	font-family: $font-avenir-roman;
+	font-size: 1.25em; //20px
+	font-weight: 400;
+	color: $color-white;
+	background-color: $color-orange;
+	margin: auto;
+	padding: 1em 0; //16px 0
+}
+
+.item__text {
+	width: 90%;
+	font-family: $font-avenir-roman;
+	font-size: 1em; //16px
+	font-weight: 400;
+	color: $color-brown;
+	margin: 1em auto 3em; //16px 48px
+}
+
+.flashcards {
+	
+}
+
+.wall-puzzles {
+	
+}
+
+.pillows {
+	
+}
+
+.decals {
+	
+}
+
+.posters {
+	
+}
+
+.speak-piggy {
+	
+}
+
+.c-is-for-cow {
+	
+}
+
+.two-by-two {
+	
+}
+
+.where-to-buy {
+	
+}
+
+.where-to-buy__text {
+	
+}
+
+.where-to-buy__logo {
+	
+}
