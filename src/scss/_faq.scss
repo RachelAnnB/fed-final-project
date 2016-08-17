@@ -41,11 +41,7 @@
   padding: 0.5em; //8px
   border: 2px solid $color-brown;
 
-  &:hover {
-    background-color: $color-brown;
-  }
-  
-  &:active {
+  &:hover, &:active {
     background-color: $color-brown;
   }
 }

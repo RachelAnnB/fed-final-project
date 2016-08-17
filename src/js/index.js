@@ -36,7 +36,7 @@ $('.responsive').slick({
 
 //---------------Show/Hide FAQs---------------//
 function showonlyone(thechosenone) {
-	var newboxes = document.getElementsByTagName("div");
+	var newboxes = document.getElementsByClassName("newboxes");
 	for (var x = 0; x < newboxes.length; x++) {
 		name = newboxes[x].getAttribute("class");
 		if (name == 'newboxes') {
