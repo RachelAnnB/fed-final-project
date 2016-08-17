@@ -1,0 +1,200 @@
+//---------------Break Points---------------//
+//45em (720px)
+//56.5em (904px)
+//61.25em (980px)
+//62em (992px)
+//65em (1040px)
+//81.25em (1300px)
+//87.5em (1400px)
+
+.products {
+	background: url("../images/white-wood.jpg") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+	padding: 4em 0; //64px 0
+}
+
+.products__heading {
+	width: 10em; //160px
+	font-family: $font-egyptian;
+	font-size: 1em; //16px
+	color: $color-blue;
+	border-top: 2px solid $color-blue;
+	border-bottom: 2px solid $color-blue;
+	padding: 0.25em 0; //4px 0
+	margin: auto;
+	
+	@media(min-width: 61.25em) {
+		font-size: 1.5em; //24px
+	}
+}
+
+.products__box {
+	margin: auto;
+}
+
+.product-title__box {
+	width: 85%;
+	background-color: $color-blue;
+	padding: 1em; //16px
+	margin: 4em auto 3em; //64px 48px
+}
+
+.product-title {
+	font-family: $font-egyptian;
+	font-size: 1.75em; //28px
+	color: $color-white;
+	border: 2px solid $color-white;
+	padding: 1em; //16px
+	
+	@media(min-width: 45em) {
+		font-size: 2em; //32px
+	}
+	
+	@media(min-width: 62em) {
+		font-size: 2.5em; //40px
+	}
+}
+
+.products__group {
+	display: inline-block;
+}
+
+.products__group__item {
+	width: 100%;
+	
+	@media(min-width: 56.5em) {
+		width: 48%;
+		display: inline-block;
+	}
+	
+	@media(min-width: 81.25em) {
+		width: 32%;
+	}
+}
+
+.item__heading__box {
+	width: 100%;
+	background-color: $color-orange;
+	padding: 0.5em 0; //8px 0
+	position: relative;
+	margin: auto;
+	z-index: 1;
+	top: 240px;
+	
+	@media(min-width: 81.25em) {
+		top: 260px;
+	}
+}
+
+.item__heading {
+	font-family: $font-avenir-roman;
+	font-size: 1em; //16px
+	font-weight: 400;
+	color: $color-white;
+	border-top: 2px solid $color-white;
+	border-bottom: 2px solid $color-white;
+	padding: 0.5em 0; //8px 0
+	
+	@media(min-width: 81.25em) {
+		font-size: 1.25em; //20px
+	}
+}
+
+.item__text {
+	width: 90%;
+	font-family: $font-avenir-roman;
+	font-size: 1em; //16px
+	font-weight: 400;
+	color: $color-brown;
+	margin: 2em auto 5em; //32px 80px
+}
+
+.flashcards {
+	background: url("/images/flashcards.jpg") no-repeat center;
+	background-size: cover;
+	@include product-img;
+}
+
+.wall-puzzles {
+	background: url("/images/wall-puzzles.jpg") no-repeat center;
+	background-size: cover;
+	@include product-img;
+}
+
+.pillows {
+	background: url("/images/pillow.jpg") no-repeat center;
+	background-size: cover;
+	@include product-img;
+}
+
+.decals {
+	background: url("/images/wall-decal.jpg") no-repeat center;
+	background-size: cover;
+	@include product-img;
+}
+
+.posters {
+	background: url("/images/poster.jpg") no-repeat center;
+	background-size: cover;
+	@include product-img;
+}
+
+.speak-piggy {
+	background: url("/images/speak-piggy.jpg") no-repeat center;
+	background-size: cover;
+	@include product-img;
+}
+
+.c-for-cow {
+	background: url("/images/c-is-for-cow.jpg") no-repeat center;
+	background-size: cover;
+	@include product-img;
+}
+
+.two-by-two {
+	background: url("/images/two-by-two.jpg") no-repeat center;
+	background-size: cover;
+	@include product-img;
+}
+
+.where-to-buy {
+	width: 90%;
+	background-color: $color-blue;
+	padding: 1em; //16px
+	margin: 4em auto 1em; //64px 16px
+}
+
+.where-to-buy__text {
+	font-family: $font-egyptian;
+	font-size: 1.5em; //24px
+	color: $color-white;
+	
+	@media(min-width: 87.5em) {
+		position: absolute;
+		margin-top: 1.25em; //20px
+		left: 9em; //144em
+	}
+	
+	@media(min-width: 90em) {
+		left: 9.5em; //152px
+	}
+}
+
+.where-to-buy__logo {
+	background-position: 50% 50%;
+	display: block;
+	margin-top: 1em; //16px
+	padding: 1em; //16px
+	text-indent: -9999em;
+	
+	@media(min-width: 87.5em) {
+		background-position: 80% 50%;
+		margin-bottom: 1em; //16px
+	}
+	
+	@media(min-width: 90em) {
+		background-position: 78% 50%;
+	}
+}

@@ -1,0 +1,19 @@
+//---------------Break Points---------------//
+//81.25em (1300px)
+
+@mixin product-img {
+	margin: auto;
+	width: 20em; //320px
+	height: 20em; //320px
+	border-radius: 10em; //160px
+	-webkit-border-radius: 10em; //160px
+	-moz-border-radius: 10em; //160px
+	
+	@media(min-width: 81.25em) {
+		width: 22em; //352px
+		height: 22em; //352px
+		border-radius: 11em; //176px
+		-webkit-border-radius: 11em; //176px
+		-moz-border-radius: 11em; //176px
+	}
+}
