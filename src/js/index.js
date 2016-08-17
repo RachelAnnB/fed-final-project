@@ -28,10 +28,10 @@ $('.responsive').slick({
 			slidesToScroll: 1
 		}
 	}
-	 // You can unslick at a given breakpoint now by adding:
-	 // settings: "unslick"
-	 // instead of a settings object
-	]
+		// You can unslick at a given breakpoint now by adding:
+		// settings: "unslick"
+		// instead of a settings object
+		]
 });
 
 //---------------Show/Hide FAQs---------------//
@@ -50,7 +50,7 @@ function showonlyone(thechosenone) {
 }
 
 //---------------Collapsible FAQ Buttons---------------//
-var acc = document.getElementsByClassName("btn");
+var acc = document.getElementsByClassName("faq__question");
 var i;
 
 for (i = 0; i < acc.length; i++) {
