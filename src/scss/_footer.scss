@@ -1,0 +1,106 @@
+//---------------Break Points---------------//
+//50em (800px)
+//56.25em (900px)
+//90em (1440px)
+
+.footer {
+	background: url("../images/brown-wood.jpg") no-repeat center;
+	background-size: cover;
+	text-align: center;
+	padding: 4em 0; //64px 0
+}
+
+.footer__container {
+	@media(min-width: 90em) {
+		width: 90em; //1440px
+		margin: auto;
+	}
+}
+
+.footer__links {
+	width: 100%;
+
+	@media(min-width: 56.25em) {
+		width: 33%;
+		float: left;
+		text-align: left;
+	}
+}
+
+.footer__link {
+	font-family: $font-avenir-roman;
+	font-size: 1em; //16px
+	font-weight: 400;
+	color: $color-white;
+	text-decoration: none;
+	display: block;
+	margin: 0.25em auto; //4px
+
+	&:hover {
+		color: $color-blue;
+	}
+
+	@media(min-width: 56.25em) {
+		margin-left: 3em; //48px
+	}
+}
+
+.footer__text {
+	font-family: $font-avenir-roman;
+	font-size: 1em; //16px
+	font-weight: 400;
+	color: $color-white;
+	display: block;
+	margin: 0.25em auto; //4px
+
+	@media(min-width: 56.25em) {
+		margin-left: 3em; //48px
+	}
+}
+
+.footer__site__logo {
+	width: 100%;
+
+	@media(min-width: 56.25em) {
+		width: 33%;
+		float: left;
+	}
+}
+
+.footer__logo {
+	background-position: center;
+	display: block;
+	height: 3em; //80px
+	text-indent: -9999em;
+	margin: 3em auto; //32px
+
+	@media(min-width: 50em) {
+		margin: 1em auto; //16px
+	}
+}
+
+.footer__icons {
+	width: 100%;
+	margin: auto;
+	display: inline-block;
+
+	@media(min-width: 56.25em) {
+		width: 30%;
+		text-align: right;
+		margin-right: 2em; //32px
+	}
+}
+
+.footer__icon {
+	background-position: center;
+	display: inline-block;
+	height: 3em; //48px
+	text-indent: -9999em;
+	width: 23%;
+	margin: 2em auto 0; //32px
+
+	@media(min-width: 56.25em) {
+		width: 26%;
+		margin: 1em auto 0; //16px
+	}
+}
