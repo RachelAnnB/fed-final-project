@@ -90,7 +90,7 @@
 	font-size: 1.25em; //20px
 	color: $color-brown;
 
-	:hover {
-
+	&:hover {
+		color: $color-orange;
 	}
 }
