@@ -62,7 +62,7 @@
 .faq__question {
   width: 90%;
   background-color: $color-tan;
-  font-family: $font-avenir;
+  font-family: $font-avenir-roman;
   font-size: 1.125em; //18px
   font-weight: 400;
   color: $color-orange;
@@ -94,7 +94,7 @@
 }
 
 .faq__answer {
-  font-family: $font-avenir;
+  font-family: $font-avenir-roman;
   font-size: 1em; //16px
   font-weight: 400;
   color: $color-tan;
@@ -110,7 +110,7 @@
 }
 
 .faq__other__text {
-  font-family: $font-avenir;
+  font-family: $font-avenir-roman;
   font-size: 1em; //16px
   font-weight: 400;
   color: $color-brown;
