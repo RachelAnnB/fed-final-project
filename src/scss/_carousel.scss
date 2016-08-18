@@ -1,97 +1,97 @@
 .carousel {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .carousel__img {
-	background-image: url("http://placehold.it/200x150");
-	background-size: cover;
-	background-position: center;
-	height: 200px;
-	width: 150px;
-	margin: 0px 5px;
-	padding-top: 60px;
+  background-image: url("http://placehold.it/200x150");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 150px;
+  margin: 0px 5px;
+  padding-top: 60px;
 }
 
 .carousel__img:hover {
-	border: 3px solid black;
-	background: rgba(0,0,0,0.5);
-	color: white;
+  border: 3px solid black;
+  background: rgba(0,0,0,0.5);
+  color: white;
 }
 
 .carousel__img:hover .carousel__text {
-	display: block;
+  display: block;
 }
 
 .carousel__text {
-	display: none;
-	text-align: center;
-	padding-bottom: 1em;
+  display: none;
+  text-align: center;
+  padding-bottom: 1em;
 }
 
 .slick-dots {
-	text-align: center;
-	margin: 0 0 10px 0;
-	padding: 0;
-	li {
-		display: inline-block;
-		margin-left: 4px;
-		margin-right: 4px;
-		&.slick-active {
-			button {
-				background-color: black;
-			}
-		}
-		button {
-			font: 0/0 a;
-			text-shadow: none;
-			color: transparent;
-			background-color: #999;
-			border: none;
-			width: 15px;
-			height: 15px;
-			border-radius: 50%;
-		}
-		:hover {
-			background-color: black;
-		}
-	}
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 0;
+  li {
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+    &.slick-active {
+      button {
+        background-color: black;
+      }
+    }
+    button {
+      font: 0/0 a;
+      text-shadow: none;
+      color: transparent;
+      background-color: #999;
+      border: none;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+    }
+    :hover {
+      background-color: black;
+    }
+  }
 }
 
 
 /* Custom Arrow */
 
 .prev {
-	color: #999;
-	position: absolute;
-	top: 38%;
-	left: -2em;
-	font-size: 1.5em;
-	:hover {
-		cursor: pointer;
-		color: black;
-	}
+  color: #999;
+  position: absolute;
+  top: 38%;
+  left: -2em;
+  font-size: 1.5em;
+  :hover {
+    cursor: pointer;
+    color: black;
+  }
 }
 
 .next {
-	color: #999;
-	position: absolute;
-	top: 38%;
-	right: -2em;
-	font-size: 1.5em;
-	:hover {
-		cursor: pointer;
-		color: black;
-	}
+  color: #999;
+  position: absolute;
+  top: 38%;
+  right: -2em;
+  font-size: 1.5em;
+  :hover {
+    cursor: pointer;
+    color: black;
+  }
 }
 
 @media screen and (max-width: 800px) {
-	.next {
-		
-	}
+  .next {
+    
+  }
 }

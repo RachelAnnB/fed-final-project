@@ -20,17 +20,17 @@
 	font-size: 2.125em; //34px
 	color: $color-brown;
 	margin-bottom: 0.5em; //8px
-	
+
 	@media(min-width: 45em) {
 		font-size: 2.5em; //40px
 	}
-	
+
 	@media(min-width: 61.25em) {
 		font-weight: 700;
 		font-size: 3.5em; //56px
 		margin-top: 1em; //16px
 	}
-	
+
 	@media(min-width: 87.5em) {
 		font-size: 5.5em; //88px
 		margin-bottom: 0.25em; //4px
@@ -44,11 +44,11 @@
 	color: $color-brown;
 	width: 85%;
 	margin: auto;
-	
+
 	@media(min-width: 45em) {
 		font-size: 1.5em; //24px
 	}
-	
+
 	@media(min-width: 61.25em) {
 		width: 75%;
 		font-size: 2em; //32px
