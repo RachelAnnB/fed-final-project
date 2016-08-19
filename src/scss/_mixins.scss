@@ -18,3 +18,12 @@
 		-moz-border-radius: 11em; //176px
 	}
 }
+
+@mixin fun-fact {
+	display: none;
+	background-color: $color-tan;
+	border-radius: 1em; //16px
+	position: absolute;
+	width: 15em; //240px
+	padding: 1em; //16px
+}

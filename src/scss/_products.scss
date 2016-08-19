@@ -53,65 +53,6 @@
 	}
 }
 
-.fun-fact__heading {
-	
-}
-
-.fun-fact__text {
-	
-}
-
-.icon-duck {
-	background-position: 150% 100%;
-	cursor: pointer;
-	
-	&:hover .fun-fact--duck{
-		display: block;
-	}
-	
-	@media(min-width: 50em) {
-		background-position: 100% 100%;
-	}
-}
-
-.fun-fact--duck {
-	display: none;
-}
-
-.icon-bear {
-	background-position: -25% 0%;
-	cursor: pointer;
-	
-	&:hover .fun-fact--bear{
-		display: block;
-	}
-	
-	@media(min-width: 50em) {
-		background-position: -1% 0%;
-	}
-}
-
-.fun-fact--bear {
-	display: none;
-}
-
-.icon-goldfish {
-	background-position: 130% 100%;
-	cursor: pointer;
-	
-	&:hover .fun-fact--goldfish{
-		display: block;
-	}
-	
-	@media(min-width: 50em) {
-		background-position: 105% 100%;
-	}
-}
-
-.fun-fact--goldfish {
-	display: none;
-}
-
 .product-title {
 	font-family: $font-egyptian;
 	font-size: 1.75em; //28px
