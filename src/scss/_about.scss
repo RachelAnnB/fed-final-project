@@ -1,0 +1,49 @@
+//---------------Break Points---------------//
+//50em (800px)
+//61.25em (980px)
+
+.about {
+  background-color: $color-blue;
+  text-align: center;
+  padding: 4em 0; //64px 0
+  
+  &__heading {
+    width: 10em; //160px
+    font-family: $font-egyptian;
+    font-size: 1em; //16px
+    color: $color-white;
+    border-top: 2px solid $color-white;
+    border-bottom: 2px solid $color-white;
+    padding: 0.25em 0; //4px 0
+    margin: auto;
+
+    @media(min-width: 61.25em) {
+      font-size: 1.5em; //24px
+    }
+  }
+  
+  &__text {
+    width: 90%;
+    font-family: $font-avenir-roman;
+    font-size: 1.25em; //20px
+    font-weight: 400;
+    color: $color-white;
+    margin: 2em auto; //32px
+
+    @media(min-width: 50em) {
+      width: 27em; //432px
+      font-size: 1.75em; //28px
+    }
+  }
+  
+  &__logo {
+    background-position: center;
+    display: block;
+    height: 8em; //128px
+    text-indent: -9999em;
+
+    @media(min-width: 50em) {
+      height: 12em; //192px
+    }
+  }
+}
