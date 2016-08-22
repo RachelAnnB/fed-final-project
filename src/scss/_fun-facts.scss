@@ -1,10 +1,10 @@
 //---------------Break Points---------------//
 //50em (800px)
-//61.25em (980px)
+//56.5em (904px)
+//62em (992px)
+//70em (1120px)
 //75em (1200px)
 //81.25em (1300px)
-//87.5em (1400px)
-//90em (1440px)
 
 .fun-fact__heading {
 	font-family: $font-avenir-medium;
@@ -51,7 +51,7 @@
 		right: 3%;
 	}
 	
-	@media(min-width: 61.25em) {
+	@media(min-width: $bp-global-medium) {
 		top: 66%;
 	}
 	
@@ -63,7 +63,7 @@
 		right: 5%;
 	}
 	
-	@media(min-width: 87.5em) {
+	@media(min-width: $bp-global-large) {
 		top: 71%;
 	}
 }
@@ -99,7 +99,7 @@
 		bottom: -80%;
 	}
 	
-	@media(min-width: 61.25em) {
+	@media(min-width: $bp-global-medium) {
 		bottom: -87%;
 	}
 	
@@ -108,7 +108,7 @@
 		left: 14%;
 	}
 	
-	@media(min-width: 87.5em) {
+	@media(min-width: $bp-global-large) {
 		bottom: -54%;
 	}
 }
@@ -153,7 +153,7 @@
 		bottom: -143%;
 	}
 	
-	@media(min-width: 61.25em) {
+	@media(min-width: $bp-global-medium) {
 		bottom: -150%;
 	}
 	
@@ -169,7 +169,7 @@
 		bottom: -116%;
 	}
 	
-	@media(min-width: 87.5em) {
+	@media(min-width: $bp-global-large) {
 		bottom: -122%;
 		right: 5%;
 	}
@@ -215,7 +215,7 @@
 		bottom: -143%;
 	}
 	
-	@media(min-width: 61.25em) {
+	@media(min-width: $bp-global-medium) {
 		bottom: -150%;
 	}
 	
@@ -231,7 +231,7 @@
 		bottom: -116%;
 	}
 	
-	@media(min-width: 87.5em) {
+	@media(min-width: $bp-global-large) {
 		bottom: -122%;
 		right: 5%;
 	}

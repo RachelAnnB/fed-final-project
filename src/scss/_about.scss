@@ -1,6 +1,5 @@
 //---------------Break Points---------------//
-//50em (800px)
-//61.25em (980px)
+$bp-about-small: 50em; //800px
 
 .about {
   background-color: $color-blue;
@@ -17,7 +16,7 @@
     padding: 0.25em 0; //4px 0
     margin: auto;
 
-    @media(min-width: 61.25em) {
+    @media(min-width: $bp-global-medium) {
       font-size: 1.5em; //24px
     }
   }
@@ -30,7 +29,7 @@
     color: $color-white;
     margin: 2em auto; //32px
 
-    @media(min-width: 50em) {
+    @media(min-width: $bp-about-small) {
       width: 27em; //432px
       font-size: 1.75em; //28px
     }
@@ -41,8 +40,9 @@
     display: block;
     height: 8em; //128px
     text-indent: -9999em;
+    @include filter-invert;
 
-    @media(min-width: 50em) {
+    @media(min-width: $bp-about-small) {
       height: 12em; //192px
     }
   }

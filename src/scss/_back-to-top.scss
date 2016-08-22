@@ -1,11 +1,15 @@
 #return-to-top {
+  font-family: $font-avenir-roman;
+  font-size: 1em; //16px
+  font-weight: 400;
+  color: $color-white;
+  padding: 1em; //16px
+  z-index: 2;
   position: fixed;
-  bottom: 1.25em; //20px
-  right: 1.25em; //20px
+  bottom: 1.5em; //24px
+  right: 1.5em; //24px
   background: $color-black;
   background: rgba(0, 0, 0, 0.7);
-  width: 7.5em; //120px
-  height: 3.125em; //50px
   display: block;
   text-decoration: none;
   display: none;
@@ -14,23 +18,9 @@
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  
+
   &:hover {
     background: rgba(0, 0, 0, 0.9);
     color: $color-white;
   }
-}
-
-#return-to-top i {
-  color: $color-white;
-  margin: 0;
-  position: relative;
-  left: 1em; //16px
-  top: 0.875em; //14px
-  font-size: 1.125em; //18px
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
