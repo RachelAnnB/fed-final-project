@@ -174,3 +174,65 @@
 		right: 5%;
 	}
 }
+
+//-----Owl-----//
+.icon-owl {
+	background-position: 195% 100%;
+	background-size: 11em auto; //
+
+	@media(min-width: 50em) {
+		background-position: 114% 100%;
+		cursor: pointer;
+
+		&:hover .fun-fact--owl{
+			display: block;
+		}
+
+		&:active .fun-fact--owl {
+			display: block;
+		}
+	}
+	
+	@media(min-width: 56.5em) {
+		background-position: 105% 100%;
+	}
+	
+	@media(min-width: 81.25em) {
+		background-size: 13em auto; //
+	}
+}
+
+.fun-fact--owl {
+	@include fun-fact;
+	margin: 0.625em 3.125em 0 0; //10px 50px 0 0
+
+	@media(min-width: 50em) {
+		bottom: -216%;
+		right: 3%;
+	}
+	
+	@media(min-width: 56.5em) {
+		bottom: -143%;
+	}
+	
+	@media(min-width: 61.25em) {
+		bottom: -150%;
+	}
+	
+	@media(min-width: 62em) {
+		bottom: -154%;
+		right: 4%;
+	}
+	@media(min-width: 70em) {
+		bottom: -150%;
+	}
+	
+	@media(min-width: 81.25em) {
+		bottom: -116%;
+	}
+	
+	@media(min-width: 87.5em) {
+		bottom: -122%;
+		right: 5%;
+	}
+}
