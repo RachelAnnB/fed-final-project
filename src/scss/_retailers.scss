@@ -9,111 +9,111 @@
 	background-size: cover;
 	text-align: center;
 	padding: 4em 0; //64px 0
-}
 
-.retailers__heading {
-	width: 10em; //160px
-	font-family: $font-egyptian;
-	font-size: 1em; //16px
-	color: $color-blue;
-	border-top: 2px solid $color-blue;
-	border-bottom: 2px solid $color-blue;
-	padding: 0.25em 0; //4px 0
-	margin: auto;
+	&__heading {
+		width: 10em; //160px
+		font-family: $font-egyptian;
+		font-size: 1em; //16px
+		color: $color-blue;
+		border-top: 2px solid $color-blue;
+		border-bottom: 2px solid $color-blue;
+		padding: 0.25em 0; //4px 0
+		margin: auto;
 
-	@media(min-width: 61.25em) {
+		@media(min-width: 61.25em) {
+			font-size: 1.5em; //24px
+		}
+	}
+
+	&__text {
+		width: 90%;
+		font-family: $font-avenir-medium;
 		font-size: 1.5em; //24px
-	}
-}
+		font-weight: 700;
+		color: $color-blue;
+		margin: 2em auto; //32px
 
-.retailers__text {
-	width: 90%;
-	font-family: $font-avenir-medium;
-	font-size: 1.5em; //24px
-	font-weight: 700;
-	color: $color-blue;
-	margin: 2em auto; //32px
-	
-	@media(min-width: 72em) {
-		width: 28em; //448px
-		font-size: 2.5em; //40px
-	}
-}
-
-.retailers__form {
-	width: 100%;
-}
-
-.retailers__input {
-	width: 90%;
-	display: block;
-	font-family: $font-avenir-roman;
-	font-size: 1em; //16px
-	font-weight: 400;
-	color: $color-blue;
-	padding: 1em 0 1em 0.75em; //16px 0 16px 12px
-	margin: 1em auto; //16px 0
-	border: none;
-	
-	&:focus {
-		outline-color: $color-dark-gray;
+		@media(min-width: 72em) {
+			width: 28em; //448px
+			font-size: 2.5em; //40px
+		}
 	}
 
-	@media(min-width: 50em) {
-		width: 70%;
+	&__form {
+		width: 100%;
 	}
-	
-	@media(min-width: 75em) {
-		width: 40%;
-	}
-}
 
-.retailers__textarea {
-	width: 90%;
-	display: block;
-	font-family: $font-avenir-roman;
-	font-size: 1em; //16px
-	font-weight: 400;
-	color: $color-blue;
-	padding: 1em 0 7em 0.75em; //16px 0 112px 12px
-	margin: 1em auto; //16px 0
-	border: none;
-	
-	&:focus {
-		outline-color: $color-dark-gray;
-	}
-	
-	@media(min-width: 50em) {
-		width: 70%;
-	}
-	
-	@media(min-width: 75em) {
-		width: 40%;
-	}
-}
+	&__input {
+		width: 90%;
+		display: block;
+		font-family: $font-avenir-roman;
+		font-size: 1em; //16px
+		font-weight: 400;
+		color: $color-blue;
+		padding: 1em 0 1em 0.75em; //16px 0 16px 12px
+		margin: 1em auto; //16px 0
+		border: none;
 
-.retailers__submit {
-	width: 92%;
-	background-color: $color-blue;
-	font-family: $font-avenir-roman;
-	font-size: 1.25em; //20px
-	font-weight: 400;
-	color: $color-tan;
-	padding: 2em 0; //32px 0
-	margin: 1em auto; //16px 0
-	border-radius: 0;
-	border: none;
-	
-	&:focus {
-		outline-color: $color-dark-gray;
+		&:focus {
+			outline-color: $color-dark-gray;
+		}
+
+		@media(min-width: 50em) {
+			width: 70%;
+		}
+
+		@media(min-width: 75em) {
+			width: 40%;
+		}
 	}
-	
-	@media(min-width: 50em) {
-		width: 40%;
+
+	&__textarea {
+		width: 90%;
+		display: block;
+		font-family: $font-avenir-roman;
+		font-size: 1em; //16px
+		font-weight: 400;
+		color: $color-blue;
+		padding: 1em 0 7em 0.75em; //16px 0 112px 12px
+		margin: 1em auto; //16px 0
+		border: none;
+
+		&:focus {
+			outline-color: $color-dark-gray;
+		}
+
+		@media(min-width: 50em) {
+			width: 70%;
+		}
+
+		@media(min-width: 75em) {
+			width: 40%;
+		}
 	}
-	
-	@media(min-width: 75em) {
-		width: 25%;
+
+	&__submit {
+		width: 92%;
+		background-color: $color-blue;
+		font-family: $font-avenir-roman;
+		font-size: 1.25em; //20px
+		font-weight: 400;
+		color: $color-tan;
+		padding: 2em 0; //32px 0
+		margin: 1em auto; //16px 0
+		border-radius: 0;
+		border: none;
+
+		&:focus {
+			outline-color: $color-dark-gray;
+		}
+
+		@media(min-width: 50em) {
+			width: 40%;
+		}
+
+		@media(min-width: 75em) {
+			width: 25%;
+		}
 	}
 }
 

@@ -6,51 +6,51 @@
 .hero {
 	background: url("../images/bedroom.jpg") no-repeat 5% 50%;
 	background-size: cover;
-}
 
-.hero__overlay {
-	background-color: rgba(255, 255, 255, 0.3);
-	text-align: center;
-	padding: 4em 0 18em; //96px 0 288px
-}
-
-.hero__heading {
-	font-family: $font-avenir-medium;
-	font-weight: 400;
-	font-size: 2.125em; //34px
-	color: $color-brown;
-	margin-bottom: 0.5em; //8px
-
-	@media(min-width: 45em) {
-		font-size: 2.5em; //40px
+	&__overlay {
+		background-color: rgba(255, 255, 255, 0.3);
+		text-align: center;
+		padding: 4em 0 18em; //96px 0 288px
 	}
 
-	@media(min-width: 61.25em) {
-		font-weight: 700;
-		font-size: 3.5em; //56px
-		margin-top: 1em; //16px
+	&__heading {
+		font-family: $font-avenir-medium;
+		font-weight: 400;
+		font-size: 2.125em; //34px
+		color: $color-brown;
+		margin-bottom: 0.5em; //8px
+
+		@media(min-width: 45em) {
+			font-size: 2.5em; //40px
+		}
+
+		@media(min-width: 61.25em) {
+			font-weight: 700;
+			font-size: 3.5em; //56px
+			margin-top: 1em; //16px
+		}
+
+		@media(min-width: 87.5em) {
+			font-size: 5.5em; //88px
+			margin-bottom: 0.25em; //4px
+		}
 	}
 
-	@media(min-width: 87.5em) {
-		font-size: 5.5em; //88px
-		margin-bottom: 0.25em; //4px
-	}
-}
+	&__text {
+		font-family: $font-avenir-roman;
+		font-weight: 400;
+		font-size: 1em; //16px
+		color: $color-brown;
+		width: 85%;
+		margin: auto;
 
-.hero__text {
-	font-family: $font-avenir-roman;
-	font-weight: 400;
-	font-size: 1em; //16px
-	color: $color-brown;
-	width: 85%;
-	margin: auto;
+		@media(min-width: 45em) {
+			font-size: 1.5em; //24px
+		}
 
-	@media(min-width: 45em) {
-		font-size: 1.5em; //24px
-	}
-
-	@media(min-width: 61.25em) {
-		width: 75%;
-		font-size: 2em; //32px
+		@media(min-width: 61.25em) {
+			width: 75%;
+			font-size: 2em; //32px
+		}
 	}
 }

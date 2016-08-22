@@ -3,11 +3,11 @@ All Styles
 **/
 
 //Global styles
-@import "slick-min";
-@import "reset";
 @import "variables";
 @import "mixins";
 @import "fonts";
+@import "reset";
+@import "slick-min";
 
 //Section styles
 @import "header";
