@@ -4,7 +4,7 @@
   "description": "Final project for the 2016 frontend designer apprentices at Sparkbox.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prestart": "npm run copy && npm run sass && npm run icons && npm run scripts",
+    "prestart": "npm run copy && npm run html && npm run sass && npm run icons && npm run scripts",
     "start": "parallelshell 'npm run watch' 'npm run server'",
     "server": "node server.js",
     "watch": "node tasks/watch.js",
