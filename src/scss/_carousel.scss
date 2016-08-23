@@ -1,5 +1,6 @@
 .carousel {
   box-sizing: border-box;
+  margin-top: 8em; //128px
 }
 
 *,
@@ -8,94 +9,114 @@
   box-sizing: inherit;
 }
 
+.row {
+
+}
+
 .carousel__img {
-  background-image: url("http://placehold.it/200x150");
-  background-size: cover;
-  background-position: center;
   height: 12.5em; //200px
   width: 9.375em; //150px
   margin: 0px 0.3125; //0 5px
   padding-top: 3.75em; //60px
 
-  &:hover {
-    border: 3px solid black;
-    background: rgba(0,0,0,0.5);
-    color: $color-white;
-  }
-
-  &:hover .carousel__text {
+  &:hover .carousel__text__box, .carousel__text {
     display: block;
   }
 }
 
+.icon-cheetah {
+  background-position: center;
+  background-size: contain;
+}
+
+.icon-cow {
+  background-position: center;
+  background-size: contain;
+}
+
+.icon-elephant {
+  background-position: center;
+  background-size: contain;
+}
+
+.icon-iguana {
+  background-position: center;
+  background-size: contain;
+}
+
+.icon-moose {
+  background-position: center;
+  background-size: contain;
+}
+
+.icon-narwhal {
+  background-position: center;
+  background-size: contain;
+}
+
+.icon-rhino {
+  background-position: center;
+  background-size: contain;
+}
+
+.icon-yak {
+  background-position: center;
+  background-size: contain;
+}
+
 .carousel__text {
-  display: none;
+  font-family: $font-avenir-roman;
+  font-size: 1em; //16px
+  font-weight: 400;
+  color: $color-white;
   text-align: center;
-  padding-bottom: 1em; //16px
+  display: none;
+  border-top: 2px solid $color-white;
+  border-bottom: 2px solid $color-white;
+  padding: 0.25em 0; //4px 0\
+
+  &__box {
+    display: none;
+    max-width: 75%;
+    margin: 0 auto;
+    background-color: $color-orange;
+    padding: 0.25em 0; //4px 0
+    margin-top: 5.5em; //88px
+  }
 }
 
 .slick-dots {
   text-align: center;
   margin: 0 0 0.625em 0; //0 0 10px 0
-  padding: 0;
-  
+  padding: 1em; //16px
+
   li {
     display: inline-block;
-    margin-left: 0.25em; //4px
-    margin-right: 0.25em; //4px
+    margin-left: 0.5em; //8px
+    margin-right: 0.5em; //8px
 
     &.slick-active {
       button {
-        background-color: $color-black;
+        background-color: $color-blue;
       }
     }
 
     button {
-      font: 0/0 a;
       text-shadow: none;
       color: transparent;
-      background-color: $color-dark-gray;
+      background-color: $color-orange;
       border: none;
-      width: 0.9375em; //15px
-      height: 0.9375em; //15px
+      width: 1.5em; //24px
+      height: 1.5em; //24px
       border-radius: 50%;
+
+      &:hover {
+        background-color: $color-white;
+      }
+
+      &:focus {
+        outline: none;
+      }
     }
-
-    :hover {
-      background-color: $color-black;
-    }
-  }
-}
-
-//Custom Arrow
-.prev {
-  color: $color-dark-gray;
-  position: absolute;
-  top: 38%;
-  left: -2em; //-32px
-  font-size: 1.5em; //24px
-
-  :hover {
-    cursor: pointer;
-    color: $color-black;
-  }
-}
-
-.next {
-  color: $color-dark-gray;
-  position: absolute;
-  top: 38%;
-  right: -2em; //-32px
-  font-size: 1.5em; //24px
-
-  :hover {
-    cursor: pointer;
-    color: $color-black;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .next {
-
   }
 }
