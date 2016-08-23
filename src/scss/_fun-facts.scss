@@ -1,10 +1,7 @@
 //---------------Break Points---------------//
-//50em (800px)
-//56.5em (904px)
-//62em (992px)
-//70em (1120px)
-//75em (1200px)
-//81.25em (1300px)
+$bp-facts-small: 50em; //800px
+$bp-facts-medium: 56.5em; //904px
+$bp-facts-large: 81.25em; //1300px
 
 .fun-fact__heading {
 	font-family: $font-avenir-medium;
@@ -27,8 +24,9 @@
 .icon-duck {
 	background-position: 175% 100%;
 	background-size: 10em auto; //160px
+	position: relative;
 
-	@media(min-width: 50em) {
+	@media(min-width: $bp-facts-small) {
 		background-position: 100% 100%;
 		cursor: pointer;
 
@@ -44,35 +42,23 @@
 
 .fun-fact--duck {
 	@include fun-fact;
-	margin: 0.625em 3.125em 0 0; //10px 50px 0 0
 
-	@media(min-width: 50em) {
-		top: 58%;
+	@media(min-width: $bp-facts-small) {
+		bottom: 80%;
 		right: 3%;
 	}
 	
-	@media(min-width: $bp-global-medium) {
-		top: 66%;
-	}
-	
-	@media(min-width: 75em) {
-		right: 4%;
-	}
-	
-	@media(min-width: 81.25em) {
-		right: 5%;
-	}
-	
 	@media(min-width: $bp-global-large) {
-		top: 71%;
+		right: 2%;
 	}
 }
 
 //-----Bear-----//
 .icon-bear {
 	background-position: -65% 0%;
+	position: relative;
 
-	@media(min-width: 50em) {
+	@media(min-width: $bp-facts-small) {
 		background-position: -1% 0%;
 		cursor: pointer;
 
@@ -88,37 +74,24 @@
 
 .fun-fact--bear {
 	@include fun-fact;
-	margin: 0.625em 3.125em 0 0; //10px 50px 0 0
-
-	@media(min-width: 50em) {
-		bottom: -114%;
-		left: 17%;
-	}
 	
-	@media(min-width: 56.5em) {
-		bottom: -80%;
-	}
-	
-	@media(min-width: $bp-global-medium) {
-		bottom: -87%;
-	}
-	
-	@media(min-width: 81.25em) {
-		bottom: -48%;
-		left: 14%;
+	@media(min-width: $bp-facts-small) {
+		bottom: 80%;
+		left: 12%;
 	}
 	
 	@media(min-width: $bp-global-large) {
-		bottom: -54%;
+		left: 9%;
 	}
 }
 
 //-----Goldfish-----//
 .icon-goldfish {
 	background-position: 195% 100%;
-	background-size: 11em auto; //
+	background-size: 11em auto; //176px
+	position: relative;
 
-	@media(min-width: 50em) {
+	@media(min-width: $bp-facts-small) {
 		background-position: 114% 100%;
 		cursor: pointer;
 
@@ -131,56 +104,35 @@
 		}
 	}
 	
-	@media(min-width: 56.5em) {
+	@media(min-width: $bp-facts-medium) {
 		background-position: 105% 100%;
 	}
 	
-	@media(min-width: 81.25em) {
-		background-size: 13em auto; //
+	@media(min-width: $bp-facts-large) {
+		background-size: 13em auto; //208px
 	}
 }
 
 .fun-fact--goldfish {
 	@include fun-fact;
-	margin: 0.625em 3.125em 0 0; //10px 50px 0 0
-
-	@media(min-width: 50em) {
-		bottom: -216%;
+	
+	@media(min-width: $bp-facts-small) {
+		bottom: 80%;
 		right: 3%;
 	}
 	
-	@media(min-width: 56.5em) {
-		bottom: -143%;
-	}
-	
-	@media(min-width: $bp-global-medium) {
-		bottom: -150%;
-	}
-	
-	@media(min-width: 62em) {
-		bottom: -154%;
-		right: 4%;
-	}
-	@media(min-width: 70em) {
-		bottom: -150%;
-	}
-	
-	@media(min-width: 81.25em) {
-		bottom: -116%;
-	}
-	
 	@media(min-width: $bp-global-large) {
-		bottom: -122%;
-		right: 5%;
+		right: 2%;
 	}
 }
 
 //-----Owl-----//
 .icon-owl {
 	background-position: 195% 100%;
-	background-size: 11em auto; //
+	background-size: 11em auto; //176px
+	position: relative;
 
-	@media(min-width: 50em) {
+	@media(min-width: $bp-facts-small) {
 		background-position: 114% 100%;
 		cursor: pointer;
 
@@ -193,46 +145,24 @@
 		}
 	}
 	
-	@media(min-width: 56.5em) {
+	@media(min-width: $bp-facts-medium) {
 		background-position: 105% 100%;
 	}
 	
-	@media(min-width: 81.25em) {
-		background-size: 13em auto; //
+	@media(min-width: $bp-facts-large) {
+		background-size: 13em auto; //208px
 	}
 }
 
 .fun-fact--owl {
 	@include fun-fact;
-	margin: 0.625em 3.125em 0 0; //10px 50px 0 0
-
-	@media(min-width: 50em) {
-		bottom: -216%;
+	
+	@media(min-width: $bp-facts-small) {
+		bottom: 80%;
 		right: 3%;
 	}
 	
-	@media(min-width: 56.5em) {
-		bottom: -143%;
-	}
-	
-	@media(min-width: $bp-global-medium) {
-		bottom: -150%;
-	}
-	
-	@media(min-width: 62em) {
-		bottom: -154%;
-		right: 4%;
-	}
-	@media(min-width: 70em) {
-		bottom: -150%;
-	}
-	
-	@media(min-width: 81.25em) {
-		bottom: -116%;
-	}
-	
 	@media(min-width: $bp-global-large) {
-		bottom: -122%;
-		right: 5%;
+		right: 2%;
 	}
 }

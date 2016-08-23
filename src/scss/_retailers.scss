@@ -64,6 +64,10 @@ $bp-retailers-large: 75em; //1200px
 		@media(min-width: $bp-retailers-large) {
 			width: 40%;
 		}
+		
+		@media(min-width: $bp-global-xlarge) {
+			width: 38em; //608px
+		}
 	}
 
 	&__textarea {
@@ -88,6 +92,10 @@ $bp-retailers-large: 75em; //1200px
 		@media(min-width: $bp-retailers-large) {
 			width: 40%;
 		}
+		
+		@media(min-width: $bp-global-xlarge) {
+			width: 38em; //608px
+		}
 	}
 
 	&__submit {
@@ -107,7 +115,7 @@ $bp-retailers-large: 75em; //1200px
 		}
 		
 		&:hover {
-			background-color: $color-brown;
+			background-color: $color-dark-gray;
 		}
 
 		@media(min-width: $bp-retailers-small) {
@@ -116,6 +124,10 @@ $bp-retailers-large: 75em; //1200px
 
 		@media(min-width: $bp-retailers-large) {
 			width: 25%;
+		}
+		
+		@media(min-width: $bp-global-xlarge) {
+			width: 18em; //288px
 		}
 	}
 }

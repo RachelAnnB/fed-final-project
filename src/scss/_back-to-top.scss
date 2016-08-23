@@ -8,8 +8,7 @@
   position: fixed;
   bottom: 1.5em; //24px
   right: 1.5em; //24px
-  background: $color-black;
-  background: rgba(0, 0, 0, 0.7);
+  background: $color-brown;
   display: block;
   text-decoration: none;
   display: none;
@@ -20,7 +19,24 @@
   transition: all 0.3s ease;
 
   &:hover {
-    background: rgba(0, 0, 0, 0.9);
-    color: $color-white;
+    background: $color-white;
+    color: $color-brown;
   }
+}
+
+#owl-btn {
+  z-index: 3;
+  position: fixed;
+  bottom: 4em; //24px
+  right: 1.5em; //24px
+  display: block;
+  height: 8em;
+  width: auto;
+  text-decoration: none;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }

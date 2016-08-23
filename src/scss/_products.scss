@@ -67,6 +67,10 @@ $bp-product-large: 81.25em; //1300px
 		background-color: $color-blue;
 		padding: 1em; //16px
 		margin: 4em auto 3em; //64px 48px
+		
+		@media(min-width: $bp-global-xlarge) {
+			width: 76em; //1216px
+		}
 	}
 }
 
@@ -105,6 +109,22 @@ $bp-product-large: 81.25em; //1300px
 	font-weight: 400;
 	color: $color-brown;
 	margin: 2em auto 5em; //32px 80px
+	
+	@media(min-width: $bp-global-small) {
+		width: 36em; //576px
+	}
+	
+	@media(min-width: $bp-product-small) {
+		width: 90%;
+	}
+	
+	@media(min-width: 960px) { //60em
+		width: 26em;
+	}
+	
+	@media(min-width: $bp-product-large) {
+		width: 90%;
+	}
 }
 
 .flashcards {
@@ -126,7 +146,7 @@ $bp-product-large: 81.25em; //1300px
 }
 
 .decals {
-	background: url("/images/wall-decal.jpg") no-repeat center;
+	background: url("/images/wall-decal.jpg") no-repeat 50% 40%;
 	background-size: cover;
 	@include product-img;
 }
@@ -160,6 +180,10 @@ $bp-product-large: 81.25em; //1300px
 	background-color: $color-blue;
 	padding: 1em; //16px
 	margin: 4em auto 1em; //64px 16px
+	
+	@media(min-width: $bp-global-xlarge) {
+		width: 80em; //1280px
+	}
 
 	&__text {
 		font-family: $font-egyptian;

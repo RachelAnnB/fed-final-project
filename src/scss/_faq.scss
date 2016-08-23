@@ -73,9 +73,9 @@ $bp-faq-small: 50em; //800px
       background-color: $color-brown;
     }
 
-    //&:active {
-    //  background-color: $color-tan;
-    //}
+    @media(min-width: $bp-global-xlarge) {
+			width: 56em; //896px
+		}
   }
 
   &__answer__box {
