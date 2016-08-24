@@ -15,6 +15,7 @@ $(function() {
 });
 
 //---------------Back to Top---------------//
+//Button
 $(window).scroll(function() {
 	if ($(this).scrollTop() >= 50) {        
 		// If page is scrolled more than 50px
@@ -26,6 +27,25 @@ $(window).scroll(function() {
 	}
 });
 $('#return-to-top').click(function() {      
+	// When arrow is clicked
+	$('body,html').animate({
+		scrollTop : 0                       
+		// Scroll to top of body
+	}, 500);
+});
+
+//Owl
+$(window).scroll(function() {
+	if ($(this).scrollTop() >= 50) {        
+		// If page is scrolled more than 50px
+		$('#owl-btn').fadeIn(200);    
+		// Fade in the arrow
+	} else {
+		$('#owl-btn').fadeOut(200);   
+		// Else fade out the arrow
+	}
+});
+$('#owl-btn').click(function() {      
 	// When arrow is clicked
 	$('body,html').animate({
 		scrollTop : 0                       
@@ -63,10 +83,10 @@ $('.responsive').slick({
 			slidesToScroll: 1
 		}
 	}
-		// You can unslick at a given breakpoint now by adding:
-		// settings: "unslick"
-		// instead of a settings object
-		]
+							 // You can unslick at a given breakpoint now by adding:
+							 // settings: "unslick"
+							 // instead of a settings object
+							]
 });
 
 //---------------Show/Hide FAQs---------------//

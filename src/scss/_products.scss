@@ -1,12 +1,7 @@
 //---------------Break Points---------------//
-//45em (720px)
-//56.5em (904px)
-//61.25em (980px)
-//62em (992px)
-//65em (1040px)
-//81.25em (1300px)
-//87.5em (1400px)
-//90em (1440px)
+$bp-product-small: 56.5em; //904px
+$bp-product-medium: 62em; //992px
+$bp-product-large: 81.25em; //1300px
 
 .products {
 	background: url("../images/white-wood.jpg") no-repeat center;
@@ -25,7 +20,7 @@
 		padding: 0.25em 0; //4px 0
 		margin: auto;
 
-		@media(min-width: 61.25em) {
+		@media(min-width: $bp-global-medium) {
 			font-size: 1.5em; //24px
 		}
 	}
@@ -40,12 +35,12 @@
 		&__item {
 			width: 100%;
 
-			@media(min-width: 56.5em) {
+			@media(min-width: $bp-product-small) {
 				width: 48%;
 				display: inline-block;
 			}
 
-			@media(min-width: 81.25em) {
+			@media(min-width: $bp-product-large) {
 				width: 32%;
 			}
 		}
@@ -59,11 +54,11 @@
 	border: 2px solid $color-white;
 	padding: 1em; //16px
 
-	@media(min-width: 45em) {
+	@media(min-width: $bp-global-small) {
 		font-size: 2em; //32px
 	}
 
-	@media(min-width: 62em) {
+	@media(min-width: $bp-product-medium) {
 		font-size: 2.5em; //40px
 	}
 
@@ -72,6 +67,10 @@
 		background-color: $color-blue;
 		padding: 1em; //16px
 		margin: 4em auto 3em; //64px 48px
+		
+		@media(min-width: $bp-global-xlarge) {
+			width: 76em; //1216px
+		}
 	}
 }
 
@@ -84,7 +83,7 @@
 	border-bottom: 2px solid $color-white;
 	padding: 0.5em 0; //8px 0
 
-	@media(min-width: 81.25em) {
+	@media(min-width: $bp-product-large) {
 		font-size: 1.25em; //20px
 	}
 
@@ -97,7 +96,7 @@
 		z-index: 1;
 		top: 15em; //240px
 
-		@media(min-width: 81.25em) {
+		@media(min-width: $bp-product-large) {
 			top: 16.25em; //260px
 		}
 	}
@@ -110,6 +109,22 @@
 	font-weight: 400;
 	color: $color-brown;
 	margin: 2em auto 5em; //32px 80px
+	
+	@media(min-width: $bp-global-small) {
+		width: 36em; //576px
+	}
+	
+	@media(min-width: $bp-product-small) {
+		width: 90%;
+	}
+	
+	@media(min-width: 960px) { //60em
+		width: 26em;
+	}
+	
+	@media(min-width: $bp-product-large) {
+		width: 90%;
+	}
 }
 
 .flashcards {
@@ -131,7 +146,7 @@
 }
 
 .decals {
-	background: url("/images/wall-decal.jpg") no-repeat center;
+	background: url("/images/wall-decal.jpg") no-repeat 50% 40%;
 	background-size: cover;
 	@include product-img;
 }
@@ -165,19 +180,23 @@
 	background-color: $color-blue;
 	padding: 1em; //16px
 	margin: 4em auto 1em; //64px 16px
+	
+	@media(min-width: $bp-global-xlarge) {
+		width: 80em; //1280px
+	}
 
 	&__text {
 		font-family: $font-egyptian;
 		font-size: 1.5em; //24px
 		color: $color-white;
 
-		@media(min-width: 87.5em) {
+		@media(min-width: $bp-global-large) {
 			position: absolute;
 			margin-top: 1.25em; //20px
 			left: 9em; //144em
 		}
 
-		@media(min-width: 90em) {
+		@media(min-width: $bp-global-xlarge) {
 			left: 9.5em; //152px
 		}
 	}
@@ -188,13 +207,14 @@
 		margin-top: 1em; //16px
 		padding: 1em; //16px
 		text-indent: -9999em;
+		@include filter-invert;
 
-		@media(min-width: 87.5em) {
+		@media(min-width: $bp-global-large) {
 			background-position: 80% 50%;
 			margin-bottom: 1em; //16px
 		}
 
-		@media(min-width: 90em) {
+		@media(min-width: $bp-global-xlarge) {
 			background-position: 78% 50%;
 		}
 	}

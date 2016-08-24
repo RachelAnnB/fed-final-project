@@ -1,12 +1,9 @@
-//---------------Break Points---------------//
-//61.25em (980px)
-
 .header {
 	width: 100%;
 	background: url("../images/tan-wood.jpg") no-repeat center;
 	background-size: cover;
 
-	@media(min-width: 61.25em) {
+	@media(min-width: $bp-global-medium) {
 		padding-bottom: 1.75em; //28px
 	}
 }
@@ -20,7 +17,7 @@
 	padding-top: 1em; //16px
 	margin: auto;
 
-	@media(min-width: 61.25em) {
+	@media(min-width: $bp-global-medium) {
 		width: 40%;
 		position: absolute;
 		left: 30%;
@@ -36,7 +33,7 @@
 	overflow: hidden;
 	text-indent: -9999em;
 
-	@media(min-width: 61.25em) {
+	@media(min-width: $bp-global-medium) {
 		width: 10em; //160px
 		background-size: contain;
 	}
@@ -53,32 +50,33 @@
 	display: inline-block;
 	padding: 1.5em 0; //24px
 	width: 24%;
-	@media(min-width: 61.25em) {
+	
+	@media(min-width: $bp-global-medium) {
 		width: 6%;
 		margin-top: 1.75em; //28px
 	}
 }
 
 .left1 {
-	@media(min-width: 61.25em) {
+	@media(min-width: $bp-global-medium) {
 		margin: 0 5em 0 2em; //0 80px 0 32px
 	}
 }
 
 .left2 {
-	@media(min-width: 61.25em) {
+	@media(min-width: $bp-global-medium) {
 		margin-right: 15em; //240px
 	}
 }
 
 .right1 {
-	@media(min-width: 61.25em) {
+	@media(min-width: $bp-global-medium) {
 		margin-left: 15em; //240px
 	}
 }
 
 .right2 {
-	@media(min-width: 61.25em) {
+	@media(min-width: $bp-global-medium) {
 		margin: 0 2em 0 5em; //0 32px 0 80px
 	}
 }
@@ -90,7 +88,7 @@
 	font-size: 1.25em; //20px
 	color: $color-brown;
 
-	&:hover {
+	&:hover, &:active {
 		color: $color-orange;
 	}
 }

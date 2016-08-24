@@ -1,7 +1,6 @@
 //---------------Break Points---------------//
-//50em (800px)
-//56.25em (900px)
-//90em (1440px)
+$bp-footer-small: 50em; //800px
+$bp-footer-medium: 56.25em; //900px
 
 .footer {
 	background: url("../images/brown-wood.jpg") no-repeat center;
@@ -10,7 +9,7 @@
 	padding: 4em 0; //64px 0
 
 	&__container {
-		@media(min-width: 90em) {
+		@media(min-width: $bp-global-xlarge) {
 			width: 90em; //1440px
 			margin: auto;
 		}
@@ -18,8 +17,8 @@
 
 	&__links {
 		width: 100%;
-		
-		@media(min-width: 56.25em) {
+
+		@media(min-width: $bp-footer-medium) {
 			width: 33%;
 			float: left;
 			text-align: left;
@@ -36,10 +35,10 @@
 		margin: 0.25em auto; //4px
 
 		&:hover {
-			color: $color-blue;
+			color: $color-black;
 		}
 
-		@media(min-width: 56.25em) {
+		@media(min-width: $bp-footer-medium) {
 			margin-left: 3em; //48px
 		}
 	}
@@ -52,7 +51,7 @@
 		display: block;
 		margin: 0.25em auto; //4px
 
-		@media(min-width: 56.25em) {
+		@media(min-width: $bp-footer-medium) {
 			margin-left: 3em; //48px
 		}
 	}
@@ -60,7 +59,7 @@
 	&__site-logo {
 		width: 100%;
 
-		@media(min-width: 56.25em) {
+		@media(min-width: $bp-footer-medium) {
 			width: 33%;
 			float: left;
 		}
@@ -72,8 +71,9 @@
 		height: 3em; //80px
 		text-indent: -9999em;
 		margin: 3em auto; //32px
+		@include filter-invert;
 
-		@media(min-width: 50em) {
+		@media(min-width: $bp-footer-small) {
 			margin: 1em auto; //16px
 		}
 	}
@@ -83,7 +83,7 @@
 		margin: auto;
 		display: inline-block;
 
-		@media(min-width: 56.25em) {
+		@media(min-width: $bp-footer-medium) {
 			width: 30%;
 			text-align: right;
 			margin-right: 2em; //32px
@@ -97,8 +97,9 @@
 		text-indent: -9999em;
 		width: 23%;
 		margin: 2em auto 0; //32px
+		@include filter-invert;
 
-		@media(min-width: 56.25em) {
+		@media(min-width: $bp-footer-medium) {
 			width: 26%;
 			margin: 1em auto 0; //16px
 		}

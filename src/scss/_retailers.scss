@@ -1,8 +1,7 @@
 //---------------Break Points---------------//
-//50em (800px)
-//61.25em (980px)
-//72em (1152px)
-//75em (1200px)
+$bp-retailers-small: 50em; //800px
+$bp-retailers-medium: 72em; //1152px
+$bp-retailers-large: 75em; //1200px
 
 .retailers {
 	background: url("../images/tan-wood.jpg") no-repeat center;
@@ -20,7 +19,7 @@
 		padding: 0.25em 0; //4px 0
 		margin: auto;
 
-		@media(min-width: 61.25em) {
+		@media(min-width: $bp-global-medium) {
 			font-size: 1.5em; //24px
 		}
 	}
@@ -33,7 +32,7 @@
 		color: $color-blue;
 		margin: 2em auto; //32px
 
-		@media(min-width: 72em) {
+		@media(min-width: $bp-retailers-medium) {
 			width: 28em; //448px
 			font-size: 2.5em; //40px
 		}
@@ -58,12 +57,16 @@
 			outline-color: $color-dark-gray;
 		}
 
-		@media(min-width: 50em) {
+		@media(min-width: $bp-retailers-small) {
 			width: 70%;
 		}
 
-		@media(min-width: 75em) {
+		@media(min-width: $bp-retailers-large) {
 			width: 40%;
+		}
+		
+		@media(min-width: $bp-global-xlarge) {
+			width: 38em; //608px
 		}
 	}
 
@@ -82,12 +85,16 @@
 			outline-color: $color-dark-gray;
 		}
 
-		@media(min-width: 50em) {
+		@media(min-width: $bp-retailers-small) {
 			width: 70%;
 		}
 
-		@media(min-width: 75em) {
+		@media(min-width: $bp-retailers-large) {
 			width: 40%;
+		}
+		
+		@media(min-width: $bp-global-xlarge) {
+			width: 38em; //608px
 		}
 	}
 
@@ -106,13 +113,21 @@
 		&:focus {
 			outline-color: $color-dark-gray;
 		}
+		
+		&:hover {
+			background-color: $color-dark-gray;
+		}
 
-		@media(min-width: 50em) {
+		@media(min-width: $bp-retailers-small) {
 			width: 40%;
 		}
 
-		@media(min-width: 75em) {
+		@media(min-width: $bp-retailers-large) {
 			width: 25%;
+		}
+		
+		@media(min-width: $bp-global-xlarge) {
+			width: 18em; //288px
 		}
 	}
 }

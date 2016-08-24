@@ -1,7 +1,5 @@
 //---------------Break Points---------------//
-//25em (400px)
-//50em (800px)
-//61.25em (980px)
+$bp-faq-small: 50em; //800px
 
 .faq {
   background-color: $color-orange;
@@ -18,7 +16,7 @@
     padding: 0.25em 0; //4px 0
     margin: auto;
 
-    @media(min-width: 61.25em) {
+    @media(min-width: $bp-global-medium) {
       font-size: 1.5em; //24px
     }
   }
@@ -47,11 +45,11 @@
     margin: auto;
     margin-bottom: 1.5em; //24px
 
-    @media(min-width: 25em) {
+    @media(min-width: $bp-global-xsmall) {
       width: 90%;
     }
 
-    @media(min-width: 50em) {
+    @media(min-width: $bp-faq-small) {
       width: 70%;
     }
   }
@@ -65,6 +63,7 @@
     color: $color-orange;
     cursor: pointer;
     padding: 1.25em; //20px
+    margin: 0 auto;
     border: none;
     text-align: left;
     outline: none;
@@ -74,9 +73,9 @@
       background-color: $color-brown;
     }
 
-    //&:active {
-    //  background-color: $color-tan;
-    //}
+    @media(min-width: $bp-global-xlarge) {
+      width: 56em; //896px
+    }
   }
 
   &__answer__box {
@@ -101,7 +100,7 @@
     width: 90%;
     margin: auto;
 
-    @media(min-width: 50em) {
+    @media(min-width: $bp-faq-small) {
       width: 45em;
     }
 
