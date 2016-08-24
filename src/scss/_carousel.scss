@@ -1,6 +1,19 @@
 .carousel {
   box-sizing: border-box;
-  margin-top: 8em; //128px
+  padding-top: 1.5em; //24px
+  background-color: rgba($color-blue, 0.2);
+  
+  @media(min-width: 400px) {//change to a variable!
+    margin-top: 4em; //64px
+  }
+  
+  @media(min-width: 720px) {//change to a variable!
+    margin-top: 8em; //128px 
+  }
+  
+  @media(min-width: 1400px) {//change to a variable!
+    margin-top: 6em; //96px
+  }
 }
 
 *,
@@ -10,23 +23,20 @@
 }
 
 .row {
-
+  @media(min-width: 1440px) {
+		width: 90em;
+    margin: 0 auto;
+	}
 }
 
 .carousel__img {
-  height: 12.5em; //200px
-  width: 9.375em; //150px
-  margin: 0px 0.3125; //0 5px
-  padding-top: 3.75em; //60px
-
+  height: 13em; //208px
+  width: auto;
+  margin: 0 0.5em; //0 8px
+  
   &:hover .carousel__text__box, .carousel__text {
     display: block;
   }
-}
-
-.icon-cheetah {
-  background-position: center;
-  background-size: contain;
 }
 
 .icon-cow {
@@ -39,7 +49,12 @@
   background-size: contain;
 }
 
-.icon-iguana {
+.icon-goose {
+  background-position: center;
+  background-size: contain;
+}
+
+.icon-kangaroo {
   background-position: center;
   background-size: contain;
 }
@@ -49,17 +64,17 @@
   background-size: contain;
 }
 
-.icon-narwhal {
+.icon-mouse {
+  background-position: center;
+  background-size: contain;
+}
+
+.icon-octopus {
   background-position: center;
   background-size: contain;
 }
 
 .icon-rhino {
-  background-position: center;
-  background-size: contain;
-}
-
-.icon-yak {
   background-position: center;
   background-size: contain;
 }
@@ -73,7 +88,7 @@
   display: none;
   border-top: 2px solid $color-white;
   border-bottom: 2px solid $color-white;
-  padding: 0.25em 0; //4px 0\
+  padding: 0.25em 0; //4px 0
 
   &__box {
     display: none;
@@ -81,7 +96,11 @@
     margin: 0 auto;
     background-color: $color-orange;
     padding: 0.25em 0; //4px 0
-    margin-top: 5.5em; //88px
+    margin-top: 10em; //160px
+    
+    @media(min-width: 1440px) {//change to variable!
+      max-width: 16em; //256px
+    }
   }
 }
 
@@ -106,8 +125,8 @@
       color: transparent;
       background-color: $color-orange;
       border: none;
-      width: 1.5em; //24px
-      height: 1.5em; //24px
+      width: 1.75em; //28px
+      height: 1.75em; //28px
       border-radius: 50%;
 
       &:hover {
