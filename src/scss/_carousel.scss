@@ -33,6 +33,8 @@ $bp-carousel-small: 30em; //480px
 }
 
 .carousel__img {
+  background-position: center;
+  background-size: contain;
   height: 13em; //208px
   width: auto;
   margin: 0 0.5em; //0 8px
@@ -40,78 +42,6 @@ $bp-carousel-small: 30em; //480px
   &:hover .carousel__text__box, .carousel__text {
     display: block;
   }
-}
-
-.antelope {
-  background: url("/images/antelope.png") no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.cow {
-  background: url("/images/cow.png") no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.elephant {
-  background: url("/images/elephant.png") no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.goose {
-  background: url("/images/goose.png") no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.horse {
-  background: url("/images/horse.png") no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.kangaroo {
-  background: url("/images/kangaroo.png") no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.lion {
-  background: url("/images/lion.png") no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.moose {
-  background: url("/images/moose.png") no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.mouse {
-  background: url("/images/mouse.png") no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.octopus {
-  background: url("/images/octopus.png") no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.rhino {
-  background: url("/images/rhino.png") no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.snake {
-  background: url("/images/snake.png") no-repeat;
-  background-position: center;
-  background-size: 13em auto;
 }
 
 .carousel__text {

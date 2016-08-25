@@ -1,18 +1,60 @@
+.icon-logo-white { background-image: url('png/logo-white.png'); background-repeat: no-repeat; }
+
+.icon-logo { background-image: url('png/logo.png'); background-repeat: no-repeat; }
+
+.icon-moose { background-image: url('png/moose.png'); background-repeat: no-repeat; }
+
+.icon-antelope { background-image: url('png/antelope.png'); background-repeat: no-repeat; }
+
+.icon-arrow-left { background-image: url('png/arrow-left.png'); background-repeat: no-repeat; }
+
+.icon-mouse { background-image: url('png/mouse.png'); background-repeat: no-repeat; }
+
+.icon-arrow-right { background-image: url('png/arrow-right.png'); background-repeat: no-repeat; }
+
+.icon-narwhal { background-image: url('png/narwhal.png'); background-repeat: no-repeat; }
+
 .icon-bear { background-image: url('png/bear.png'); background-repeat: no-repeat; }
+
+.icon-octopus { background-image: url('png/octopus.png'); background-repeat: no-repeat; }
 
 .icon-cow { background-image: url('png/cow.png'); background-repeat: no-repeat; }
 
 .icon-duck { background-image: url('png/duck.png'); background-repeat: no-repeat; }
 
+.icon-owl { background-image: url('png/owl.png'); background-repeat: no-repeat; }
+
 .icon-elephant { background-image: url('png/elephant.png'); background-repeat: no-repeat; }
 
 .icon-facebook { background-image: url('png/facebook.png'); background-repeat: no-repeat; }
 
+.icon-phone { background-image: url('png/phone.png'); background-repeat: no-repeat; }
+
+.icon-rhino { background-image: url('png/rhino.png'); background-repeat: no-repeat; }
+
 .icon-goldfish { background-image: url('png/goldfish.png'); background-repeat: no-repeat; }
+
+.icon-goose { background-image: url('png/goose.png'); background-repeat: no-repeat; }
+
+.icon-snake { background-image: url('png/snake.png'); background-repeat: no-repeat; }
+
+.icon-horse { background-image: url('png/horse.png'); background-repeat: no-repeat; }
+
+.icon-sparkbox-logo { background-image: url('png/sparkbox-logo.png'); background-repeat: no-repeat; }
 
 .icon-iguana { background-image: url('png/iguana.png'); background-repeat: no-repeat; }
 
+.icon-twitter { background-image: url('png/twitter.png'); background-repeat: no-repeat; }
+
+.icon-walrus { background-image: url('png/walrus.png'); background-repeat: no-repeat; }
+
+.icon-kangaroo { background-image: url('png/kangaroo.png'); background-repeat: no-repeat; }
+
+.icon-xrayfish { background-image: url('png/xrayfish.png'); background-repeat: no-repeat; }
+
 .icon-land-of-nod { background-image: url('png/land-of-nod.png'); background-repeat: no-repeat; }
+
+.icon-lion { background-image: url('png/lion.png'); background-repeat: no-repeat; }
 
 .icon-logo-white { background-image: url('png/logo-white.png'); background-repeat: no-repeat; }
 
@@ -20,13 +62,19 @@
 
 .icon-moose { background-image: url('png/moose.png'); background-repeat: no-repeat; }
 
+.icon-mouse { background-image: url('png/mouse.png'); background-repeat: no-repeat; }
+
 .icon-narwhal { background-image: url('png/narwhal.png'); background-repeat: no-repeat; }
+
+.icon-octopus { background-image: url('png/octopus.png'); background-repeat: no-repeat; }
 
 .icon-owl { background-image: url('png/owl.png'); background-repeat: no-repeat; }
 
 .icon-phone { background-image: url('png/phone.png'); background-repeat: no-repeat; }
 
 .icon-rhino { background-image: url('png/rhino.png'); background-repeat: no-repeat; }
+
+.icon-snake { background-image: url('png/snake.png'); background-repeat: no-repeat; }
 
 .icon-sparkbox-logo { background-image: url('png/sparkbox-logo.png'); background-repeat: no-repeat; }
 

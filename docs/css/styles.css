@@ -3,20 +3,20 @@ All Styles
 **/
 @font-face {
   font-family: Egyptian;
-  src: url("/fonts/6e10a66d-dfda-4866-8ba4-be80c33f44d9.eot?#iefix");
-  src: url("/fonts/6e10a66d-dfda-4866-8ba4-be80c33f44d9.eot?#iefix") format("eot"), url("/fonts/220aeeef-b16f-4aa5-9cde-80a0c8898c31.woff2") format("woff2"), url("/fonts/9632f777-a0ee-40fc-ba6d-817484d1d572.woff") format("woff"), url("/fonts/0a5a4d63-7e73-45a2-b206-3c65108aab37.ttf") format("truetype"), url("/fonts/c039d37d-63b4-4b91-9acf-9296e42153df.svg#c039d37d-63b4-4b91-9acf-9296e42153df") format("svg"); }
+  src: url("../fonts/6e10a66d-dfda-4866-8ba4-be80c33f44d9.eot?#iefix");
+  src: url("../fonts/6e10a66d-dfda-4866-8ba4-be80c33f44d9.eot?#iefix") format("eot"), url("../fonts/220aeeef-b16f-4aa5-9cde-80a0c8898c31.woff2") format("woff2"), url("../fonts/9632f777-a0ee-40fc-ba6d-817484d1d572.woff") format("woff"), url("../fonts/0a5a4d63-7e73-45a2-b206-3c65108aab37.ttf") format("truetype"), url("../fonts/c039d37d-63b4-4b91-9acf-9296e42153df.svg#c039d37d-63b4-4b91-9acf-9296e42153df") format("svg"); }
 
 @font-face {
   font-family: Avenir;
   font-weight: 400;
-  src: url("/fonts/57bf7902-79ee-4b31-a327-1bbf59a3d155.eot?#iefix");
-  src: url("/fonts/57bf7902-79ee-4b31-a327-1bbf59a3d155.eot?#iefix") format("eot"), url("/fonts/b290e775-e0f9-4980-914b-a4c32a5e3e36.woff2") format("woff2"), url("/fonts/4b978f72-bb48-46c3-909a-2a8cd2f8819c.woff") format("woff"), url("/fonts/9bdf0737-f98c-477a-9365-ffc41b9d1285.ttf") format("truetype"), url("/fonts/15281d0d-e3c2-46e1-94db-cb681e00bfaa.svg#15281d0d-e3c2-46e1-94db-cb681e00bfaa") format("svg"); }
+  src: url("../fonts/57bf7902-79ee-4b31-a327-1bbf59a3d155.eot?#iefix");
+  src: url("../fonts/57bf7902-79ee-4b31-a327-1bbf59a3d155.eot?#iefix") format("eot"), url("../fonts/b290e775-e0f9-4980-914b-a4c32a5e3e36.woff2") format("woff2"), url("../fonts/4b978f72-bb48-46c3-909a-2a8cd2f8819c.woff") format("woff"), url("../fonts/9bdf0737-f98c-477a-9365-ffc41b9d1285.ttf") format("truetype"), url("../fonts/15281d0d-e3c2-46e1-94db-cb681e00bfaa.svg#15281d0d-e3c2-46e1-94db-cb681e00bfaa") format("svg"); }
 
 @font-face {
   font-family: Avenir;
   font-weight: 700;
-  src: url("/fonts/e0542193-b2e6-4273-bc45-39d4dfd3c15b.eot?#iefix");
-  src: url("/fonts/e0542193-b2e6-4273-bc45-39d4dfd3c15b.eot?#iefix") format("eot"), url("/fonts/17b90ef5-b63f-457b-a981-503bb7afe3c0.woff2") format("woff2"), url("/fonts/c9aeeabd-dd65-491d-b4be-3e0db9ae47a0.woff") format("woff"), url("/fonts/25f994de-d13f-4a5d-a82b-bf925a1e054d.ttf") format("truetype"), url("/fonts/3604edbd-784e-4ca7-b978-18836469c62d.svg#3604edbd-784e-4ca7-b978-18836469c62d") format("svg"); }
+  src: url("../fonts/e0542193-b2e6-4273-bc45-39d4dfd3c15b.eot?#iefix");
+  src: url("../fonts/e0542193-b2e6-4273-bc45-39d4dfd3c15b.eot?#iefix") format("eot"), url("../fonts/17b90ef5-b63f-457b-a981-503bb7afe3c0.woff2") format("woff2"), url("../fonts/c9aeeabd-dd65-491d-b4be-3e0db9ae47a0.woff") format("woff"), url("../fonts/25f994de-d13f-4a5d-a82b-bf925a1e054d.ttf") format("truetype"), url("../fonts/3604edbd-784e-4ca7-b978-18836469c62d.svg#3604edbd-784e-4ca7-b978-18836469c62d") format("svg"); }
 
 body {
   margin: 0; }
@@ -116,7 +116,7 @@ h1, h2, h3, h4, p {
   width: 100%; }
 
 .site-title {
-  padding-top: 1em;
+  padding-top: 0.5em;
   margin: auto; }
   @media (min-width: 61.25em) {
     .site-title {
@@ -128,7 +128,7 @@ h1, h2, h3, h4, p {
   background-size: cover;
   display: block;
   height: 2em;
-  width: 1.75em;
+  width: 1.5em;
   margin: 0 auto;
   overflow: hidden;
   text-indent: -9999em; }
@@ -145,7 +145,7 @@ h1, h2, h3, h4, p {
 .list__item {
   list-style-type: none;
   display: inline-block;
-  padding: 1.5em 0;
+  padding: 1em 0;
   width: 24%; }
   @media (min-width: 61.25em) {
     .list__item {
@@ -216,7 +216,7 @@ h1, h2, h3, h4, p {
   .hero__overlay {
     background-color: rgba(255, 255, 255, 0.3);
     text-align: center;
-    padding: 4em 0 18em; }
+    padding-top: 4em; }
   .hero__heading {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     font-weight: 400;
@@ -234,11 +234,12 @@ h1, h2, h3, h4, p {
     @media (min-width: 87.5em) {
       .hero__heading {
         font-size: 5.5em;
+        margin-top: 0;
         margin-bottom: 0.25em; } }
   .hero__text {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1.25em;
     color: #4B3900;
     width: 85%;
     margin: auto; }
@@ -251,81 +252,100 @@ h1, h2, h3, h4, p {
         font-size: 2em; } }
 
 .carousel {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding-top: 1.5em;
+  background-color: rgba(232, 207, 0, 0.1); }
+  @media (min-width: 25em) {
+    .carousel {
+      margin-top: 4em; } }
+  @media (min-width: 45em) {
+    .carousel {
+      margin-top: 8em; } }
+  @media (min-width: 87.5em) {
+    .carousel {
+      margin-top: 6em; } }
 
 *,
 *:before,
 *:after {
   box-sizing: inherit; }
 
+@media (min-width: 90em) {
+  .row {
+    width: 90em;
+    margin: 0 auto; } }
+
 .carousel__img {
-  background-image: url("http://placehold.it/200x150");
-  background-size: cover;
   background-position: center;
-  height: 12.5em;
-  width: 9.375em;
-  margin: 0px 0.3125;
-  padding-top: 3.75em; }
-  .carousel__img:hover {
-    border: 3px solid black;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff; }
-  .carousel__img:hover .carousel__text {
+  background-size: contain;
+  height: 13em;
+  width: auto;
+  margin: 0 0.5em; }
+  .carousel__img:hover .carousel__text__box, .carousel__img .carousel__text {
     display: block; }
 
 .carousel__text {
-  display: none;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: #fff;
   text-align: center;
-  padding-bottom: 1em; }
+  display: none;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  padding: 0.25em 0; }
+  .carousel__text__box {
+    display: block;
+    max-width: 60%;
+    margin: 0 auto;
+    background-color: #F26531;
+    padding: 0.25em 0;
+    margin-top: 9.5em; }
+    @media (min-width: 30em) {
+      .carousel__text__box {
+        display: none;
+        max-width: 95%; } }
+    @media (min-width: 90em) {
+      .carousel__text__box {
+        max-width: 16em; } }
 
 .slick-dots {
   text-align: center;
   margin: 0 0 0.625em 0;
-  padding: 0; }
+  padding: 0.75em; }
   .slick-dots li {
     display: inline-block;
-    margin-left: 0.25em;
-    margin-right: 0.25em; }
+    margin-left: 0.5em;
+    margin-right: 0.5em; }
     .slick-dots li.slick-active button {
-      background-color: #000; }
+      background-color: #08B7BD; }
     .slick-dots li button {
-      font: 0/0 a;
       text-shadow: none;
       color: transparent;
-      background-color: #A1A1A1;
+      background-color: #F26531;
       border: none;
-      width: 0.9375em;
-      height: 0.9375em;
+      width: 1em;
+      height: 1em;
       border-radius: 50%; }
-    .slick-dots li :hover {
-      background-color: #000; }
-
-.prev {
-  color: #A1A1A1;
-  position: absolute;
-  top: 38%;
-  left: -2em;
-  font-size: 1.5em; }
-  .prev :hover {
-    cursor: pointer;
-    color: #000; }
-
-.next {
-  color: #A1A1A1;
-  position: absolute;
-  top: 38%;
-  right: -2em;
-  font-size: 1.5em; }
-  .next :hover {
-    cursor: pointer;
-    color: #000; }
+      .slick-dots li button:hover {
+        background-color: #fff; }
+      .slick-dots li button:focus {
+        outline: none; }
+      @media (min-width: 30em) {
+        .slick-dots li button {
+          width: 1.75em;
+          height: 1.75em; } }
 
 .products {
   background: url("../images/white-wood.jpg") no-repeat center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   text-align: center;
-  padding: 4em 0; }
+  padding: 4em 0;
+  margin-top: -0.75em; }
+  @media (min-width: 45em) {
+    .products {
+      background-attachment: fixed; } }
   .products__heading {
     width: 10em;
     font-family: Egyptian, Georgia, "Times New Roman", serif;
@@ -417,7 +437,7 @@ h1, h2, h3, h4, p {
       width: 90%; } }
 
 .flashcards {
-  background: url("/images/flashcards.jpg") no-repeat center;
+  background: url("../images/flashcards.jpg") no-repeat center;
   background-size: cover;
   margin: auto;
   width: 20em;
@@ -435,7 +455,7 @@ h1, h2, h3, h4, p {
       -moz-border-radius: 11em; } }
 
 .wall-puzzles {
-  background: url("/images/wall-puzzles.jpg") no-repeat center;
+  background: url("../images/wall-puzzles.jpg") no-repeat center;
   background-size: cover;
   margin: auto;
   width: 20em;
@@ -453,7 +473,7 @@ h1, h2, h3, h4, p {
       -moz-border-radius: 11em; } }
 
 .pillows {
-  background: url("/images/pillow.jpg") no-repeat center;
+  background: url("../images/pillow.jpg") no-repeat center;
   background-size: cover;
   margin: auto;
   width: 20em;
@@ -471,7 +491,7 @@ h1, h2, h3, h4, p {
       -moz-border-radius: 11em; } }
 
 .decals {
-  background: url("/images/wall-decal.jpg") no-repeat 50% 40%;
+  background: url("../images/wall-decal.jpg") no-repeat 50% 40%;
   background-size: cover;
   margin: auto;
   width: 20em;
@@ -489,7 +509,7 @@ h1, h2, h3, h4, p {
       -moz-border-radius: 11em; } }
 
 .posters {
-  background: url("/images/poster.jpg") no-repeat center;
+  background: url("../images/poster.jpg") no-repeat center;
   background-size: cover;
   margin: auto;
   width: 20em;
@@ -507,7 +527,7 @@ h1, h2, h3, h4, p {
       -moz-border-radius: 11em; } }
 
 .speak-piggy {
-  background: url("/images/speak-piggy.jpg") no-repeat center;
+  background: url("../images/speak-piggy.jpg") no-repeat center;
   background-size: cover;
   margin: auto;
   width: 20em;
@@ -525,7 +545,7 @@ h1, h2, h3, h4, p {
       -moz-border-radius: 11em; } }
 
 .c-for-cow {
-  background: url("/images/c-is-for-cow.jpg") no-repeat center;
+  background: url("../images/c-is-for-cow.jpg") no-repeat center;
   background-size: cover;
   margin: auto;
   width: 20em;
@@ -543,7 +563,7 @@ h1, h2, h3, h4, p {
       -moz-border-radius: 11em; } }
 
 .two-by-two {
-  background: url("/images/two-by-two.jpg") no-repeat center;
+  background: url("../images/two-by-two.jpg") no-repeat center;
   background-size: cover;
   margin: auto;
   width: 20em;
