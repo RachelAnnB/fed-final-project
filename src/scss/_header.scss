@@ -14,7 +14,7 @@
 }
 
 .site-title {
-	padding-top: 1em; //16px
+	padding-top: 0.5em; //8px
 	margin: auto;
 
 	@media(min-width: $bp-global-medium) {
@@ -28,7 +28,7 @@
 	background-size: cover;
 	display: block;
 	height: 2em; //32px
-	width: 1.75em; //28px
+	width: 1.5em; //24px
 	margin: 0 auto;
 	overflow: hidden;
 	text-indent: -9999em;
@@ -48,7 +48,7 @@
 .list__item {
 	list-style-type: none;
 	display: inline-block;
-	padding: 1.5em 0; //24px
+	padding: 1em 0; //16px 0
 	width: 24%;
 	
 	@media(min-width: $bp-global-medium) {
