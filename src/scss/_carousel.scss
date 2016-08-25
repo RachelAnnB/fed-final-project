@@ -1,17 +1,20 @@
+//---------------Break Points---------------//
+$bp-carousel-small: 30em; //480px
+
 .carousel {
   box-sizing: border-box;
   padding-top: 1.5em; //24px
   background-color: rgba($color-yellow, 0.1);
-  
-  @media(min-width: 400px) {//change to a variable!
+
+  @media(min-width: $bp-global-xsmall) {
     margin-top: 4em; //64px
   }
-  
-  @media(min-width: 720px) {//change to a variable!
+
+  @media(min-width: $bp-global-small) {
     margin-top: 8em; //128px 
   }
-  
-  @media(min-width: 1400px) {//change to a variable!
+
+  @media(min-width: $bp-global-large) {
     margin-top: 6em; //96px
   }
 }
@@ -23,80 +26,92 @@
 }
 
 .row {
-  @media(min-width: 1440px) {
-		width: 90em;
+  @media(min-width: $bp-global-xlarge) {
+    width: 90em;
     margin: 0 auto;
-	}
+  }
 }
 
 .carousel__img {
   height: 13em; //208px
   width: auto;
   margin: 0 0.5em; //0 8px
-  
+
   &:hover .carousel__text__box, .carousel__text {
     display: block;
   }
 }
 
-.icon-antelope {
+.antelope {
+  background: url("/images/antelope.png") no-repeat;
   background-position: center;
   background-size: contain;
 }
 
-.icon-cow {
+.cow {
+  background: url("/images/cow.png") no-repeat;
   background-position: center;
   background-size: contain;
 }
 
-.icon-elephant {
+.elephant {
+  background: url("/images/elephant.png") no-repeat;
   background-position: center;
   background-size: contain;
 }
 
-.icon-goose {
+.goose {
+  background: url("/images/goose.png") no-repeat;
   background-position: center;
   background-size: contain;
 }
 
-.icon-horse {
+.horse {
+  background: url("/images/horse.png") no-repeat;
   background-position: center;
   background-size: contain;
 }
 
-.icon-kangaroo {
+.kangaroo {
+  background: url("/images/kangaroo.png") no-repeat;
   background-position: center;
   background-size: contain;
 }
 
-.icon-lion {
+.lion {
+  background: url("/images/lion.png") no-repeat;
   background-position: center;
   background-size: contain;
 }
 
-.icon-moose {
+.moose {
+  background: url("/images/moose.png") no-repeat;
   background-position: center;
   background-size: contain;
 }
 
-.icon-mouse {
+.mouse {
+  background: url("/images/mouse.png") no-repeat;
   background-position: center;
   background-size: contain;
 }
 
-.icon-octopus {
+.octopus {
+  background: url("/images/octopus.png") no-repeat;
   background-position: center;
   background-size: contain;
 }
 
-.icon-rhino {
+.rhino {
+  background: url("/images/rhino.png") no-repeat;
   background-position: center;
   background-size: contain;
 }
 
-.icon-snake {
+.snake {
+  background: url("/images/snake.png") no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 13em auto;
 }
 
 .carousel__text {
@@ -111,14 +126,19 @@
   padding: 0.25em 0; //4px 0
 
   &__box {
-    display: none;
-    max-width: 75%;
+    display: block;
+    max-width: 60%;
     margin: 0 auto;
     background-color: $color-orange;
     padding: 0.25em 0; //4px 0
-    margin-top: 10em; //160px
-    
-    @media(min-width: 1440px) {//change to variable!
+    margin-top: 9.5em; //152px
+
+    @media(min-width: $bp-carousel-small) {
+      display: none;
+      max-width: 95%;
+    }
+
+    @media(min-width: $bp-global-xlarge) {
       max-width: 16em; //256px
     }
   }
@@ -127,7 +147,7 @@
 .slick-dots {
   text-align: center;
   margin: 0 0 0.625em 0; //0 0 10px 0
-  padding: 1em; //16px
+  padding: 0.75em; //12px
 
   li {
     display: inline-block;
@@ -156,8 +176,8 @@
       &:focus {
         outline: none;
       }
-      
-      @media(min-width: 480px) {//change to variable!
+
+      @media(min-width: $bp-carousel-small) {
         width: 1.75em; //28px
         height: 1.75em; //28px
       }
