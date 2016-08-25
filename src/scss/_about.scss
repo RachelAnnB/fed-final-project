@@ -4,7 +4,7 @@ $bp-about-small: 50em; //800px
 .about {
   background-color: $color-blue;
   text-align: center;
-  padding: 4em 0; //64px 0
+  padding: 4em 0 8em; //64px 0 128px
   
   &__heading {
     width: 10em; //160px
@@ -27,7 +27,7 @@ $bp-about-small: 50em; //800px
     font-size: 1.25em; //20px
     font-weight: 400;
     color: $color-white;
-    margin: 2em auto; //32px
+    margin: 2em auto 5em; //32px 80px
 
     @media(min-width: $bp-about-small) {
       width: 27em; //432px
@@ -37,13 +37,17 @@ $bp-about-small: 50em; //800px
   
   &__logo {
     background-position: center;
-    display: block;
-    height: 8em; //128px
+    display: inline;
+    padding: 5em 15em; //80px 240px
     text-indent: -9999em;
     @include filter-invert;
 
+    @media(min-width: $bp-global-xsmall) {
+      padding: 5em 10em; //80px 160px
+    } 
+    
     @media(min-width: $bp-about-small) {
-      height: 12em; //192px
+      padding: 6em 16em; //96px 256px
     }
   }
 }
