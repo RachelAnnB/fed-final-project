@@ -15,6 +15,7 @@ $bp-product-large: 81.25em; //1300px
 		background-attachment: fixed;
 	}
 
+<<<<<<< Updated upstream
 	&__heading {
 		width: 10em; //160px
 		font-family: $font-egyptian;
@@ -28,6 +29,20 @@ $bp-product-large: 81.25em; //1300px
 		@media(min-width: $bp-global-medium) {
 			font-size: 1.5em; //24px
 		}
+=======
+.products__heading {
+	width: 10em; //160px
+	font-family: $font-egyptian;
+	font-size: 1em; //16px
+	color: $color-blue;
+	border-top: 2px solid $color-blue;
+	border-bottom: 2px solid $color-blue;
+	padding: 0.25em 0; //4px 0
+	margin: auto;
+
+	@media(min-width: 61.25em) {
+		font-size: 1.5em; //24px
+>>>>>>> Stashed changes
 	}
 
 	&__box {
@@ -59,14 +74,47 @@ $bp-product-large: 81.25em; //1300px
 	border: 2px solid $color-white;
 	padding: 1em; //16px
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	@media(min-width: $bp-global-small) {
 		font-size: 2em; //32px
 	}
 
 	@media(min-width: $bp-product-medium) {
 		font-size: 2.5em; //40px
+=======
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+	@media(min-width: 45em) {
+		font-size: 2em; //32px
 	}
 
+	@media(min-width: 62em) {
+		font-size: 2.5em; //40px
+	}
+}
+
+.products__group {
+	display: inline-block;
+}
+
+.products__group__item {
+	width: 100%;
+
+	@media(min-width: 56.5em) {
+		width: 48%;
+		display: inline-block;
+	}
+
+	@media(min-width: 81.25em) {
+		width: 32%;
+>>>>>>> Stashed changes
+	}
+
+<<<<<<< Updated upstream
 	&__box {
 		width: 85%;
 		background-color: $color-blue;
@@ -76,6 +124,19 @@ $bp-product-large: 81.25em; //1300px
 		@media(min-width: $bp-global-xlarge) {
 			width: 76em; //1216px
 		}
+=======
+.item__heading__box {
+	width: 100%;
+	background-color: $color-orange;
+	padding: 0.5em 0; //8px 0
+	position: relative;
+	margin: auto;
+	z-index: 1;
+	top: 240px;
+
+	@media(min-width: 81.25em) {
+		top: 260px;
+>>>>>>> Stashed changes
 	}
 }
 
@@ -88,7 +149,17 @@ $bp-product-large: 81.25em; //1300px
 	border-bottom: 2px solid $color-white;
 	padding: 0.5em 0; //8px 0
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	@media(min-width: $bp-product-large) {
+=======
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+	@media(min-width: 81.25em) {
+>>>>>>> Stashed changes
 		font-size: 1.25em; //20px
 	}
 
@@ -185,6 +256,7 @@ $bp-product-large: 81.25em; //1300px
 	background-color: $color-blue;
 	padding: 1em; //16px
 	margin: 4em auto 1em; //64px 16px
+<<<<<<< Updated upstream
 	
 	@media(min-width: $bp-global-xlarge) {
 		width: 80em; //1280px
@@ -222,5 +294,39 @@ $bp-product-large: 81.25em; //1300px
 		@media(min-width: $bp-global-xlarge) {
 			background-position: 78% 50%;
 		}
+=======
+}
+
+.where-to-buy__text {
+	font-family: $font-egyptian;
+	font-size: 1.5em; //24px
+	color: $color-white;
+
+	@media(min-width: 87.5em) {
+		position: absolute;
+		margin-top: 1.25em; //20px
+		left: 9em; //144em
+	}
+
+	@media(min-width: 90em) {
+		left: 9.5em; //152px
+	}
+}
+
+.where-to-buy__logo {
+	background-position: 50% 50%;
+	display: block;
+	margin-top: 1em; //16px
+	padding: 1em; //16px
+	text-indent: -9999em;
+
+	@media(min-width: 87.5em) {
+		background-position: 80% 50%;
+		margin-bottom: 1em; //16px
+	}
+
+	@media(min-width: 90em) {
+		background-position: 78% 50%;
+>>>>>>> Stashed changes
 	}
 }

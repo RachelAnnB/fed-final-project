@@ -30,6 +30,7 @@ $bp-mixin-large: 81.25em; //1300px
 
 @mixin filter-invert {
 	&:hover {
-		filter: grayscale(100%);
+		filter: invert(100%);
+		-webkit-filter: invert(100%);
 	}
 }

@@ -1,6 +1,6 @@
 <svg id="facebook-square" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <style>
-    .st0{fill:#F26531;}
+    .st0{fill:#FFFFFF;}
   </style>
   <path class="st0" d="M82.7 1H17.3C8.4 1 1 8.4 1 17.3v65.3C1 91.7 8.4 99 17.3 99h65.3c9 0 16.3-7.3 16.3-16.3V17.3C99 8.4 91.7 1 82.7 1zm1.6 49H68.4v42.9H50V50h-8.9V36H50v-9.1c0-12.4 5.3-19.7 19.9-19.7h16.8v15.2H73c-4.1 0-4.6 2.1-4.6 6.1v7.6h18.4L84.3 50z"/>
 </svg>
