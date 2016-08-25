@@ -208,7 +208,8 @@ h1, h2, h3, h4, p {
   text-decoration: none;
   display: none;
   -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  cursor: pointer; }
 
 .hero {
   background: url("../images/bedroom.jpg") no-repeat 5% 50%;
@@ -954,7 +955,7 @@ h1, h2, h3, h4, p {
 .about {
   background-color: #08B7BD;
   text-align: center;
-  padding: 4em 0; }
+  padding: 4em 0 8em; }
   .about__heading {
     width: 10em;
     font-family: Egyptian, Georgia, "Times New Roman", serif;
@@ -973,22 +974,25 @@ h1, h2, h3, h4, p {
     font-size: 1.25em;
     font-weight: 400;
     color: #fff;
-    margin: 2em auto; }
+    margin: 2em auto 5em; }
     @media (min-width: 50em) {
       .about__text {
         width: 27em;
         font-size: 1.75em; } }
   .about__logo {
     background-position: center;
-    display: block;
-    height: 8em;
+    display: inline;
+    padding: 5em 15em;
     text-indent: -9999em; }
     .about__logo:hover {
       filter: invert(100%);
       -webkit-filter: invert(100%); }
+    @media (min-width: 25em) {
+      .about__logo {
+        padding: 5em 10em; } }
     @media (min-width: 50em) {
       .about__logo {
-        height: 12em; } }
+        padding: 6em 16em; } }
 
 .footer {
   background: url("../images/brown-wood.jpg") no-repeat center;
