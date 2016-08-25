@@ -8,6 +8,6 @@ const globby = require("globby");
 let files = globby.sync('src/icons/*');
 let options = {};
 
-let icon = new icons(files, 'dist/icons', options);
+let icon = new icons(files, 'docs/icons', options);
 
 icon.process();
