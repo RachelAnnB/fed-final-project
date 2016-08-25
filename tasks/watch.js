@@ -13,7 +13,7 @@ const options = {
 };
 let tinyServer = tinylr();
 
-const watcher = chokidar.watch(['src/scss', 'src/pages', 'src/layout', 'src/partials', 'src/icons', 'src/public', 'src/js', 'dist/css'], {
+const watcher = chokidar.watch(['src/scss', 'src/pages', 'src/layout', 'src/partials', 'src/icons', 'src/public', 'src/js', 'docs/css'], {
   ignored: /[\/\\]\./,
   ignoreInitial: true
 });

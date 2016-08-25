@@ -22,7 +22,7 @@ if (process.env.NODE_ENV === 'production') {
       }
   });
 }
-app.use(serveStatic(__dirname + '/dist'));
+app.use(serveStatic(__dirname + '/docs'));
 
 app.listen(port, function() {
   console.log('Server started on ' + port);

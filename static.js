@@ -99,7 +99,7 @@
       layoutPath = layoutPicker(fileName);
       template = renderTemplate(file);
       page = renderPage(template, layoutPath);
-      return fs.outputFileSync("dist/" + fileName + ".html", page, 'utf8');
+      return fs.outputFileSync("docs/" + fileName + ".html", page, 'utf8');
     });
   };
 
