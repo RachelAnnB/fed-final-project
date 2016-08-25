@@ -133,49 +133,49 @@ $bp-product-large: 81.25em; //1300px
 }
 
 .flashcards {
-	background: url("/images/flashcards.jpg") no-repeat center;
+	background: url("../images/flashcards.jpg") no-repeat center;
 	background-size: cover;
 	@include product-img;
 }
 
 .wall-puzzles {
-	background: url("/images/wall-puzzles.jpg") no-repeat center;
+	background: url("../images/wall-puzzles.jpg") no-repeat center;
 	background-size: cover;
 	@include product-img;
 }
 
 .pillows {
-	background: url("/images/pillow.jpg") no-repeat center;
+	background: url("../images/pillow.jpg") no-repeat center;
 	background-size: cover;
 	@include product-img;
 }
 
 .decals {
-	background: url("/images/wall-decal.jpg") no-repeat 50% 40%;
+	background: url("../images/wall-decal.jpg") no-repeat 50% 40%;
 	background-size: cover;
 	@include product-img;
 }
 
 .posters {
-	background: url("/images/poster.jpg") no-repeat center;
+	background: url("../images/poster.jpg") no-repeat center;
 	background-size: cover;
 	@include product-img;
 }
 
 .speak-piggy {
-	background: url("/images/speak-piggy.jpg") no-repeat center;
+	background: url("../images/speak-piggy.jpg") no-repeat center;
 	background-size: cover;
 	@include product-img;
 }
 
 .c-for-cow {
-	background: url("/images/c-is-for-cow.jpg") no-repeat center;
+	background: url("../images/c-is-for-cow.jpg") no-repeat center;
 	background-size: cover;
 	@include product-img;
 }
 
 .two-by-two {
-	background: url("/images/two-by-two.jpg") no-repeat center;
+	background: url("../images/two-by-two.jpg") no-repeat center;
 	background-size: cover;
 	@include product-img;
 }

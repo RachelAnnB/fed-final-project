@@ -1,89 +1,92 @@
 <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 792 792">
   <style>
-    .st0{fill:#569BBE;} .st1{fill:#FFFFFF;} .st2{fill:none;stroke:#000000;stroke-width:0.8;stroke-miterlimit:10;} .st3{fill:#A8DEE8;} .st4{fill:#D7E8F7;} .st5{clip-path:url(#SVGID_2_);fill:#D7E8F7;} .st6{clip-path:url(#SVGID_4_);fill:#A8DEE8;} .st7{clip-path:url(#SVGID_6_);fill:#D7E8F7;} .st8{clip-path:url(#SVGID_8_);fill:#D7E8F7;} .st9{clip-path:url(#SVGID_10_);fill:#D7E8F7;} .st10{clip-path:url(#SVGID_12_);fill:#D7E8F7;} .st11{clip-path:url(#SVGID_14_);fill:#D7E8F7;} .st12{fill:#D8E8F1;stroke:#D7E8F7;stroke-miterlimit:10;}
+    .st0{fill:url(#SVGID_1_);} .st1{fill:#569BBE;} .st2{fill:#FFFFFF;} .st3{fill:none;stroke:#000000;stroke-width:0.8;stroke-miterlimit:10;} .st4{fill:#A8DEE8;} .st5{fill:#D7E8F7;} .st6{clip-path:url(#SVGID_3_);fill:#D7E8F7;} .st7{clip-path:url(#SVGID_5_);fill:#A8DEE8;} .st8{clip-path:url(#SVGID_7_);fill:#D7E8F7;} .st9{clip-path:url(#SVGID_9_);fill:#D7E8F7;} .st10{clip-path:url(#SVGID_11_);fill:#D7E8F7;} .st11{clip-path:url(#SVGID_13_);fill:#D7E8F7;} .st12{clip-path:url(#SVGID_15_);fill:#D7E8F7;} .st13{fill:#D8E8F1;stroke:#D7E8F7;stroke-miterlimit:10;}
   </style>
-  <path d="M610.4 618.6c0-118.3-95.9-214.4-214.4-214.4-118.3 0-214.4 95.9-214.4 214.4 0 65.8 29.8 124.8 76.5 164.2-29.5-32.8-47.6-76.4-47.6-124 0-102.4 83-185.4 185.4-185.4s185.4 83 185.4 185.4c0 47.6-18 91.2-47.6 124 46.9-39.3 76.7-98.2 76.7-164.2z"/>
-  <path class="st0" d="M590.2 571.1c0-107.2-87-194.2-194.2-194.2s-194.2 87-194.2 194.2c0 59.7 26.9 113.1 69.3 148.8-26.8-29.8-43.1-69.1-43.1-112.3 0-92.8 75.2-168 168-168s168 75.2 168 168c0 43.2-16.3 82.6-43.1 112.3 42.4-35.8 69.3-89.2 69.3-148.8z"/>
-  <path class="st0" d="M664.8 586.1c0-148.4-120.4-268.8-268.8-268.8S127.2 437.6 127.2 586.1c0 82.6 37.3 156.6 95.9 205.9-37.1-41.2-59.6-95.7-59.6-155.6 0-128.4 104.1-232.5 232.5-232.5S628.5 508 628.5 636.4c0 59.8-22.6 114.3-59.6 155.6 58.7-49.4 95.9-123.2 95.9-205.9z"/>
-  <circle class="st0" cx="396.6" cy="161.5" r="161.4"/>
-  <path class="st0" d="M498.8 236c0 16.9 13.6 30.4 30.4 30.4 16.9 0 30.4-13.6 30.4-30.4s-13.6-30.4-30.4-30.4c-16.7 0-30.4 13.6-30.4 30.4z"/>
-  <path d="M543.6 236c0-7.9-6.4-14.4-14.4-14.4-7.9 0-14.4 6.4-14.4 14.4"/>
-  <path d="M543.6 236c0-7.9-6.4-14.4-14.4-14.4-7.9 0-14.4 6.4-14.4 14.4"/>
-  <path class="st0" d="M233.4 236c0 16.9 13.6 30.4 30.4 30.4 16.9 0 30.4-13.6 30.4-30.4s-13.6-30.4-30.4-30.4c-16.8 0-30.4 13.6-30.4 30.4z"/>
-  <path d="M278.2 236c0-7.9-6.4-14.4-14.4-14.4-7.9 0-14.4 6.4-14.4 14.4"/>
-  <ellipse class="st1" cx="267.7" cy="227" rx="3.8" ry="3.8"/>
-  <ellipse class="st1" cx="533.2" cy="227" rx="3.8" ry="3.8"/>
-  <path class="st2" d="M249.4 243.5h28.8M514.9 243.5h28.7"/>
-  <path class="st0" d="M474.6 297.6c0 28.1 22.7 50.8 50.8 50.8H267.7c28.1 0 50.8-22.7 50.8-50.8h156.1z"/>
-  <circle class="st3" cx="429.9" cy="63.1" r="26.4"/>
-  <circle class="st4" cx="394.1" cy="93.9" r="12.3"/>
-  <circle class="st3" cx="453" cy="320" r="9.3"/>
-  <circle class="st4" cx="462.3" cy="344.5" r="5.1"/>
-  <circle class="st4" cx="439.2" cy="346.3" r="8.8"/>
-  <circle class="st3" cx="338" cy="320" r="9.3"/>
-  <circle class="st4" cx="328.7" cy="344.5" r="5.1"/>
-  <circle class="st4" cx="351.8" cy="346.3" r="8.8"/>
-  <circle class="st3" cx="333.9" cy="64" r="12.3"/>
-  <circle class="st3" cx="373.3" cy="57.3" r="18.9"/>
-  <path class="st2" d="M396 115.9v261M341.6 155.4h108.6M341.6 167.2h108.6M341.6 178.6h108.6"/>
+  <radialGradient id="SVGID_1_" cx="357.229" cy="777.25" r="160.338" gradientTransform="matrix(1.199 0 0 .1 -34.804 699.525)" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-opacity=".8"/>
+    <stop offset="1" stop-opacity="0"/>
+  </radialGradient>
+  <ellipse class="st0" cx="393.6" cy="777.3" rx="271.3" ry="14.4"/>
+  <path d="M604 607.5C604 491.4 509.9 397 393.6 397c-116.1 0-210.5 94.2-210.5 210.5 0 64.6 29.3 122.5 75.1 161.2-29-32.2-46.7-75-46.7-121.7 0-100.5 81.5-182 182-182s182 81.5 182 182c0 46.7-17.7 89.5-46.7 121.7 46-38.5 75.2-96.4 75.2-161.2z"/>
+  <path class="st1" d="M584.2 560.9c0-105.2-85.4-190.7-190.7-190.7s-190.7 85.4-190.7 190.7c0 58.6 26.4 111 68 146.1-26.3-29.3-42.3-67.8-42.3-110.3 0-91.1 73.8-164.9 164.9-164.9s164.9 73.8 164.9 164.9c0 42.4-16 81.1-42.3 110.3 41.8-35.2 68.2-87.6 68.2-146.1z"/>
+  <path class="st1" d="M657.5 575.6c0-145.7-118.2-263.9-263.9-263.9s-264 118.1-264 263.9c0 81.1 36.6 153.7 94.2 202.1-36.4-40.4-58.5-94-58.5-152.8 0-126.1 102.2-228.3 228.3-228.3S621.8 498.9 621.8 625c0 58.7-22.2 112.2-58.5 152.8 57.6-48.5 94.2-121 94.2-202.2z"/>
+  <circle class="st1" cx="394.1" cy="158.8" r="158.5"/>
+  <path class="st1" d="M494.5 231.9c0 16.6 13.4 29.8 29.8 29.8 16.6 0 29.8-13.4 29.8-29.8s-13.4-29.8-29.8-29.8-29.8 13.3-29.8 29.8z"/>
+  <path d="M538.5 231.9c0-7.8-6.3-14.1-14.1-14.1s-14.1 6.3-14.1 14.1"/>
+  <path d="M538.5 231.9c0-7.8-6.3-14.1-14.1-14.1s-14.1 6.3-14.1 14.1"/>
+  <path class="st1" d="M233.9 231.9c0 16.6 13.4 29.8 29.8 29.8 16.6 0 29.8-13.4 29.8-29.8s-13.4-29.8-29.8-29.8-29.8 13.3-29.8 29.8z"/>
+  <path d="M277.9 231.9c0-7.8-6.3-14.1-14.1-14.1s-14.1 6.3-14.1 14.1"/>
+  <ellipse class="st2" cx="267.6" cy="223.1" rx="3.7" ry="3.7"/>
+  <ellipse class="st2" cx="528.3" cy="223.1" rx="3.7" ry="3.7"/>
+  <path class="st3" d="M249.6 239.3h28.3m232.4 0h28.2"/>
+  <path class="st1" d="M470.7 292.4c0 27.6 22.3 49.9 49.9 49.9h-253c27.6 0 49.9-22.3 49.9-49.9h153.2z"/>
+  <circle class="st4" cx="426.8" cy="62.2" r="25.9"/>
+  <circle class="st5" cx="391.7" cy="92.4" r="12.1"/>
+  <circle class="st4" cx="449.5" cy="314.4" r="9.1"/>
+  <circle class="st5" cx="458.6" cy="338.4" r="5"/>
+  <circle class="st5" cx="436" cy="340.2" r="8.6"/>
+  <circle class="st4" cx="336.6" cy="314.4" r="9.1"/>
+  <circle class="st5" cx="327.5" cy="338.4" r="5"/>
+  <circle class="st5" cx="350.2" cy="340.2" r="8.6"/>
+  <circle class="st4" cx="332.6" cy="63" r="12.1"/>
+  <circle class="st4" cx="371.3" cy="56.5" r="18.6"/>
+  <path class="st3" d="M393.6 114v256.2m-53.5-217.4h106.6m-106.6 11.6h106.6m-106.6 11.1h106.6"/>
+  <defs>
+    <circle id="SVGID_2_" cx="394.1" cy="158.8" r="158.5"/>
+  </defs>
+  <clipPath id="SVGID_3_">
+    <use xlink:href="#SVGID_2_" overflow="visible"/>
+  </clipPath>
+  <circle class="st6" cx="340.1" cy="14.6" r="25.9"/>
+  <defs>
+    <circle id="SVGID_4_" cx="394.1" cy="158.8" r="158.5"/>
+  </defs>
+  <clipPath id="SVGID_5_">
+    <use xlink:href="#SVGID_4_" overflow="visible"/>
+  </clipPath>
+  <circle class="st7" cx="396.6" cy="25.9" r="12.1"/>
+  <defs>
+    <circle id="SVGID_6_" cx="394.1" cy="158.8" r="158.5"/>
+  </defs>
+  <clipPath id="SVGID_7_">
+    <use xlink:href="#SVGID_6_" overflow="visible"/>
+  </clipPath>
+  <circle class="st8" cx="381.5" cy="-3.7" r="12.1"/>
   <g>
     <defs>
-      <circle id="SVGID_1_" cx="396.6" cy="161.5" r="161.4"/>
+      <circle id="SVGID_8_" cx="394.1" cy="158.8" r="158.5"/>
     </defs>
-    <clipPath id="SVGID_2_">
-      <use xlink:href="#SVGID_1_" overflow="visible"/>
+    <clipPath id="SVGID_9_">
+      <use xlink:href="#SVGID_8_" overflow="visible"/>
     </clipPath>
-    <circle class="st5" cx="341.6" cy="14.7" r="26.4"/>
-    <defs>
-      <circle id="SVGID_3_" cx="396.6" cy="161.5" r="161.4"/>
-    </defs>
-    <clipPath id="SVGID_4_">
-      <use xlink:href="#SVGID_3_" overflow="visible"/>
-    </clipPath>
-    <circle class="st6" cx="399.1" cy="26.2" r="12.3"/>
-    <defs>
-      <circle id="SVGID_5_" cx="396.6" cy="161.5" r="161.4"/>
-    </defs>
-    <clipPath id="SVGID_6_">
-      <use xlink:href="#SVGID_5_" overflow="visible"/>
-    </clipPath>
-    <circle class="st7" cx="383.7" cy="-4" r="12.3"/>
-    <g>
-      <defs>
-        <circle id="SVGID_7_" cx="396.6" cy="161.5" r="161.4"/>
-      </defs>
-      <clipPath id="SVGID_8_">
-        <use xlink:href="#SVGID_7_" overflow="visible"/>
-      </clipPath>
-      <circle class="st8" cx="467.7" cy="33.8" r="12.3"/>
-    </g>
-    <g>
-      <defs>
-        <circle id="SVGID_9_" cx="396.6" cy="161.5" r="161.4"/>
-      </defs>
-      <clipPath id="SVGID_10_">
-        <use xlink:href="#SVGID_9_" overflow="visible"/>
-      </clipPath>
-      <circle class="st9" cx="498.8" cy="30.8" r="12.3"/>
-    </g>
-    <g>
-      <defs>
-        <circle id="SVGID_11_" cx="396.6" cy="161.5" r="161.4"/>
-      </defs>
-      <clipPath id="SVGID_12_">
-        <use xlink:href="#SVGID_11_" overflow="visible"/>
-      </clipPath>
-      <circle class="st10" cx="436.8" cy="7.3" r="18.9"/>
-    </g>
-    <g>
-      <defs>
-        <circle id="SVGID_13_" cx="396.6" cy="161.5" r="161.4"/>
-      </defs>
-      <clipPath id="SVGID_14_">
-        <use xlink:href="#SVGID_13_" overflow="visible"/>
-      </clipPath>
-      <circle class="st11" cx="299.7" cy="31.5" r="12.3"/>
-    </g>
+    <circle class="st9" cx="463.9" cy="33.4" r="12.1"/>
   </g>
-  <path class="st12" d="M535.8 553.3c0-77.3-62.7-139.8-139.8-139.8S256.2 476 256.2 553.3c0 43 19.5 81.5 49.9 107.1-19.3-21.4-31-49.8-31-80.9 0-66.9 54.2-121 121-121s121 54.2 121 121c0 31.1-11.8 59.5-31 80.9 30.4-25.7 49.7-64.2 49.7-107.1z"/>
+  <g>
+    <defs>
+      <circle id="SVGID_10_" cx="394.1" cy="158.8" r="158.5"/>
+    </defs>
+    <clipPath id="SVGID_11_">
+      <use xlink:href="#SVGID_10_" overflow="visible"/>
+    </clipPath>
+    <circle class="st10" cx="494.5" cy="30.4" r="12.1"/>
+  </g>
+  <g>
+    <defs>
+      <circle id="SVGID_12_" cx="394.1" cy="158.8" r="158.5"/>
+    </defs>
+    <clipPath id="SVGID_13_">
+      <use xlink:href="#SVGID_12_" overflow="visible"/>
+    </clipPath>
+    <circle class="st11" cx="433.6" cy="7.4" r="18.6"/>
+  </g>
+  <g>
+    <defs>
+      <circle id="SVGID_14_" cx="394.1" cy="158.8" r="158.5"/>
+    </defs>
+    <clipPath id="SVGID_15_">
+      <use xlink:href="#SVGID_14_" overflow="visible"/>
+    </clipPath>
+    <circle class="st12" cx="299" cy="31.1" r="12.1"/>
+  </g>
+  <path class="st13" d="M530.8 543.4c0-75.9-61.6-137.3-137.3-137.3s-137.3 61.4-137.3 137.3c0 42.2 19.1 80 49 105.1-18.9-21-30.4-48.9-30.4-79.4 0-65.7 53.2-118.8 118.8-118.8s118.8 53.2 118.8 118.8c0 30.5-11.6 58.4-30.4 79.4 29.9-25.2 48.8-63 48.8-105.1z"/>
 </svg>
