@@ -107,17 +107,22 @@ h1, h2, h3, h4, p {
   width: 100%;
   background: url("../images/tan-wood.jpg") no-repeat center;
   background-size: cover; }
+  @media (max-width: 30em) {
+    .header {
+      height: 6em; } }
   @media (min-width: 61.25em) {
     .header {
       padding-bottom: 1.75em; } }
 
-.nav {
-  text-align: center;
-  width: 100%; }
-
 .site-title {
   padding-top: 0.5em;
   margin: auto; }
+  @media (max-width: 30em) {
+    .site-title {
+      width: 30%;
+      float: left;
+      position: absolute;
+      left: 35%; } }
   @media (min-width: 61.25em) {
     .site-title {
       width: 40%;
@@ -137,32 +142,64 @@ h1, h2, h3, h4, p {
       width: 10em;
       background-size: contain; } }
 
+.nav {
+  text-align: center;
+  width: 100%; }
+  @media (max-width: 30em) {
+    .nav {
+      width: 100%;
+      float: left;
+      text-align: center;
+      margin: 0.5em 0; } }
+
 .nav__list {
   margin: 0;
-  padding: 0;
-  display: inline; }
+  padding: 0; }
+  @media (min-width: 481px) {
+    .nav__list {
+      display: inline; } }
 
 .list__item {
   list-style-type: none;
   display: inline-block;
   padding: 1em 0;
   width: 24%; }
+  @media (max-width: 30em) {
+    .list__item {
+      margin: 0.5em 2em;
+      padding: 0; } }
   @media (min-width: 61.25em) {
     .list__item {
       width: 6%;
       margin-top: 1.75em; } }
 
+@media (max-width: 30em) {
+  .left1 {
+    margin-right: 4em; } }
+
 @media (min-width: 61.25em) {
   .left1 {
     margin: 0 5em 0 2em; } }
+
+@media (max-width: 30em) {
+  .left2 {
+    margin-left: 4em; } }
 
 @media (min-width: 61.25em) {
   .left2 {
     margin-right: 15em; } }
 
+@media (max-width: 30em) {
+  .right1 {
+    margin-right: 4em; } }
+
 @media (min-width: 61.25em) {
   .right1 {
     margin-left: 15em; } }
+
+@media (max-width: 30em) {
+  .right2 {
+    margin-left: 4em; } }
 
 @media (min-width: 61.25em) {
   .right2 {
@@ -176,6 +213,9 @@ h1, h2, h3, h4, p {
   color: #4B3900; }
   .item__link:hover, .item__link:active {
     color: #F26531; }
+  @media (max-width: 30em) {
+    .item__link {
+      padding: 0.5em; } }
 
 #return-to-top {
   font-family: Avenir, Helvetica, Arial, sans-serif;
