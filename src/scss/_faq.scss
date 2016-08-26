@@ -1,5 +1,6 @@
 //---------------Break Points---------------//
 $bp-faq-small: 50em; //800px
+$bp-faq-medium: 75em; //1200px
 
 .faq {
   background-color: $color-orange;
@@ -29,8 +30,9 @@ $bp-faq-small: 50em; //800px
   &__link {
     width: 48%;
     display: inline;
-    font-family: $font-egyptian;
+    font-family: $font-avenir-roman;
     font-size: 2.25em; //36px
+    font-weight: 400;
     color: $color-tan;
     text-decoration: none;
     padding: 0.5em; //8px
@@ -38,6 +40,22 @@ $bp-faq-small: 50em; //800px
 
     &:hover, &:active {
       background-color: $color-brown;
+    }
+
+    @media(min-width: $bp-global-small) {
+      padding: 0.5em 2em; //8px 32px
+    }
+
+    @media(min-width: $bp-global-medium) {
+      padding: 0.5em 3em; //8px 48px
+    }
+
+    @media(min-width: $bp-faq-medium) {
+      padding: 0.5em 4em; //8px 64px
+    }
+
+    @media(min-width: $bp-global-xlarge) {
+      padding: 0.5em 6em; //8px 96px
     }
   }
 
@@ -78,22 +96,30 @@ $bp-faq-small: 50em; //800px
     }
   }
 
-  &__answer__box {
-    width: 95%;
-    display: none;
-    padding: 0.25em; //4px
-    margin: auto;
-  }
-
-  &__answer__box.show {
-    display: block !important;
-  }
-
   &__answer {
+    width: 90%;
+    margin: 0 auto;
     font-family: $font-avenir-roman;
     font-size: 1em; //16px
     font-weight: 400;
     color: $color-tan;
+    text-align: left;
+    padding: 0.5em 0; //8px 0
+
+    &__box {
+      width: 95%;
+      display: none;
+      padding: 0.25em; //4px
+      margin: auto;
+    }
+
+    &__box.show {
+      display: block !important;
+    }
+
+    &__link {
+      color: $color-brown;
+    }
   }
 
   &__other {
@@ -101,7 +127,7 @@ $bp-faq-small: 50em; //800px
     margin: auto;
 
     @media(min-width: $bp-faq-small) {
-      width: 45em;
+      width: 45em; //720px
     }
 
     &__text {

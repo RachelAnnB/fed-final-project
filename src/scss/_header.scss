@@ -45,6 +45,7 @@ $bp-header-small: 30em; //480px
 	@media(min-width: $bp-global-medium) {
 		width: 10em; //160px
 		background-size: contain;
+		margin-top: 0.25em; //4px
 	}
 }
 
