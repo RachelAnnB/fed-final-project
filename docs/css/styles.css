@@ -107,17 +107,21 @@ h1, h2, h3, h4, p {
   width: 100%;
   background: url("../images/tan-wood.jpg") no-repeat center;
   background-size: cover; }
+  @media (max-width: 30em) {
+    .header {
+      height: 6em; } }
   @media (min-width: 61.25em) {
     .header {
       padding-bottom: 1.75em; } }
 
-.nav {
-  text-align: center;
-  width: 100%; }
-
 .site-title {
   padding-top: 0.5em;
   margin: auto; }
+  @media (max-width: 30em) {
+    .site-title {
+      width: 30%;
+      position: absolute;
+      left: 35%; } }
   @media (min-width: 61.25em) {
     .site-title {
       width: 40%;
@@ -135,34 +139,67 @@ h1, h2, h3, h4, p {
   @media (min-width: 61.25em) {
     .site-logo {
       width: 10em;
-      background-size: contain; } }
+      background-size: contain;
+      margin-top: 0.25em; } }
+
+.nav {
+  text-align: center;
+  width: 100%; }
+  @media (max-width: 30em) {
+    .nav {
+      width: 100%;
+      float: left;
+      text-align: center;
+      margin: 0.5em 0; } }
 
 .nav__list {
   margin: 0;
-  padding: 0;
-  display: inline; }
+  padding: 0; }
+  @media (min-width: 481px) {
+    .nav__list {
+      display: inline; } }
 
 .list__item {
   list-style-type: none;
   display: inline-block;
   padding: 1em 0;
   width: 24%; }
+  @media (max-width: 30em) {
+    .list__item {
+      margin: 0.5em 2em;
+      padding: 0; } }
   @media (min-width: 61.25em) {
     .list__item {
       width: 6%;
       margin-top: 1.75em; } }
 
+@media (max-width: 30em) {
+  .left1 {
+    margin-right: 4em; } }
+
 @media (min-width: 61.25em) {
   .left1 {
     margin: 0 5em 0 2em; } }
+
+@media (max-width: 30em) {
+  .left2 {
+    margin-left: 4em; } }
 
 @media (min-width: 61.25em) {
   .left2 {
     margin-right: 15em; } }
 
+@media (max-width: 30em) {
+  .right1 {
+    margin-right: 4em; } }
+
 @media (min-width: 61.25em) {
   .right1 {
     margin-left: 15em; } }
+
+@media (max-width: 30em) {
+  .right2 {
+    margin-left: 4em; } }
 
 @media (min-width: 61.25em) {
   .right2 {
@@ -176,6 +213,9 @@ h1, h2, h3, h4, p {
   color: #4B3900; }
   .item__link:hover, .item__link:active {
     color: #F26531; }
+  @media (max-width: 30em) {
+    .item__link {
+      padding: 0.5em; } }
 
 #return-to-top {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -363,6 +403,9 @@ h1, h2, h3, h4, p {
     margin: auto; }
   .products__group {
     display: inline-block; }
+    @media (min-width: 90em) {
+      .products__group {
+        width: 90em; } }
     .products__group__item {
       width: 100%; }
       @media (min-width: 56.5em) {
@@ -778,14 +821,27 @@ h1, h2, h3, h4, p {
   .faq__link {
     width: 48%;
     display: inline;
-    font-family: Egyptian, Georgia, "Times New Roman", serif;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
     font-size: 2.25em;
+    font-weight: 400;
     color: #F0F1D9;
     text-decoration: none;
     padding: 0.5em;
     border: 2px solid #4B3900; }
     .faq__link:hover, .faq__link:active {
       background-color: #4B3900; }
+    @media (min-width: 45em) {
+      .faq__link {
+        padding: 0.5em 2em; } }
+    @media (min-width: 61.25em) {
+      .faq__link {
+        padding: 0.5em 3em; } }
+    @media (min-width: 75em) {
+      .faq__link {
+        padding: 0.5em 4em; } }
+    @media (min-width: 90em) {
+      .faq__link {
+        padding: 0.5em 6em; } }
   .faq__box {
     margin: auto;
     margin-bottom: 1.5em; }
@@ -815,18 +871,24 @@ h1, h2, h3, h4, p {
     @media (min-width: 90em) {
       .faq__question {
         width: 56em; } }
-  .faq__answer__box {
-    width: 95%;
-    display: none;
-    padding: 0.25em;
-    margin: auto; }
-  .faq__answer__box.show {
-    display: block !important; }
   .faq__answer {
+    width: 90%;
+    margin: 0 auto;
     font-family: Avenir, Helvetica, Arial, sans-serif;
     font-size: 1em;
     font-weight: 400;
-    color: #F0F1D9; }
+    color: #F0F1D9;
+    text-align: left;
+    padding: 0.5em 0; }
+    .faq__answer__box {
+      width: 95%;
+      display: none;
+      padding: 0.25em;
+      margin: auto; }
+    .faq__answer__box.show {
+      display: block !important; }
+    .faq__answer__link {
+      color: #4B3900; }
   .faq__other {
     width: 90%;
     margin: auto; }
@@ -999,6 +1061,9 @@ h1, h2, h3, h4, p {
   background-size: cover;
   text-align: center;
   padding: 4em 0; }
+  @media (min-width: 56.25em) {
+    .footer {
+      padding: 3em 0 7.5em; } }
   @media (min-width: 90em) {
     .footer__container {
       width: 90em;
@@ -1019,7 +1084,7 @@ h1, h2, h3, h4, p {
     display: block;
     margin: 0.25em auto; }
     .footer__link:hover {
-      color: #000; }
+      color: #F26531; }
     @media (min-width: 56.25em) {
       .footer__link {
         margin-left: 3em; } }
@@ -1044,11 +1109,11 @@ h1, h2, h3, h4, p {
     display: block;
     height: 3em;
     text-indent: -9999em;
-    margin: 3em auto; }
-    .footer__logo:hover {
-      filter: invert(100%);
-      -webkit-filter: invert(100%); }
-    @media (min-width: 50em) {
+    margin: 2em auto; }
+    @media (min-width: 40em) {
+      .footer__logo {
+        margin: 3em auto; } }
+    @media (min-width: 56.25em) {
       .footer__logo {
         margin: 1em auto; } }
   .footer__icons {
@@ -1057,20 +1122,23 @@ h1, h2, h3, h4, p {
     display: inline-block; }
     @media (min-width: 56.25em) {
       .footer__icons {
-        width: 30%;
-        text-align: right;
-        margin-right: 2em; } }
+        float: left;
+        width: 33%;
+        text-align: right; } }
   .footer__icon {
     background-position: center;
     display: inline-block;
-    height: 3em;
-    text-indent: -9999em;
-    width: 23%;
-    margin: 2em auto 0; }
+    margin: 0 2em;
+    fill: #fff; }
     .footer__icon:hover {
-      filter: invert(100%);
-      -webkit-filter: invert(100%); }
-    @media (min-width: 56.25em) {
-      .footer__icon {
-        width: 26%;
-        margin: 1em auto 0; } }
+      fill: #F26531; }
+
+.icon-phone, .icon-facebook, .icon-twitter {
+  width: 3em;
+  margin: 0 1em; }
+  @media (min-width: 40em) {
+    .icon-phone, .icon-facebook, .icon-twitter {
+      margin: 0 3em; } }
+  @media (min-width: 56.25em) {
+    .icon-phone, .icon-facebook, .icon-twitter {
+      margin: 0.75em 1em 0; } }
