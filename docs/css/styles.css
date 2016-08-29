@@ -120,7 +120,6 @@ h1, h2, h3, h4, p {
   @media (max-width: 30em) {
     .site-title {
       width: 30%;
-      float: left;
       position: absolute;
       left: 35%; } }
   @media (min-width: 61.25em) {

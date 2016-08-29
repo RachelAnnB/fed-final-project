@@ -21,7 +21,6 @@ $bp-header-small: 30em; //480px
 
 	@media(max-width: $bp-header-small) {
 		width: 30%;
-		float: left;
 		position: absolute;
 		left: 35%;
 	}
