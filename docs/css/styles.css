@@ -849,25 +849,19 @@ h1, h2, h3, h4, p {
     @media (min-width: 90em) {
       .faq__link {
         padding: 0.5em 6em; } }
-<<<<<<< d5b932325412e21dfff7f46533c26e871e589ba5
-  .faq__box {
-=======
   .faq__list {
     list-style: none;
     margin-top: 4em;
     padding: 0; }
   .faq__item {
->>>>>>> Refactor: remove all js for faq section
     margin: auto;
     margin-bottom: 1.5em;
     /*@media(min-width: $bp-global-xsmall) {
     width: 90%;
   }
-
     @media(min-width: $bp-faq-small) {
     width: 70%;
   }
-
     @media(min-width: $bp-global-xlarge) {
     width: 56em; //896px
     margin: 0 auto;
@@ -898,26 +892,12 @@ h1, h2, h3, h4, p {
       .faq__question {
         width: 56em; } }
   .faq__answer {
-<<<<<<< d5b932325412e21dfff7f46533c26e871e589ba5
-    width: 90%;
-=======
->>>>>>> Refactor: remove all js for faq section
     margin: 0 auto;
     font-family: Avenir, Helvetica, Arial, sans-serif;
     font-size: 1em;
     font-weight: 400;
     color: #F0F1D9;
     text-align: left;
-<<<<<<< d5b932325412e21dfff7f46533c26e871e589ba5
-    padding: 0.5em 0; }
-    .faq__answer__box {
-      width: 95%;
-      display: none;
-      padding: 0.25em;
-      margin: auto; }
-    .faq__answer__box.show {
-      display: block !important; }
-=======
     padding: 0.5em 0;
     display: none; }
     @media (min-width: 25em) {
@@ -929,7 +909,6 @@ h1, h2, h3, h4, p {
     @media (min-width: 90em) {
       .faq__answer {
         width: 62em; } }
->>>>>>> Refactor: remove all js for faq section
     .faq__answer__link {
       color: #4B3900; }
   .faq__other {
