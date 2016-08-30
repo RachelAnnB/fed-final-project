@@ -6,6 +6,7 @@ $bp-faq-medium: 75em; //1200px
   background-color: $color-orange;
   text-align: center;
   padding: 4em 0; //64px 0
+  position: relative;
 
   &__heading {
     width: 10em; //160px
@@ -22,9 +23,18 @@ $bp-faq-medium: 75em; //1200px
     }
   }
 
+  &__targets {
+    position: absolute;
+    top: 0;
+  }
+
+  &__content {
+    margin-top: 4em; //64px
+  }
+
   &__links {
     width: 100%;
-    margin: 4em auto; //64px 0
+    margin: 0 auto;
   }
 
   &__link {
@@ -37,6 +47,7 @@ $bp-faq-medium: 75em; //1200px
     text-decoration: none;
     padding: 0.5em; //8px
     border: 2px solid $color-brown;
+    background-color: $color-brown;
 
     &:hover, &:active {
       background-color: $color-brown;
@@ -59,9 +70,46 @@ $bp-faq-medium: 75em; //1200px
     }
   }
 
-  &__box {
+  &__list {
+    list-style: none;
+    margin-top: 4em; //64px
+    padding: 0;
+  }
+
+  &__item {
     margin: auto;
     margin-bottom: 1.5em; //24px
+
+    /*@media(min-width: $bp-global-xsmall) {
+    width: 90%;
+  }
+    @media(min-width: $bp-faq-small) {
+    width: 70%;
+  }
+    @media(min-width: $bp-global-xlarge) {
+    width: 56em; //896px
+    margin: 0 auto;
+  }*/
+  }
+
+  &__question {
+    width: 90%;
+    margin: 0 auto;
+    background-color: $color-tan;
+    font-family: $font-avenir-roman;
+    font-size: 1.125em; //18px
+    font-weight: 400;
+    color: $color-orange;
+    cursor: pointer;
+    padding: 1.25em; //20px
+    border: none;
+    text-align: left;
+    outline: none;
+    display: block;
+
+    &:hover {
+      background-color: $color-brown;
+    }
 
     @media(min-width: $bp-global-xsmall) {
       width: 90%;
@@ -70,26 +118,6 @@ $bp-faq-medium: 75em; //1200px
     @media(min-width: $bp-faq-small) {
       width: 70%;
     }
-  }
-
-  &__question {
-    width: 90%;
-    background-color: $color-tan;
-    font-family: $font-avenir-roman;
-    font-size: 1.125em; //18px
-    font-weight: 400;
-    color: $color-orange;
-    cursor: pointer;
-    padding: 1.25em; //20px
-    margin: 0 auto;
-    border: none;
-    text-align: left;
-    outline: none;
-    transition: 0.4s;
-
-    &:hover {
-      background-color: $color-brown;
-    }
 
     @media(min-width: $bp-global-xlarge) {
       width: 56em; //896px
@@ -97,7 +125,6 @@ $bp-faq-medium: 75em; //1200px
   }
 
   &__answer {
-    width: 90%;
     margin: 0 auto;
     font-family: $font-avenir-roman;
     font-size: 1em; //16px
@@ -105,16 +132,18 @@ $bp-faq-medium: 75em; //1200px
     color: $color-tan;
     text-align: left;
     padding: 0.5em 0; //8px 0
+    display: none;
 
-    &__box {
-      width: 95%;
-      display: none;
-      padding: 0.25em; //4px
-      margin: auto;
+    @media(min-width: $bp-global-xsmall) {
+      width: 90%;
     }
 
-    &__box.show {
-      display: block !important;
+    @media(min-width: $bp-faq-small) {
+      width: 70%;
+    }
+
+    @media(min-width: $bp-global-xlarge) {
+      width: 62em; //992px
     }
 
     &__link {
@@ -139,4 +168,28 @@ $bp-faq-medium: 75em; //1200px
       border: 2px solid $color-tan;
     }
   }
+}
+
+#parents:not(:target) ~ .faq__content .link__group--2,
+#parents:target ~ .faq__content .link__group--1 {
+  background-color: $color-orange;
+}
+
+#parents:target ~ .faq__content .list--1,
+#parents:not(:target) ~ .faq__content .list--2 {
+  display: none;
+}
+
+.faq__item + .faq__item {
+  margin-top: 1em; //16px
+}
+
+.visually-hidden {
+  position: fixed;
+  top: 0;
+  right: 100%;
+}
+
+[type="checkbox"]:checked ~ .faq__answer {
+  display: block;
 }

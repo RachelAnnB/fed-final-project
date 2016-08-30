@@ -802,7 +802,8 @@ h1, h2, h3, h4, p {
 .faq {
   background-color: #F26531;
   text-align: center;
-  padding: 4em 0; }
+  padding: 4em 0;
+  position: relative; }
   .faq__heading {
     width: 10em;
     font-family: Egyptian, Georgia, "Times New Roman", serif;
@@ -815,9 +816,14 @@ h1, h2, h3, h4, p {
     @media (min-width: 61.25em) {
       .faq__heading {
         font-size: 1.5em; } }
+  .faq__targets {
+    position: absolute;
+    top: 0; }
+  .faq__content {
+    margin-top: 4em; }
   .faq__links {
     width: 100%;
-    margin: 4em auto; }
+    margin: 0 auto; }
   .faq__link {
     width: 48%;
     display: inline;
@@ -827,7 +833,8 @@ h1, h2, h3, h4, p {
     color: #F0F1D9;
     text-decoration: none;
     padding: 0.5em;
-    border: 2px solid #4B3900; }
+    border: 2px solid #4B3900;
+    background-color: #4B3900; }
     .faq__link:hover, .faq__link:active {
       background-color: #4B3900; }
     @media (min-width: 45em) {
@@ -842,17 +849,26 @@ h1, h2, h3, h4, p {
     @media (min-width: 90em) {
       .faq__link {
         padding: 0.5em 6em; } }
-  .faq__box {
+  .faq__list {
+    list-style: none;
+    margin-top: 4em;
+    padding: 0; }
+  .faq__item {
     margin: auto;
-    margin-bottom: 1.5em; }
-    @media (min-width: 25em) {
-      .faq__box {
-        width: 90%; } }
-    @media (min-width: 50em) {
-      .faq__box {
-        width: 70%; } }
+    margin-bottom: 1.5em;
+    /*@media(min-width: $bp-global-xsmall) {
+    width: 90%;
+  }
+    @media(min-width: $bp-faq-small) {
+    width: 70%;
+  }
+    @media(min-width: $bp-global-xlarge) {
+    width: 56em; //896px
+    margin: 0 auto;
+  }*/ }
   .faq__question {
     width: 90%;
+    margin: 0 auto;
     background-color: #F0F1D9;
     font-family: Avenir, Helvetica, Arial, sans-serif;
     font-size: 1.125em;
@@ -860,33 +876,39 @@ h1, h2, h3, h4, p {
     color: #F26531;
     cursor: pointer;
     padding: 1.25em;
-    margin: 0 auto;
     border: none;
     text-align: left;
     outline: none;
-    -webkit-transition: 0.4s;
-    transition: 0.4s; }
+    display: block; }
     .faq__question:hover {
       background-color: #4B3900; }
+    @media (min-width: 25em) {
+      .faq__question {
+        width: 90%; } }
+    @media (min-width: 50em) {
+      .faq__question {
+        width: 70%; } }
     @media (min-width: 90em) {
       .faq__question {
         width: 56em; } }
   .faq__answer {
-    width: 90%;
     margin: 0 auto;
     font-family: Avenir, Helvetica, Arial, sans-serif;
     font-size: 1em;
     font-weight: 400;
     color: #F0F1D9;
     text-align: left;
-    padding: 0.5em 0; }
-    .faq__answer__box {
-      width: 95%;
-      display: none;
-      padding: 0.25em;
-      margin: auto; }
-    .faq__answer__box.show {
-      display: block !important; }
+    padding: 0.5em 0;
+    display: none; }
+    @media (min-width: 25em) {
+      .faq__answer {
+        width: 90%; } }
+    @media (min-width: 50em) {
+      .faq__answer {
+        width: 70%; } }
+    @media (min-width: 90em) {
+      .faq__answer {
+        width: 62em; } }
     .faq__answer__link {
       color: #4B3900; }
   .faq__other {
@@ -902,6 +924,25 @@ h1, h2, h3, h4, p {
       color: #4B3900;
       padding: 1em;
       border: 2px solid #F0F1D9; }
+
+#parents:not(:target) ~ .faq__content .link__group--2,
+#parents:target ~ .faq__content .link__group--1 {
+  background-color: #F26531; }
+
+#parents:target ~ .faq__content .list--1,
+#parents:not(:target) ~ .faq__content .list--2 {
+  display: none; }
+
+.faq__item + .faq__item {
+  margin-top: 1em; }
+
+.visually-hidden {
+  position: fixed;
+  top: 0;
+  right: 100%; }
+
+[type="checkbox"]:checked ~ .faq__answer {
+  display: block; }
 
 .retailers {
   background: url("../images/tan-wood.jpg") no-repeat center;

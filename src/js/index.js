@@ -1,16 +1,16 @@
 //---------------Smooth Scrolling---------------//
-$(function() {
-	$('a[href*="#"]:not([href="#"])').click(function() {
-		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			if (target.length) {
-				$('html, body').animate({
-					scrollTop: target.offset().top
-				}, 1000);
-				return false;
-			}
-		}
+$(document).ready(function(){
+	$('a[href^="#"]:not([href="#parents"]):not([href="#retailers"])').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
 	});
 });
 
@@ -88,29 +88,3 @@ $('.responsive').slick({
 							 // instead of a settings object
 							]
 });
-
-//---------------Show/Hide FAQs---------------//
-function showonlyone(thechosenone) {
-	var newboxes = document.getElementsByClassName("newboxes");
-	for (var x = 0; x < newboxes.length; x++) {
-		name = newboxes[x].getAttribute("class");
-		if (name == 'newboxes') {
-			if (newboxes[x].id == thechosenone) {
-				newboxes[x].style.display = 'block';
-			} else {
-				newboxes[x].style.display = 'none';
-			}
-		}
-	}
-}
-
-//---------------Collapsible FAQ Buttons---------------//
-var acc = document.getElementsByClassName("faq__question");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-	acc[i].onclick = function() {
-		this.classList.toggle("active");
-		this.nextElementSibling.classList.toggle("show");
-	}
-}
