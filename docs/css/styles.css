@@ -221,36 +221,67 @@ h1, h2, h3, h4, p {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   font-size: 1em;
   font-weight: 400;
-  color: #fff;
-  padding: 1em;
   z-index: 2;
   position: fixed;
-  bottom: 1.5em;
-  right: 1.5em;
-  background: #4B3900;
   display: block;
   text-decoration: none;
   display: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-  #return-to-top:hover {
-    background: #fff;
-    color: #4B3900; }
+  @media (min-width: 25em) {
+    #return-to-top {
+      width: 100%;
+      right: 0;
+      bottom: 0;
+      padding: 1.5em;
+      padding-right: 0;
+      text-align: center;
+      background-color: #F0F1D9;
+      color: #4B3900; }
+      #return-to-top:active {
+        background-color: #4B3900;
+        color: #F0F1D9; } }
+  @media (min-width: 50em) {
+    #return-to-top {
+      width: 10em;
+      bottom: 1.5em;
+      right: 1.5em;
+      padding: 1em;
+      background-color: #4B3900;
+      color: #F0F1D9; }
+      #return-to-top:hover {
+        background: #fff;
+        color: #4B3900; } }
 
-#owl-btn {
-  z-index: 3;
-  position: fixed;
-  bottom: 4em;
-  right: 1.5em;
-  display: block;
-  height: 8em;
-  width: auto;
-  text-decoration: none;
-  display: none;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  cursor: pointer; }
+@media (min-width: 25em) {
+  .icon-owl {
+    display: none; } }
 
+@media (min-width: 50em) {
+  .icon-owl {
+    background-size: contain;
+    background-position: center;
+    z-index: 3;
+    position: fixed;
+    padding: 4em;
+    bottom: 4em;
+    right: 1em;
+    display: block;
+    width: auto;
+    display: none;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer; } }
+
+/*
+.icon-owl:hover .left-wing{
+  transform: rotate(10deg) translateX(45px) translateY(-25px) scale(1.125, 1.125);
+}
+
+.icon-owl:hover .right-wing{
+  transform: rotate(-10deg) translateX(-105px) translateY(50px) scale(1.125, 1.125);
+}
+*/
 .hero {
   background: url("../images/bedroom.jpg") no-repeat 5% 50%;
   background-size: cover; }
@@ -765,40 +796,6 @@ h1, h2, h3, h4, p {
     .fun-fact--goldfish {
       right: 2%; } }
 
-.icon-owl {
-  background-position: 195% 100%;
-  background-size: 11em auto;
-  position: relative; }
-  @media (min-width: 50em) {
-    .icon-owl {
-      background-position: 114% 100%;
-      cursor: pointer; }
-      .icon-owl:hover .fun-fact--owl {
-        display: block; }
-      .icon-owl:active .fun-fact--owl {
-        display: block; } }
-  @media (min-width: 56.5em) {
-    .icon-owl {
-      background-position: 105% 100%; } }
-  @media (min-width: 81.25em) {
-    .icon-owl {
-      background-size: 13em auto; } }
-
-.fun-fact--owl {
-  display: none;
-  background-color: #F0F1D9;
-  border-radius: 1em;
-  position: absolute;
-  width: 15em;
-  padding: 1em; }
-  @media (min-width: 50em) {
-    .fun-fact--owl {
-      bottom: 80%;
-      right: 3%; } }
-  @media (min-width: 87.5em) {
-    .fun-fact--owl {
-      right: 2%; } }
-
 .faq {
   background-color: #F26531;
   text-align: center;
@@ -1102,6 +1099,9 @@ h1, h2, h3, h4, p {
   background-size: cover;
   text-align: center;
   padding: 4em 0; }
+  @media (min-width: 25em) {
+    .footer {
+      padding-bottom: 6em; } }
   @media (min-width: 56.25em) {
     .footer {
       padding: 3em 0 7.5em; } }
