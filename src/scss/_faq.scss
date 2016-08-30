@@ -170,13 +170,13 @@ $bp-faq-medium: 75em; //1200px
   }
 }
 
-#faq__group--2:not(:target) ~ .faq__content .link__group--2,
-#faq__group--2:target ~ .faq__content .link__group--1 {
+#parents:not(:target) ~ .faq__content .link__group--2,
+#parents:target ~ .faq__content .link__group--1 {
   background-color: $color-orange;
 }
 
-#faq__group--2:target ~ .faq__content .list--1,
-#faq__group--2:not(:target) ~ .faq__content .list--2 {
+#parents:target ~ .faq__content .list--1,
+#parents:not(:target) ~ .faq__content .list--2 {
   display: none;
 }
 
