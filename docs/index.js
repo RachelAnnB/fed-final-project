@@ -28,14 +28,7 @@ $(window).scroll(function() {
 		// Else fade out the btn
 	}
 });
-$('#return-to-top').click(function() {
-	// When arrow is clicked
-	$('body,html').animate({
-		scrollTop : 0
-		// Scroll to top of body
-	}, 500);
-});
-$('#owl-btn').click(function() {
+$('#return-to-top, #owl-btn').click(function() {
 	// When arrow is clicked
 	$('body,html').animate({
 		scrollTop : 0
@@ -55,17 +48,13 @@ $(window).scroll(function() {
 
 			//dynamically set proper height to be N pixels from the bottom of the page, 193 = 168 + 25 (padding)
 			var heightToSet = ($(document).scrollTop() - ($(document).height() - $(window).height() - 193)); 
-			/*console.log($(document).scrollTop());
-      console.log($(document).height());
-      console.log($(window).height());
-      console.log(heightToSet);*/
 
 			/*console.table([{ 
-                  scrollTop: $(document).scrollTop(),
-                  windowHeight: $(window).height(),
-                  documentHeight: $(document).height(),
-                  heightToSet: (heightToSet)
-                 }]);*/
+				scrollTop: $(document).scrollTop(),
+				windowHeight: $(window).height(),
+				documentHeight: $(document).height(),
+				heightToSet: (heightToSet)
+      }]);*/
 
 			$(".return-to-top-btn").css('bottom', heightToSet);
 			var owlHeightToSet = heightToSet + 40;

@@ -28,14 +28,7 @@ $(window).scroll(function() {
 		// Else fade out the btn
 	}
 });
-$('#return-to-top').click(function() {
-	// When arrow is clicked
-	$('body,html').animate({
-		scrollTop : 0
-		// Scroll to top of body
-	}, 500);
-});
-$('#owl-btn').click(function() {
+$('#return-to-top, #owl-btn').click(function() {
 	// When arrow is clicked
 	$('body,html').animate({
 		scrollTop : 0
