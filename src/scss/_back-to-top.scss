@@ -1,35 +1,75 @@
+//---------------Break Points---------------//
+$bp-top-small: 56.25em; //900px
+
 #return-to-top {
   font-family: $font-avenir-roman;
   font-size: 1em; //16px
   font-weight: 400;
-  color: $color-white;
-  padding: 1em; //16px
   z-index: 2;
   position: fixed;
-  bottom: 1.5em; //24px
-  right: 1.5em; //24px
-  background: $color-brown;
   display: block;
   text-decoration: none;
   display: none;
   transition: all 0.3s ease;
 
-  &:hover {
-    background: $color-white;
+  @media(min-width: $bp-global-xsmall) {
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    padding: 1.5em; //24px
+    padding-right: 0;
+    text-align: center;
+    background-color: $color-tan;
     color: $color-brown;
+
+    &:active {
+      background-color: $color-brown;
+      color: $color-tan;
+    }
+  }
+
+  @media(min-width: $bp-top-small) {
+    width: 10em; //
+    bottom: 1.5em; //24px
+    right: 1.5em; //24px
+    padding: 1em; //16px
+    background-color: $color-brown;
+    color: $color-tan;
+
+    &:hover {
+      background: $color-white;
+      color: $color-brown;
+    }
   }
 }
 
-#owl-btn {
-  z-index: 3;
-  position: fixed;
-  bottom: 4em; //24px
-  right: 1.5em; //24px
-  display: block;
-  height: 8em;
-  width: auto;
-  text-decoration: none;
-  display: none;
-  transition: all 0.3s ease;
-  cursor: pointer;
+.icon-owl {
+  @media(min-width: $bp-global-xsmall) {
+    display: none;
+  }
+
+  @media(min-width: $bp-top-small) {
+    background-size: contain;
+    background-position: center;
+    z-index: 3;
+    position: fixed;
+    padding: 4em; //64px
+    bottom: 4em; //24px
+    right: 1em; //16px
+    display: block;
+    width: auto;
+    display: none;
+    transition: all 0.3s ease;
+    cursor: pointer;  
+  }
 }
+
+/*
+.icon-owl:hover .left-wing{
+  transform: rotate(10deg) translateX(45px) translateY(-25px) scale(1.125, 1.125);
+}
+
+.icon-owl:hover .right-wing{
+  transform: rotate(-10deg) translateX(-105px) translateY(50px) scale(1.125, 1.125);
+}
+*/

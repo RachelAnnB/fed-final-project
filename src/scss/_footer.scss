@@ -7,6 +7,10 @@ $bp-footer-medium: 56.25em; //900px
 	background-size: cover;
 	text-align: center;
 	padding: 4em 0; //64px 0
+	
+	@media(min-width: $bp-global-xsmall) {
+    padding-bottom: 6em; //96px
+  }
 
 	@media(min-width: $bp-footer-medium) {
 		padding: 3em 0 7.5em; //48px 0
