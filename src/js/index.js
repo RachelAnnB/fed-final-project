@@ -15,18 +15,27 @@ $(document).ready(function(){
 });
 
 //---------------Back to Top---------------//
-//Button
+//Owl Button
 $(window).scroll(function() {
 	if ($(this).scrollTop() >= 50) {
 		// If page is scrolled more than 50px
-		$('#return-to-top').fadeIn(200);    
-		// Fade in the arrow
+		$('#return-to-top').fadeIn(200);
+		$('#owl-btn').fadeIn(200);
+		// Fade in the btn
 	} else {
 		$('#return-to-top').fadeOut(200);
-		// Else fade out the arrow
+		$('#owl-btn').fadeOut(200);
+		// Else fade out the btn
 	}
 });
 $('#return-to-top').click(function() {
+	// When arrow is clicked
+	$('body,html').animate({
+		scrollTop : 0
+		// Scroll to top of body
+	}, 500);
+});
+$('#owl-btn').click(function() {
 	// When arrow is clicked
 	$('body,html').animate({
 		scrollTop : 0
@@ -38,26 +47,26 @@ $('#return-to-top').click(function() {
 //When you start to scroll back up, the button moves back down
 $(window).scroll(function() {
 	if (window.matchMedia("(min-width: 900px)").matches) {
-//document.scrollTop() = distance scrolled from the top
-//document.height() = total height of web page
-//window.height() = browser viewport height
-//168 = height of footer
+		//document.scrollTop() = distance scrolled from the top
+		//document.height() = total height of web page
+		//window.height() = browser viewport height
+		//168 = height of footer
 		if ($(document).scrollTop() > $(document).height() - $(window).height() - 168) { //if scrolled past footer
 
 			//dynamically set proper height to be N pixels from the bottom of the page, 193 = 168 + 25 (padding)
 			var heightToSet = ($(document).scrollTop() - ($(document).height() - $(window).height() - 193)); 
 			/*console.log($(document).scrollTop());
-			console.log($(document).height());
-			console.log($(window).height());
-			console.log(heightToSet);*/
-			
-			console.table([{ 
-									scrollTop: $(document).scrollTop(),
-									windowHeight: $(window).height(),
-									documentHeight: $(document).height(),
-									heightToSet: (heightToSet)
-								 }]);
-			
+      console.log($(document).height());
+      console.log($(window).height());
+      console.log(heightToSet);*/
+
+			/*console.table([{ 
+                  scrollTop: $(document).scrollTop(),
+                  windowHeight: $(window).height(),
+                  documentHeight: $(document).height(),
+                  heightToSet: (heightToSet)
+                 }]);*/
+
 			$(".return-to-top-btn").css('bottom', heightToSet);
 			var owlHeightToSet = heightToSet + 40;
 			$("#owl-btn").css('bottom', owlHeightToSet);
@@ -72,26 +81,6 @@ $(window).scroll(function() {
 		$("#owl-btn").css('bottom', 0);
 	}
 });
-
-//Owl
-$(window).scroll(function() {
-	if ($(this).scrollTop() >= 50) {        
-		// If page is scrolled more than 50px
-		$('#owl-btn').fadeIn(200);    
-		// Fade in the arrow
-	} else {
-		$('#owl-btn').fadeOut(200);   
-		// Else fade out the arrow
-	}
-});
-$('#owl-btn').click(function() {      
-	// When arrow is clicked
-	$('body,html').animate({
-		scrollTop : 0                       
-		// Scroll to top of body
-	}, 500);
-});
-
 
 //---------------Responsive Carousel---------------//
 $('.responsive').slick({
