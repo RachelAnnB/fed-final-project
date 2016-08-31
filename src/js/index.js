@@ -1,37 +1,76 @@
 //---------------Smooth Scrolling---------------//
 $(document).ready(function(){
 	$('a[href^="#"]:not([href="#parents"]):not([href="#retailers"])').on('click',function (e) {
-	    e.preventDefault();
+		e.preventDefault();
 
-	    var target = this.hash;
-	    var $target = $(target);
+		var target = this.hash;
+		var $target = $(target);
 
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
-	    }, 900, 'swing', function () {
-	        window.location.hash = target;
-	    });
+		$('html, body').stop().animate({
+			'scrollTop': $target.offset().top
+		}, 900, 'swing', function () {
+			window.location.hash = target;
+		});
 	});
 });
 
 //---------------Back to Top---------------//
 //Button
 $(window).scroll(function() {
-	if ($(this).scrollTop() >= 50) {        
+	if ($(this).scrollTop() >= 50) {
 		// If page is scrolled more than 50px
 		$('#return-to-top').fadeIn(200);    
 		// Fade in the arrow
 	} else {
-		$('#return-to-top').fadeOut(200);   
+		$('#return-to-top').fadeOut(200);
 		// Else fade out the arrow
 	}
 });
-$('#return-to-top').click(function() {      
+$('#return-to-top').click(function() {
 	// When arrow is clicked
 	$('body,html').animate({
-		scrollTop : 0                       
+		scrollTop : 0
 		// Scroll to top of body
 	}, 500);
+});
+
+//When you scroll to the bottom of the page, the button moves up
+//When you start to scroll back up, the button moves back down
+$(window).scroll(function() {
+	if (window.matchMedia("(min-width: 900px)").matches) {
+//document.scrollTop() = distance scrolled from the top
+//document.height() = total height of web page
+//window.height() = browser viewport height
+//168 = height of footer
+		if ($(document).scrollTop() > $(document).height() - $(window).height() - 168) { //if scrolled past footer
+
+			//dynamically set proper height to be N pixels from the bottom of the page, 193 = 168 + 25 (padding)
+			var heightToSet = ($(document).scrollTop() - ($(document).height() - $(window).height() - 193)); 
+			/*console.log($(document).scrollTop());
+			console.log($(document).height());
+			console.log($(window).height());
+			console.log(heightToSet);*/
+			
+			console.table([{ 
+									scrollTop: $(document).scrollTop(),
+									windowHeight: $(window).height(),
+									documentHeight: $(document).height(),
+									heightToSet: (heightToSet)
+								 }]);
+			
+			$(".return-to-top-btn").css('bottom', heightToSet);
+			var owlHeightToSet = heightToSet + 40;
+			$("#owl-btn").css('bottom', owlHeightToSet);
+		}
+		else {
+			$(".return-to-top-btn").css('bottom', 25);
+			$("#owl-btn").css('bottom', 65);
+		}
+	}
+	else {
+		$(".return-to-top-btn").css('bottom', 0);
+		$("#owl-btn").css('bottom', 0);
+	}
 });
 
 //Owl
@@ -52,6 +91,7 @@ $('#owl-btn').click(function() {
 		// Scroll to top of body
 	}, 500);
 });
+
 
 //---------------Responsive Carousel---------------//
 $('.responsive').slick({

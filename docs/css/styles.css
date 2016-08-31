@@ -241,7 +241,7 @@ h1, h2, h3, h4, p {
       #return-to-top:active {
         background-color: #4B3900;
         color: #F0F1D9; } }
-  @media (min-width: 50em) {
+  @media (min-width: 56.25em) {
     #return-to-top {
       width: 10em;
       bottom: 1.5em;
@@ -257,7 +257,7 @@ h1, h2, h3, h4, p {
   .icon-owl {
     display: none; } }
 
-@media (min-width: 50em) {
+@media (min-width: 56.25em) {
   .icon-owl {
     background-size: contain;
     background-position: center;
