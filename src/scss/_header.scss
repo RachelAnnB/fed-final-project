@@ -1,4 +1,5 @@
 //---------------Break Points---------------//
+$bp-header-xsmall: 20em; //320px
 $bp-header-small: 30em; //480px
 
 .header {
@@ -36,7 +37,7 @@ $bp-header-small: 30em; //480px
 	background-size: cover;
 	display: block;
 	height: 2em; //32px
-	width: 1.5em; //24px
+	width: 1.75em; //
 	margin: 0 auto;
 	overflow: hidden;
 	text-indent: -9999em;
@@ -87,7 +88,11 @@ $bp-header-small: 30em; //480px
 }
 
 .left1 {
-	@media(max-width: $bp-header-small) {
+	@media(min-width: $bp-header-xsmall) and (max-width: 376px) {
+		margin-right: 3em; //48px
+	}
+
+	@media(min-width: 377px) and (max-width: $bp-header-small) {
 		margin-right: 4em; //64px
 	}
 
@@ -97,7 +102,11 @@ $bp-header-small: 30em; //480px
 }
 
 .left2 {
-	@media(max-width: $bp-header-small) {
+	@media(min-width: $bp-header-xsmall) and (max-width: 376px) {
+		margin-left: 3em; //48px
+	}
+
+	@media(min-width: 377px) and (max-width: $bp-header-small) {
 		margin-left: 4em; //64px
 	}
 
@@ -107,7 +116,11 @@ $bp-header-small: 30em; //480px
 }
 
 .right1 {
-	@media(max-width: $bp-header-small) {
+	@media(min-width: $bp-header-xsmall) and (max-width: 376px) {
+		margin-right: 3em; //48px
+	}
+
+	@media(min-width: 377px) and (max-width: $bp-header-small) {
 		margin-right: 4em; //64px
 	}
 
@@ -117,7 +130,11 @@ $bp-header-small: 30em; //480px
 }
 
 .right2 {
-	@media(max-width: $bp-header-small) {
+	@media(min-width: $bp-header-xsmall) and (max-width: 376px) {
+		margin-left: 3em; //48px
+	}
+
+	@media(min-width: 377px) and (max-width: $bp-header-small) {
 		margin-left: 4em; //64px
 	}
 

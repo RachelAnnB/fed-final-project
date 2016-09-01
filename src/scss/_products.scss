@@ -1,4 +1,5 @@
 //---------------Break Points---------------//
+$bp-product-xsmall: 20em; //320px
 $bp-product-small: 56.5em; //904px
 $bp-product-medium: 62em; //992px
 $bp-product-large: 81.25em; //1300px
@@ -16,18 +17,9 @@ $bp-product-large: 81.25em; //1300px
 	}
 
 	&__heading {
-		width: 10em; //160px
-		font-family: $font-egyptian;
-		font-size: 1em; //16px
 		color: $color-blue;
-		border-top: 2px solid $color-blue;
-		border-bottom: 2px solid $color-blue;
-		padding: 0.25em 0; //4px 0
-		margin: auto;
-
-		@media(min-width: $bp-global-medium) {
-			font-size: 1.5em; //24px
-		}
+		@include border-blue;
+		@include section-heading;
 	}
 
 	&__box {
@@ -128,7 +120,7 @@ $bp-product-large: 81.25em; //1300px
 	}
 
 	@media(min-width: 960px) { //60em
-		width: 26em;
+		width: 26em; //416px
 	}
 
 	@media(min-width: $bp-product-large) {
@@ -190,6 +182,10 @@ $bp-product-large: 81.25em; //1300px
 	padding: 1em; //16px
 	margin: 4em auto 1em; //64px 16px
 
+	@media(min-width: $bp-product-xsmall) {
+		width: 85%;
+	}
+	
 	@media(min-width: $bp-global-xlarge) {
 		width: 80em; //1280px
 	}
@@ -202,11 +198,11 @@ $bp-product-large: 81.25em; //1300px
 		@media(min-width: $bp-global-large) {
 			position: absolute;
 			margin-top: 1.25em; //20px
-			left: 9em; //144em
+			left: 8.75em; //140px
 		}
 
 		@media(min-width: $bp-global-xlarge) {
-			left: 9.5em; //152px
+			right: 22em; //352px
 		}
 	}
 

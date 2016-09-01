@@ -1,25 +1,26 @@
 //---------------Break Points---------------//
+$bp-top-xsmall: 20em; //320px
 $bp-top-small: 56.25em; //900px
 
 #return-to-top {
-  font-family: $font-avenir-roman;
   font-size: 1em; //16px
-  font-weight: 400;
   z-index: 2;
   position: fixed;
   display: block;
   text-decoration: none;
   display: none;
   transition: all 0.3s ease;
-
-  @media(min-width: $bp-global-xsmall) {
-    width: 100%;
+	
+	@media(min-width: $bp-top-xsmall) {
+    font-family: $font-avenir-medium;
+		font-weight: 700;
+		width: 100%;
     right: 0;
     bottom: 0;
-    padding: 1.5em; //24px
+    padding: 1em; //16px
     padding-right: 0;
     text-align: center;
-    background-color: $color-tan;
+    background-color: $color-yellow;
     color: $color-brown;
 
     &:active {
@@ -29,7 +30,9 @@ $bp-top-small: 56.25em; //900px
   }
 
   @media(min-width: $bp-top-small) {
-    width: 10em; //
+    font-family: $font-avenir-roman;
+  	font-weight: 400;
+		width: 10em; //160px
     bottom: 1.5em; //24px
     right: 1.5em; //24px
     padding: 1em; //16px
@@ -54,7 +57,7 @@ $bp-top-small: 56.25em; //900px
     z-index: 3;
     position: fixed;
     padding: 4em; //64px
-    bottom: 4em; //24px
+    bottom: 4em; //64px
     right: 1em; //16px
     display: block;
     width: auto;
@@ -63,13 +66,3 @@ $bp-top-small: 56.25em; //900px
     cursor: pointer;  
   }
 }
-
-/*
-.icon-owl:hover .left-wing{
-  transform: rotate(10deg) translateX(45px) translateY(-25px) scale(1.125, 1.125);
-}
-
-.icon-owl:hover .right-wing{
-  transform: rotate(-10deg) translateX(-105px) translateY(50px) scale(1.125, 1.125);
-}
-*/

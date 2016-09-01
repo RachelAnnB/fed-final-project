@@ -10,18 +10,9 @@ $bp-retailers-large: 75em; //1200px
 	padding: 4em 0; //64px 0
 
 	&__heading {
-		width: 10em; //160px
-		font-family: $font-egyptian;
-		font-size: 1em; //16px
 		color: $color-blue;
-		border-top: 2px solid $color-blue;
-		border-bottom: 2px solid $color-blue;
-		padding: 0.25em 0; //4px 0
-		margin: auto;
-
-		@media(min-width: $bp-global-medium) {
-			font-size: 1.5em; //24px
-		}
+		@include border-blue;
+		@include section-heading;
 	}
 
 	&__text {

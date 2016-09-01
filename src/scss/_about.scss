@@ -1,4 +1,5 @@
 //---------------Break Points---------------//
+$bp-about-xsmall: 20em; //320px
 $bp-about-small: 50em; //800px
 
 .about {
@@ -7,18 +8,9 @@ $bp-about-small: 50em; //800px
   padding: 4em 0 8em; //64px 0 128px
   
   &__heading {
-    width: 10em; //160px
-    font-family: $font-egyptian;
-    font-size: 1em; //16px
     color: $color-white;
-    border-top: 2px solid $color-white;
-    border-bottom: 2px solid $color-white;
-    padding: 0.25em 0; //4px 0
-    margin: auto;
-
-    @media(min-width: $bp-global-medium) {
-      font-size: 1.5em; //24px
-    }
+		@include border-white;
+    @include section-heading;
   }
   
   &__text {
@@ -41,10 +33,14 @@ $bp-about-small: 50em; //800px
     padding: 5em 15em; //80px 240px
     text-indent: -9999em;
     @include filter-invert;
+		
+		@media(min-width: $bp-about-xsmall) {
+			padding: 3em 8em; //48px 128px
+		}
 
     @media(min-width: $bp-global-xsmall) {
       padding: 5em 10em; //80px 160px
-    } 
+    }
     
     @media(min-width: $bp-about-small) {
       padding: 6em 16em; //96px 256px
