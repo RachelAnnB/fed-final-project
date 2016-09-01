@@ -10,11 +10,11 @@ $bp-top-small: 56.25em; //900px
   text-decoration: none;
   display: none;
   transition: all 0.3s ease;
-	
-	@media(min-width: $bp-top-xsmall) {
+  
+  @media(min-width: $bp-top-xsmall) {
     font-family: $font-avenir-medium;
-		font-weight: 700;
-		width: 100%;
+    font-weight: 700;
+    width: 100%;
     right: 0;
     bottom: 0;
     padding: 1em; //16px
@@ -31,8 +31,8 @@ $bp-top-small: 56.25em; //900px
 
   @media(min-width: $bp-top-small) {
     font-family: $font-avenir-roman;
-  	font-weight: 400;
-		width: 10em; //160px
+    font-weight: 400;
+    width: 10em; //160px
     bottom: 1.5em; //24px
     right: 1.5em; //24px
     padding: 1em; //16px

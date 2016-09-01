@@ -9,7 +9,7 @@ $bp-about-small: 50em; //800px
   
   &__heading {
     color: $color-white;
-		@include border-white;
+    @include border-white;
     @include section-heading;
   }
   
@@ -33,10 +33,10 @@ $bp-about-small: 50em; //800px
     padding: 5em 15em; //80px 240px
     text-indent: -9999em;
     @include filter-invert;
-		
-		@media(min-width: $bp-about-xsmall) {
-			padding: 3em 8em; //48px 128px
-		}
+    
+    @media(min-width: $bp-about-xsmall) {
+      padding: 3em 8em; //48px 128px
+    }
 
     @media(min-width: $bp-global-xsmall) {
       padding: 5em 10em; //80px 160px

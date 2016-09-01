@@ -3,158 +3,158 @@ $bp-header-xsmall: 20em; //320px
 $bp-header-small: 30em; //480px
 
 .header {
-	width: 100%;
-	background: url("../images/tan-wood.jpg") no-repeat center;
-	background-size: cover;
+  width: 100%;
+  background: url("../images/tan-wood.jpg") no-repeat center;
+  background-size: cover;
 
-	@media(max-width: $bp-header-small) {
-		height: 6em; //96px
-	}
+  @media(max-width: $bp-header-small) {
+    height: 6em; //96px
+  }
 
-	@media(min-width: $bp-global-medium) {
-		padding-bottom: 1.75em; //28px
-	}
+  @media(min-width: $bp-global-medium) {
+    padding-bottom: 1.75em; //28px
+  }
 }
 
 .site-title {
-	padding-top: 0.5em; //8px
-	margin: auto;
+  padding-top: 0.5em; //8px
+  margin: auto;
 
-	@media(max-width: $bp-header-small) {
-		width: 30%;
-		position: absolute;
-		left: 35%;
-	}
+  @media(max-width: $bp-header-small) {
+    width: 30%;
+    position: absolute;
+    left: 35%;
+  }
 
-	@media(min-width: $bp-global-medium) {
-		width: 40%;
-		position: absolute;
-		left: 30%;
-	}
+  @media(min-width: $bp-global-medium) {
+    width: 40%;
+    position: absolute;
+    left: 30%;
+  }
 }
 
 .site-logo {
-	background-size: cover;
-	display: block;
-	height: 2em; //32px
-	width: 1.75em; //
-	margin: 0 auto;
-	overflow: hidden;
-	text-indent: -9999em;
+  background-size: cover;
+  display: block;
+  height: 2em; //32px
+  width: 1.75em; //
+  margin: 0 auto;
+  overflow: hidden;
+  text-indent: -9999em;
 
-	@media(min-width: $bp-global-medium) {
-		width: 10em; //160px
-		background-size: contain;
-		margin-top: 0.25em; //4px
-	}
+  @media(min-width: $bp-global-medium) {
+    width: 10em; //160px
+    background-size: contain;
+    margin-top: 0.25em; //4px
+  }
 }
 
 .nav {
-	text-align: center;
-	width: 100%;
+  text-align: center;
+  width: 100%;
 
-	@media(max-width: $bp-header-small) {
-		width: 100%;
-		float: left;
-		text-align: center;
-		margin: 0.5em 0; //8px 0
-	}
+  @media(max-width: $bp-header-small) {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin: 0.5em 0; //8px 0
+  }
 }
 
 .nav__list {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 
-	@media(min-width: 481px) {
-		display: inline;
-	}
+  @media(min-width: 481px) {
+    display: inline;
+  }
 }
 
 .list__item {
-	list-style-type: none;
-	display: inline-block;
-	padding: 1em 0; //16px 0
-	width: 24%;
+  list-style-type: none;
+  display: inline-block;
+  padding: 1em 0; //16px 0
+  width: 24%;
 
-	@media(max-width: $bp-header-small) {
-		margin: 0.5em 2em; //8px 32px
-		padding: 0;
-	}
+  @media(max-width: $bp-header-small) {
+    margin: 0.5em 2em; //8px 32px
+    padding: 0;
+  }
 
-	@media(min-width: $bp-global-medium) {
-		width: 6%;
-		margin-top: 1.75em; //28px
-	}
+  @media(min-width: $bp-global-medium) {
+    width: 6%;
+    margin-top: 1.75em; //28px
+  }
 }
 
 .left1 {
-	@media(min-width: $bp-header-xsmall) and (max-width: 376px) {
-		margin-right: 3em; //48px
-	}
+  @media(min-width: $bp-header-xsmall) and (max-width: 376px) {
+    margin-right: 3em; //48px
+  }
 
-	@media(min-width: 377px) and (max-width: $bp-header-small) {
-		margin-right: 4em; //64px
-	}
+  @media(min-width: 377px) and (max-width: $bp-header-small) {
+    margin-right: 4em; //64px
+  }
 
-	@media(min-width: $bp-global-medium) {
-		margin: 0 5em 0 2em; //0 80px 0 32px
-	}
+  @media(min-width: $bp-global-medium) {
+    margin: 0 5em 0 2em; //0 80px 0 32px
+  }
 }
 
 .left2 {
-	@media(min-width: $bp-header-xsmall) and (max-width: 376px) {
-		margin-left: 3em; //48px
-	}
+  @media(min-width: $bp-header-xsmall) and (max-width: 376px) {
+    margin-left: 3em; //48px
+  }
 
-	@media(min-width: 377px) and (max-width: $bp-header-small) {
-		margin-left: 4em; //64px
-	}
+  @media(min-width: 377px) and (max-width: $bp-header-small) {
+    margin-left: 4em; //64px
+  }
 
-	@media(min-width: $bp-global-medium) {
-		margin-right: 15em; //240px
-	}
+  @media(min-width: $bp-global-medium) {
+    margin-right: 15em; //240px
+  }
 }
 
 .right1 {
-	@media(min-width: $bp-header-xsmall) and (max-width: 376px) {
-		margin-right: 3em; //48px
-	}
+  @media(min-width: $bp-header-xsmall) and (max-width: 376px) {
+    margin-right: 3em; //48px
+  }
 
-	@media(min-width: 377px) and (max-width: $bp-header-small) {
-		margin-right: 4em; //64px
-	}
+  @media(min-width: 377px) and (max-width: $bp-header-small) {
+    margin-right: 4em; //64px
+  }
 
-	@media(min-width: $bp-global-medium) {
-		margin-left: 15em; //240px
-	}
+  @media(min-width: $bp-global-medium) {
+    margin-left: 15em; //240px
+  }
 }
 
 .right2 {
-	@media(min-width: $bp-header-xsmall) and (max-width: 376px) {
-		margin-left: 3em; //48px
-	}
+  @media(min-width: $bp-header-xsmall) and (max-width: 376px) {
+    margin-left: 3em; //48px
+  }
 
-	@media(min-width: 377px) and (max-width: $bp-header-small) {
-		margin-left: 4em; //64px
-	}
+  @media(min-width: 377px) and (max-width: $bp-header-small) {
+    margin-left: 4em; //64px
+  }
 
-	@media(min-width: $bp-global-medium) {
-		margin: 0 2em 0 5em; //0 32px 0 80px
-	}
+  @media(min-width: $bp-global-medium) {
+    margin: 0 2em 0 5em; //0 32px 0 80px
+  }
 }
 
 .item__link {
-	text-decoration: none;
-	font-family: $font-avenir-roman;
-	font-weight: 400;
-	font-size: 1.25em; //20px
-	color: $color-brown;
+  text-decoration: none;
+  font-family: $font-avenir-roman;
+  font-weight: 400;
+  font-size: 1.25em; //20px
+  color: $color-brown;
 
-	&:hover, &:active {
-		color: $color-orange;
-	}
+  &:hover, &:active {
+    color: $color-orange;
+  }
 
-	@media(max-width: $bp-header-small) {
-		padding: 0.5em; //8px
-	}
+  @media(max-width: $bp-header-small) {
+    padding: 0.5em; //8px
+  }
 }

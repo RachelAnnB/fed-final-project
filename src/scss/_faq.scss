@@ -11,7 +11,7 @@ $bp-faq-medium: 75em; //1200px
 
   &__heading {
     color: $color-light-gray;
-		@include border-gray;
+    @include border-gray;
     @include section-heading;
   }
 
@@ -46,11 +46,11 @@ $bp-faq-medium: 75em; //1200px
     }
 
     @media(min-width: $bp-faq-xsmall) {
-			font-size: 2em; //32px
-			padding: 0.375em; //6px
-		} 
-		
-		@media(min-width: $bp-global-small) {
+      font-size: 2em; //32px
+      padding: 0.375em; //6px
+    } 
+    
+    @media(min-width: $bp-global-small) {
       padding: 0.5em 2em; //8px 32px
     }
 
@@ -119,10 +119,10 @@ $bp-faq-medium: 75em; //1200px
     text-align: left;
     padding: 0.5em 0; //8px 0
     display: none;
-		
-		@media(min-width: $bp-faq-xsmall) {
-			width: 85%;
-		}
+    
+    @media(min-width: $bp-faq-xsmall) {
+      width: 85%;
+    }
 
     @media(min-width: $bp-global-xsmall) {
       width: 90%;
@@ -138,7 +138,7 @@ $bp-faq-medium: 75em; //1200px
 
     &__link {
       color: $color-brown;
-			text-decoration: none;
+      text-decoration: none;
     }
   }
 
@@ -158,11 +158,11 @@ $bp-faq-medium: 75em; //1200px
       padding: 1em; //16px
       border: 2px solid $color-tan;
     }
-		
-		&__link {
-			color: $color-tan;
-			text-decoration: none;
-		}
+    
+    &__link {
+      color: $color-tan;
+      text-decoration: none;
+    }
   }
 }
 
