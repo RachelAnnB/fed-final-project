@@ -36,6 +36,19 @@ $('#return-to-top, #owl-btn').click(function() {
 	}, 500);
 });
 
+mediaCheck({
+  media: '(min-width: 900px)',
+  entry: function() {
+    console.log('starting 900');
+  },
+  exit: function() {
+    console.log('leaving 900');
+  },
+  both: function() {
+    console.log('changing state');
+  }
+});
+
 //When you scroll to the bottom of the page, the button moves up
 //When you start to scroll back up, the button moves back down
 $(window).scroll(function() {
@@ -47,7 +60,7 @@ $(window).scroll(function() {
 		if ($(document).scrollTop() > $(document).height() - $(window).height() - 168) { //if scrolled past footer
 
 			//dynamically set proper height to be N pixels from the bottom of the page, 193 = 168 + 25 (padding)
-			var heightToSet = ($(document).scrollTop() - ($(document).height() - $(window).height() - 193)); 
+			var heightToSet = ($(document).scrollTop() - ($(document).height() - $(window).height() - 193));
 
 			/*console.table([{ 
 				scrollTop: $(document).scrollTop(),
