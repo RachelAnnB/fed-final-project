@@ -116,7 +116,7 @@ h1, h2, h3, h4, p {
 
 .site-title {
   padding-top: 0.5em;
-  margin: auto; }
+  text-align: center; }
   @media (max-width: 30em) {
     .site-title {
       width: 30%;
@@ -126,15 +126,14 @@ h1, h2, h3, h4, p {
     .site-title {
       width: 40%;
       position: absolute;
-      left: 30%; } }
+      left: 29%; } }
 
 .site-logo {
   background-size: cover;
-  display: block;
+  display: inline-block;
   height: 2em;
   width: 1.75em;
   margin: 0 auto;
-  overflow: hidden;
   text-indent: -9999em; }
   @media (min-width: 61.25em) {
     .site-logo {
@@ -260,16 +259,16 @@ h1, h2, h3, h4, p {
   @media (min-width: 56.25em) {
     #return-to-top {
       font-family: Avenir, Helvetica, Arial, sans-serif;
-      font-weight: 400;
+      font-weight: 700;
       width: 10em;
       bottom: 1.5em;
       right: 1.5em;
       padding: 1em;
-      background-color: #4B3900;
-      color: #F0F1D9; }
+      background-color: #E8CF00;
+      color: #4B3900; }
       #return-to-top:hover {
-        background: #fff;
-        color: #4B3900; } }
+        background: #4B3900;
+        color: #fff; } }
 
 @media (min-width: 25em) {
   .icon-owl {
@@ -792,7 +791,6 @@ h1, h2, h3, h4, p {
 
 .icon-duck {
   background-position: 205% 100%;
-  background-size: 10em auto;
   position: relative; }
   @media (min-width: 50em) {
     .icon-duck {
@@ -854,12 +852,11 @@ h1, h2, h3, h4, p {
       left: 9%; } }
 
 .icon-goldfish {
-  background-position: 225% 100%;
-  background-size: 11em auto;
+  background-position: 345% 100%;
   position: relative; }
   @media (min-width: 50em) {
     .icon-goldfish {
-      background-position: 114% 100%;
+      background-position: 110% 100%;
       cursor: pointer; } }
   @media (min-width: 50em) and (max-width: 1023px) {
     .icon-goldfish .fun-fact--goldfish {
@@ -872,9 +869,6 @@ h1, h2, h3, h4, p {
   @media (min-width: 56.5em) {
     .icon-goldfish {
       background-position: 105% 100%; } }
-  @media (min-width: 81.25em) {
-    .icon-goldfish {
-      background-size: 13em auto; } }
 
 .fun-fact--goldfish {
   display: none;

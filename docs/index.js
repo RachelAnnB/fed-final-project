@@ -36,19 +36,6 @@ $('#return-to-top, #owl-btn').click(function() {
 	}, 500);
 });
 
-mediaCheck({
-  media: '(min-width: 900px)',
-  entry: function() {
-    console.log('starting 900');
-  },
-  exit: function() {
-    console.log('leaving 900');
-  },
-  both: function() {
-    console.log('changing state');
-  }
-});
-
 //When you scroll to the bottom of the page, the button moves up
 //When you start to scroll back up, the button moves back down
 $(window).scroll(function() {

@@ -18,7 +18,7 @@ $bp-header-small: 30em; //480px
 
 .site-title {
   padding-top: 0.5em; //8px
-  margin: auto;
+  text-align: center;
 
   @media(max-width: $bp-header-small) {
     width: 30%;
@@ -29,17 +29,16 @@ $bp-header-small: 30em; //480px
   @media(min-width: $bp-global-medium) {
     width: 40%;
     position: absolute;
-    left: 30%;
+    left: 29%;
   }
 }
 
 .site-logo {
   background-size: cover;
-  display: block;
+  display: inline-block;
   height: 2em; //32px
-  width: 1.75em; //
+  width: 1.75em; //28px
   margin: 0 auto;
-  overflow: hidden;
   text-indent: -9999em;
 
   @media(min-width: $bp-global-medium) {

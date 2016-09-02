@@ -24,7 +24,6 @@ $bp-facts-xlarge: 81.25em; //1300px
 //-----Duck-----//
 .icon-duck {
   background-position: 205% 100%;
-  background-size: 10em auto; //160px
   position: relative;
 
   @media(min-width: $bp-facts-small) {
@@ -104,12 +103,11 @@ $bp-facts-xlarge: 81.25em; //1300px
 
 //-----Goldfish-----//
 .icon-goldfish {
-  background-position: 225% 100%;
-  background-size: 11em auto; //176px
+  background-position: 345% 100%;
   position: relative;
 
   @media(min-width: $bp-facts-small) {
-    background-position: 114% 100%;
+    background-position: 110% 100%;
     cursor: pointer;
   }
   
@@ -131,10 +129,6 @@ $bp-facts-xlarge: 81.25em; //1300px
   
   @media(min-width: $bp-facts-medium) {
     background-position: 105% 100%;
-  }
-  
-  @media(min-width: $bp-facts-xlarge) {
-    background-size: 13em auto; //208px
   }
 }
 
