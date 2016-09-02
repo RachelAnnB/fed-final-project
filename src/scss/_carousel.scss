@@ -27,7 +27,7 @@ $bp-carousel-small: 30em; //480px
 
 .row {
   @media(min-width: $bp-global-xlarge) {
-    width: 90em;
+    width: 90em; //1440px
     margin: 0 auto;
   }
 }
@@ -81,8 +81,11 @@ $bp-carousel-small: 30em; //480px
 
   li {
     display: inline-block;
-    margin-left: 0.5em; //8px
-    margin-right: 0.5em; //8px
+    margin: 0 0.375em; //0 6px
+    
+    @media(min-width: $bp-carousel-small) {
+      margin: 0 0.75em; //0 12px
+    }
 
     &.slick-active {
       button {

@@ -1,52 +1,77 @@
+//---------------Break Points---------------//
+$bp-hero-small: 20em; //320px
+$bp-hero-medium: 25em; //400px
+
 .hero {
-	background: url("../images/bedroom.jpg") no-repeat 5% 50%;
-	background-size: cover;
+  background: url("../images/bedroom.jpg") no-repeat 5% 50%;
+  background-size: cover;
 
-	&__overlay {
-		background-color: rgba($color-white, 0.3);
-		text-align: center;
-		padding-top: 4em; //96px
-	}
+  &__overlay {
+    background-color: rgba($color-white, 0.3);
+    text-align: center;
+    
+    @media(min-width: $bp-hero-small) {
+      padding-top: 2em; //32px
+    }
+    
+    @media(min-width: $bp-global-small) {
+      padding-top: 4em; //64px
+    }
+  }
 
-	&__heading {
-		font-family: $font-avenir-medium;
-		font-weight: 400;
-		font-size: 2.125em; //34px
-		color: $color-brown;
-		margin-bottom: 0.5em; //8px
+  &__heading {
+    font-family: $font-avenir-medium;
+    font-weight: 400;
+    font-size: 2.125em; //34px
+    color: $color-brown;
+    margin-bottom: 0.5em; //8px
 
-		@media(min-width: $bp-global-small) {
-			font-size: 2.5em; //40px
-		}
+    @media(min-width: $bp-hero-small) {
+      width: 70%;
+      margin: 0 auto 0.5em; //0 8px
+    }
+    
+    @media(min-width: $bp-hero-medium) {
+      width: 100%;
+    }
 
-		@media(min-width: $bp-global-medium) {
-			font-weight: 700;
-			font-size: 3.5em; //56px
-			margin-top: 1em; //16px
-		}
+    @media(min-width: $bp-global-small) {
+      font-size: 2.5em; //40px
+    }
 
-		@media(min-width: $bp-global-large) {
-			font-size: 5.5em; //88px
-			margin-top: 0;
-			margin-bottom: 0.25em; //4px
-		}
-	}
+    @media(min-width: $bp-global-medium) {
+      font-weight: 700;
+      font-size: 3.5em; //56px
+      margin-top: 1em; //16px
+    }
 
-	&__text {
-		font-family: $font-avenir-roman;
-		font-weight: 400;
-		font-size: 1.25em; //20px
-		color: $color-brown;
-		width: 85%;
-		margin: auto;
+    @media(min-width: $bp-global-large) {
+      font-size: 5.5em; //88px
+      margin-top: 0;
+      margin-bottom: 0.25em; //4px
+    }
+  }
 
-		@media(min-width: $bp-global-small) {
-			font-size: 1.5em; //24px
-		}
+  &__text {
+    font-family: $font-avenir-roman;
+    font-weight: 400;
+    font-size: 1.25em; //20px
+    color: $color-brown;
+    width: 85%;
+    margin: auto;
 
-		@media(min-width: $bp-global-medium) {
-			width: 75%;
-			font-size: 2em; //32px
-		}
-	}
+    @media(min-width: $bp-hero-small) {
+      margin-bottom: 1.5em; //24px
+    }
+
+    @media(min-width: $bp-global-small) {
+      margin-bottom: 0;
+      font-size: 1.5em; //24px
+    }
+
+    @media(min-width: $bp-global-medium) {
+      width: 75%;
+      font-size: 2em; //32px
+    }
+  }
 }

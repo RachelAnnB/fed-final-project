@@ -4,146 +4,137 @@ $bp-retailers-medium: 72em; //1152px
 $bp-retailers-large: 75em; //1200px
 
 .retailers {
-	background: url("../images/tan-wood.jpg") no-repeat center;
-	background-size: cover;
-	text-align: center;
-	padding: 4em 0; //64px 0
+  background: url("../images/tan-wood.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+  padding: 4em 0; //64px 0
 
-	&__heading {
-		width: 10em; //160px
-		font-family: $font-egyptian;
-		font-size: 1em; //16px
-		color: $color-blue;
-		border-top: 2px solid $color-blue;
-		border-bottom: 2px solid $color-blue;
-		padding: 0.25em 0; //4px 0
-		margin: auto;
+  &__heading {
+    color: $color-blue;
+    @include border-blue;
+    @include section-heading;
+  }
 
-		@media(min-width: $bp-global-medium) {
-			font-size: 1.5em; //24px
-		}
-	}
+  &__text {
+    width: 90%;
+    font-family: $font-avenir-medium;
+    font-size: 1.5em; //24px
+    font-weight: 700;
+    color: $color-blue;
+    margin: 2em auto; //32px
 
-	&__text {
-		width: 90%;
-		font-family: $font-avenir-medium;
-		font-size: 1.5em; //24px
-		font-weight: 700;
-		color: $color-blue;
-		margin: 2em auto; //32px
+    @media(min-width: $bp-retailers-medium) {
+      width: 28em; //448px
+      font-size: 2.5em; //40px
+    }
+  }
 
-		@media(min-width: $bp-retailers-medium) {
-			width: 28em; //448px
-			font-size: 2.5em; //40px
-		}
-	}
+  &__form {
+    width: 100%;
+  }
 
-	&__form {
-		width: 100%;
-	}
+  &__input {
+    width: 90%;
+    display: block;
+    font-family: $font-avenir-roman;
+    font-size: 1em; //16px
+    font-weight: 400;
+    color: $color-blue;
+    padding: 1em 0 1em 0.75em; //16px 0 16px 12px
+    margin: 1em auto; //16px 0
+    border: none;
 
-	&__input {
-		width: 90%;
-		display: block;
-		font-family: $font-avenir-roman;
-		font-size: 1em; //16px
-		font-weight: 400;
-		color: $color-blue;
-		padding: 1em 0 1em 0.75em; //16px 0 16px 12px
-		margin: 1em auto; //16px 0
-		border: none;
+    &:focus {
+      outline-color: $color-dark-gray;
+    }
 
-		&:focus {
-			outline-color: $color-dark-gray;
-		}
+    @media(min-width: $bp-retailers-small) {
+      width: 70%;
+    }
 
-		@media(min-width: $bp-retailers-small) {
-			width: 70%;
-		}
+    @media(min-width: $bp-retailers-large) {
+      width: 40%;
+    }
+    
+    @media(min-width: $bp-global-xlarge) {
+      width: 38em; //608px
+    }
+  }
 
-		@media(min-width: $bp-retailers-large) {
-			width: 40%;
-		}
-		
-		@media(min-width: $bp-global-xlarge) {
-			width: 38em; //608px
-		}
-	}
+  &__textarea {
+    width: 90%;
+    display: block;
+    font-family: $font-avenir-roman;
+    font-size: 1em; //16px
+    font-weight: 400;
+    color: $color-blue;
+    padding: 1em 0 7em 0.75em; //16px 0 112px 12px
+    margin: 1em auto; //16px 0
+    border: none;
 
-	&__textarea {
-		width: 90%;
-		display: block;
-		font-family: $font-avenir-roman;
-		font-size: 1em; //16px
-		font-weight: 400;
-		color: $color-blue;
-		padding: 1em 0 7em 0.75em; //16px 0 112px 12px
-		margin: 1em auto; //16px 0
-		border: none;
+    &:focus {
+      outline-color: $color-dark-gray;
+    }
 
-		&:focus {
-			outline-color: $color-dark-gray;
-		}
+    @media(min-width: $bp-retailers-small) {
+      width: 70%;
+    }
 
-		@media(min-width: $bp-retailers-small) {
-			width: 70%;
-		}
+    @media(min-width: $bp-retailers-large) {
+      width: 40%;
+    }
+    
+    @media(min-width: $bp-global-xlarge) {
+      width: 38em; //608px
+    }
+  }
 
-		@media(min-width: $bp-retailers-large) {
-			width: 40%;
-		}
-		
-		@media(min-width: $bp-global-xlarge) {
-			width: 38em; //608px
-		}
-	}
+  &__submit {
+    width: 92%;
+    background-color: $color-blue;
+    font-family: $font-avenir-roman;
+    font-size: 1.25em; //20px
+    font-weight: 400;
+    color: $color-tan;
+    padding: 2em 0; //32px 0
+    margin: 1em auto; //16px 0
+    border-radius: 0;
+    border: none;
 
-	&__submit {
-		width: 92%;
-		background-color: $color-blue;
-		font-family: $font-avenir-roman;
-		font-size: 1.25em; //20px
-		font-weight: 400;
-		color: $color-tan;
-		padding: 2em 0; //32px 0
-		margin: 1em auto; //16px 0
-		border-radius: 0;
-		border: none;
+    &:focus {
+      outline-color: $color-dark-gray;
+    }
+    
+    &:hover {
+      background-color: $color-dark-gray;
+    }
 
-		&:focus {
-			outline-color: $color-dark-gray;
-		}
-		
-		&:hover {
-			background-color: $color-dark-gray;
-		}
+    @media(min-width: $bp-retailers-small) {
+      width: 40%;
+    }
 
-		@media(min-width: $bp-retailers-small) {
-			width: 40%;
-		}
-
-		@media(min-width: $bp-retailers-large) {
-			width: 25%;
-		}
-		
-		@media(min-width: $bp-global-xlarge) {
-			width: 18em; //288px
-		}
-	}
+    @media(min-width: $bp-retailers-large) {
+      width: 25%;
+    }
+    
+    @media(min-width: $bp-global-xlarge) {
+      width: 18em; //288px
+    }
+  }
 }
 
 ::-webkit-input-placeholder {
-	color: $color-blue;
+  color: $color-blue;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-	color: $color-blue;
+  color: $color-blue;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-	color: $color-blue;
+  color: $color-blue;
 }
 
 :-ms-input-placeholder {  
-	color: $color-blue;
+  color: $color-blue;
 }

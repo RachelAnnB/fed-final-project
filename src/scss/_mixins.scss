@@ -1,36 +1,79 @@
 //---------------Break Points---------------//
+$bp-mixin-small: 20em; //320px
 $bp-mixin-large: 81.25em; //1300px
 
-@mixin product-img {
-	margin: auto;
-	width: 20em; //320px
-	height: 20em; //320px
-	border: 1px solid $color-light-gray;
-	border-radius: 10em; //160px
-	-webkit-border-radius: 10em; //160px
-	-moz-border-radius: 10em; //160px
+@mixin section-heading {
+  width: 10em; //160px
+  font-family: $font-egyptian;
+  padding: 0.25em 0; //4px 0
+  margin: auto;
+  
+  @media(min-width: $bp-mixin-small) {
+    font-size: 1.5em; //24px
+  }
+  
+  @media(min-width: $bp-global-xsmall) {
+    font-size: 1em; //16px
+  }
+  
+  @media(min-width: $bp-global-medium) {
+    font-size: 1.5em; //24px
+  }
+}
 
-	@media(min-width: $bp-mixin-large) {
-		width: 22em; //352px
-		height: 22em; //352px
-		border-radius: 11em; //176px
-		-webkit-border-radius: 11em; //176px
-		-moz-border-radius: 11em; //176px
-	}
+@mixin border-blue {
+  border-top: 2px solid $color-blue;
+  border-bottom: 2px solid $color-blue;
+}
+
+@mixin border-gray {
+  border-top: 2px solid $color-light-gray;
+  border-bottom: 2px solid $color-light-gray;
+}
+
+@mixin border-white {
+  border-top: 2px solid $color-white;
+  border-bottom: 2px solid $color-white;
+}
+
+@mixin product-img {
+  margin: auto;
+  border: 1px solid $color-light-gray;
+  border-radius: 10em; //160px
+  -webkit-border-radius: 10em; //160px
+  -moz-border-radius: 10em; //160px
+  
+  @media(min-width: $bp-mixin-small) {
+    width: 18em; //288px
+    height: 18em; //288px
+  }
+  
+  @media(min-width: $bp-global-xsmall) {
+    width: 20em; //320px
+    height: 20em; //320px
+  }
+
+  @media(min-width: $bp-mixin-large) {
+    width: 22em; //352px
+    height: 22em; //352px
+    border-radius: 11em; //176px
+    -webkit-border-radius: 11em; //176px
+    -moz-border-radius: 11em; //176px
+  }
 }
 
 @mixin fun-fact {
-	display: none;
-	background-color: $color-tan;
-	border-radius: 1em; //16px
-	position: absolute;
-	width: 15em; //240px
-	padding: 1em; //16px
+  display: none;
+  background-color: $color-tan;
+  border-radius: 1em; //16px
+  position: absolute;
+  width: 15em; //240px
+  padding: 1em; //16px
 }
 
 @mixin filter-invert {
-	&:hover {
-		filter: invert(100%);
-		-webkit-filter: invert(100%);
-	}
+  &:hover {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+  }
 }

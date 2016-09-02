@@ -1,127 +1,152 @@
 //---------------Break Points---------------//
 $bp-facts-small: 50em; //800px
 $bp-facts-medium: 56.5em; //904px
-$bp-facts-large: 81.25em; //1300px
+$bp-facts-large: 64em; //1024px
+$bp-facts-xlarge: 81.25em; //1300px
 
 .fun-fact__heading {
-	font-family: $font-avenir-medium;
-	font-size: 1.25em; //20px
-	font-weight: 700;
-	color: $color-brown;
-	text-align: left;
-	margin-bottom: 0.25em; //4px
+  font-family: $font-avenir-medium;
+  font-size: 1.25em; //20px
+  font-weight: 700;
+  color: $color-brown;
+  text-align: left;
+  margin-bottom: 0.25em; //4px
 }
 
 .fun-fact__text {
-	font-family: $font-avenir-roman;
-	font-size: 1em; //16px
-	font-weight: 400;
-	color: $color-brown;
-	text-align: left;
+  font-family: $font-avenir-roman;
+  font-size: 1em; //16px
+  font-weight: 400;
+  color: $color-brown;
+  text-align: left;
 }
 
 //-----Duck-----//
 .icon-duck {
-	background-position: 175% 100%;
-	background-size: 10em auto; //160px
-	position: relative;
+  background-position: 205% 100%;
+  background-size: 10em auto; //160px
+  position: relative;
 
-	@media(min-width: $bp-facts-small) {
-		background-position: 100% 100%;
-		cursor: pointer;
+  @media(min-width: $bp-facts-small) {
+    background-position: 100% 100%;
+    cursor: pointer;
+  }
+  
+  @media(min-width: $bp-facts-small) and (max-width: 1023px) {
+    .fun-fact--duck{
+      display: block;
+    }
+  }
+  
+  @media(min-width: $bp-facts-large) {
+    &:active .fun-fact--duck {
+			display: block;
+    }
 
-		&:hover .fun-fact--duck{
-			display: inline-block;
-		}
-
-		&:active .fun-fact--duck {
-			display: inline-block;
-		}
-	}
+    &:hover .fun-fact--duck {
+      display: block;
+    }
+  }
 }
 
 .fun-fact--duck {
-	@include fun-fact;
+  @include fun-fact;
 
-	@media(min-width: $bp-facts-small) {
-		bottom: 80%;
-		right: 3%;
-	}
-	
-	@media(min-width: $bp-global-large) {
-		right: 2%;
-	}
+  @media(min-width: $bp-facts-small) {
+    bottom: 80%;
+    right: 3%;
+  }
+  
+  @media(min-width: $bp-global-large) {
+    right: 2%;
+  }
 }
 
 //-----Bear-----//
 .icon-bear {
-	background-position: -65% 0%;
-	position: relative;
+  background-position: -95% 0%;
+  position: relative;
 
-	@media(min-width: $bp-facts-small) {
-		background-position: -1% 0%;
-		cursor: pointer;
+  @media(min-width: $bp-facts-small) {
+    background-position: -1% 0%;
+    cursor: pointer;
+  }
+  
+  @media(min-width: $bp-facts-small) and (max-width: 1023px) {
+    .fun-fact--bear{
+      display: block;
+    }
+  }
+  
+  @media(min-width: $bp-facts-large) {
+    &:active .fun-fact--bear {
+      display: block;
+    }
 
-		&:hover .fun-fact--bear{
-			display: block;
-		}
-
-		&:active .fun-fact--bear {
-			display: block;
-		}
-	}
+    &:hover .fun-fact--bear {
+      display: block;
+    }
+  }
 }
 
 .fun-fact--bear {
-	@include fun-fact;
-	
-	@media(min-width: $bp-facts-small) {
-		bottom: 80%;
-		left: 12%;
-	}
-	
-	@media(min-width: $bp-global-large) {
-		left: 9%;
-	}
+  @include fun-fact;
+  
+  @media(min-width: $bp-facts-small) {
+    bottom: 80%;
+    left: 12%;
+  }
+  
+  @media(min-width: $bp-global-large) {
+    left: 9%;
+  }
 }
 
 //-----Goldfish-----//
 .icon-goldfish {
-	background-position: 195% 100%;
-	background-size: 11em auto; //176px
-	position: relative;
+  background-position: 225% 100%;
+  background-size: 11em auto; //176px
+  position: relative;
 
-	@media(min-width: $bp-facts-small) {
-		background-position: 114% 100%;
-		cursor: pointer;
+  @media(min-width: $bp-facts-small) {
+    background-position: 114% 100%;
+    cursor: pointer;
+  }
+  
+  @media(min-width: $bp-facts-small) and (max-width: 1023px) {
+    .fun-fact--goldfish{
+      display: block;
+    }
+  }
+  
+  @media(min-width: $bp-facts-large) {
+    &:active .fun-fact--goldfish {
+      display: block;
+    }
 
-		&:hover .fun-fact--goldfish{
-			display: block;
-		}
-
-		&:active .fun-fact--goldfish {
-			display: block;
-		}
-	}
-	
-	@media(min-width: $bp-facts-medium) {
-		background-position: 105% 100%;
-	}
-	
-	@media(min-width: $bp-facts-large) {
-		background-size: 13em auto; //208px
-	}
+    &:hover .fun-fact--goldfish {
+      display: block;
+    }
+  }
+  
+  @media(min-width: $bp-facts-medium) {
+    background-position: 105% 100%;
+  }
+  
+  @media(min-width: $bp-facts-xlarge) {
+    background-size: 13em auto; //208px
+  }
 }
 
 .fun-fact--goldfish {
-	@include fun-fact;
-	
-	@media(min-width: $bp-facts-small) {
-		bottom: 80%;
-		right: 3%;
-	}
-	
-	@media(min-width: $bp-global-large) {
-		right: 2%;
-	}
+  @include fun-fact;
+  
+  @media(min-width: $bp-facts-small) {
+    bottom: 80%;
+    right: 3%;
+  }
+  
+  @media(min-width: $bp-global-large) {
+    right: 2%;
+  }
 }
