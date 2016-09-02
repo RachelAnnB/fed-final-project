@@ -996,7 +996,7 @@ h1, h2, h3, h4, p {
         width: 85%; } }
     @media (min-width: 25em) {
       .faq__answer {
-        width: 90%; } }
+        width: 80%; } }
     @media (min-width: 50em) {
       .faq__answer {
         width: 70%; } }
